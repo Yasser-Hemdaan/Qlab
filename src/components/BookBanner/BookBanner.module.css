@@ -1,0 +1,97 @@
+/* bookBanner */
+
+.bookBanner {
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+
+.bookBanner::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to right, var(--main-color), #200222);
+  height: 90%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.bookBanner .image {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.bookBanner .text {
+  color: white;
+  position: relative;
+}
+
+.bookBanner .text .title {
+  font-size: var(--sub-title-size);
+  font-weight: bold;
+  max-width: 450px;
+  text-transform: capitalize;
+  font-family: boldFont;
+}
+
+.bookBanner .text a {
+  text-transform: capitalize;
+  background-color: white;
+  font-size: large;
+  padding: 7.5px 15px;
+  color: var(--main-color) !important;
+  font-family: boldFont;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .bookBanner {
+    flex-direction: column;
+    padding-block-end: 50px;
+    text-align: center;
+    gap: 25px;
+  }
+  .bookBanner .image {
+    max-width: 350px;
+  }
+  .bookBanner .text .title {
+    margin-inline: auto;
+    max-width: 350px;
+  }
+}
+
+.form input,
+.form input:focus {
+  background-color: #ffffff3f;
+  color: white;
+  font-size: 14px;
+  border: 1.5px solid white;
+}
+
+.form input::placeholder {
+  color: rgb(222, 222, 222);
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.form button[type="submit"] {
+  font-size: var(--description-size);
+  font-family: boldFont;
+  color: var(--main-color);
+  text-transform: capitalize;
+  background-color: white;
+}

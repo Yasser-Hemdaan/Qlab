@@ -1,0 +1,48 @@
+.homeVisit {
+  overflow-x: hidden;
+}
+
+.hero {
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.book .text .mainTitle {
+  color: var(--main-color);
+  font-family: boldFont;
+  max-width: 500px;
+  font-size: var(--main-title-size);
+}
+
+.formWrapper .content .subtitle {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-family: regularFont;
+}
+
+.formWrapper .content .mainTitle {
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-family: boldFont;
+}
+
+form input:focus {
+  outline: none !important;
+  border: 1.5px solid white;
+}
+
+form input::placeholder {
+  text-transform: capitalize;
+}
+
+form::-webkit-calendar-picker-indicator {
+  filter: invert(0);
+  -webkit-filter: invert(0);
+}
+
+form button[type="submit"] {
+  background-color: var(--main-color);
+  color: white;
+}
+

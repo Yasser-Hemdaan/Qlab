@@ -1,0 +1,134 @@
+
+.packagesBody .text {
+  color: var(--main-color);
+}
+
+.packagesBody .text .subTitle {
+  font-size: var(--sub-title-size);
+  font-family: mediumFont;
+}
+
+.packagesBody .text .mainTitle {
+  font-size: var(--main-title-size);
+  font-family: boldFont;
+  max-width: 500px;
+}
+
+.packagesCardsContainer {
+  background-color: transparent;
+}
+
+.packagesBody .text .description {
+  font-size: var(--description-size);
+  font-family: mediumFont;
+  color: var(--gray-color);
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.packagesBody .text .description span {
+  color: var(--main-color) !important;
+  font-family: mediumFont !important;
+}
+
+.packagesCardsContainer {
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  /* width: 80% !important; */
+}
+
+@media screen and (max-width: 992px) {
+  .packagesCardsContainer {
+    width: 100% !important;
+  }
+}
+
+.packagesCardsContainer .packagesCard {
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.packagesCardsContainer .packagesCard .cardBody .title {
+  color: var(--main-color);
+  font-size: var(--h4-size);
+  /* text-transform: capitalize; */
+  font-family: mediumFont;
+  height: 50px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
+
+.packagesCardsContainer .packagesCard .cardBody .price {
+  display: flex;
+  gap: 5px;
+  text-transform: capitalize;
+  align-items: baseline;
+}
+
+.packagesCardsContainer .packagesCard .cardBody .price span:first-of-type {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.packagesCardsContainer .packagesCard .cardBody .price span:nth-of-type(2) {
+  color: var(--blue-color);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.price span:last-of-type {
+  text-decoration: line-through;
+  color: var(--gray-color);
+  font-size: 12px;
+}
+
+.packagesCardsContainer .packagesCard .cardBody .description {
+  color: var(--gray-color);
+  font-size: 10px;
+}
+
+.packagesCardsContainer .packagesCard .cardBody .includes {
+  font-size: 14px;
+  font-weight: bold;
+}
+.packagesCardsContainer .packagesCard .cardBody .includes > p span {
+  color: var(--blue-color);
+  text-transform: capitalize;
+}
+
+.packagesBody .link {
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--gray-color);
+  font-size: 12px;
+  border: 1px solid var(--gray-color);
+  width: fit-content;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .packagesBody .link {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.packagesBody .link a {
+  color: var(--blue-color);
+}

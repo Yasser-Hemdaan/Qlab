@@ -1,0 +1,136 @@
+.footer {
+  background-color: #f5f8fd;
+
+  position: relative;
+  margin-block-start: 150px;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 65px;
+  background-color: #f5f8fd;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  bottom: 100%;
+}
+
+.footerBody {
+}
+
+.footerBody a {
+  color: white !important;
+}
+
+.footerBody .main .logo picture img {
+  max-width: 120px;
+}
+
+.footerBody .main .description {
+  font-size: var(--description-size);
+  color: var(--gray-color);
+}
+
+.footerBody .main .sci {
+  display: flex;
+  gap: 10px;
+}
+
+.footerBody .main .sci li a {
+  background-color: #e8ecf8 !important;
+  color: var(--second-color) !important;
+  width: 35px;
+  height: 35px;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  transition: 0.2s all ease-in-out;
+  -webkit-transition: 0.2s all ease-in-out;
+  -moz-transition: 0.2s all ease-in-out;
+  -ms-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+}
+
+.footerBody .main .sci li a:hover {
+  background-color: var(--second-color) !important;
+  color: #e8ecf8 !important;
+}
+
+.footerBody .title {
+  font-size: var(--h4-size);
+  font-weight: bold;
+  text-transform: capitalize;
+  position: relative;
+  color: var(--main-color);
+}
+
+.footerBody .title::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2.5px;
+  background-color: var(--main-color);
+  bottom: -10px;
+}
+
+.footerBody .quickLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-transform: capitalize;
+  font-family: mediumFont;
+}
+
+.footerBody .openingHours {
+  display: flex;
+  text-transform: capitalize;
+  flex-direction: column;
+}
+
+.footerBody .openingHours li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerBody .openingHours li span:first-of-type {
+  color: var(--main-color);
+}
+
+.footerBody .openingHours li span:last-of-type {
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+}
+
+.footerBody .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerBody .contacts .data a {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  width: fit-content;
+}
+
+.footerBody .contacts .data a i {
+  position: relative;
+  top: 5px;
+}
+
+.footerBody .contacts .data span {
+  direction: ltr;
+}
+
+.footerBody .contacts .data a,
+.footerBody .quickLinks a {
+  color: var(--main-color) !important;
+  transition: 0.2s all ease-in-out;
+  -webkit-transition: 0.2s all ease-in-out;
+  -moz-transition: 0.2s all ease-in-out;
+  -ms-transition: 0.2s all ease-in-out;
+  -o-transition: 0.2s all ease-in-out;
+}

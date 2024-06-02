@@ -1,0 +1,9 @@
+.offers {
+    overflow-x: hidden;
+  }
+  
+  .hero {
+    max-height: 600px;
+    overflow: hidden ;
+    position: relative;
+  }
