@@ -12,15 +12,17 @@ const BookBanner = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <div className={`row g-3 sectionBody mx-auto px-4 ${styles.bookBanner}`}>
-        <div className="col-lg-5">
+      <div
+        className={`row g-3 customContainer mx-auto px-4 ${styles.bookBanner}`}
+      >
+        <div className="col-lg-5 order-lg-1 order-2">
           <div className={`${styles.image} w-100 mx-auto`}>
             <picture className="col-md-6">
               <img src={bannerImage} className="w-100" alt="" />
             </picture>
           </div>
         </div>
-        <div className="col-lg-7">
+        <div className="col-lg-7 order-lg-2 order-1">
           <div className={`${styles.text}`}>
             <h3 className={`${styles.title} mb-4`}>{t("home.book.title")}</h3>
             {/* <NavLink to="">{t("home.book.link")}</NavLink> */}

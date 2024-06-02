@@ -26,7 +26,7 @@ const About = () => {
           </picture>
         </div>
         {/* About */}
-        <div className={`${styles.mainAbout} row mx-auto py-5 my-5`}>
+        <div className={`${styles.mainAbout} customContainer row mx-auto py-5 my-5`}>
           <div className={`${styles.images} col-md-6`}></div>
           <div className={`${styles.text} col-md-6`}>
             <h3 className={`${styles.subTitle} pb-2 mb-4`}>About QLAB</h3>
@@ -52,7 +52,7 @@ const About = () => {
           </div>
         </div>
         {/* Values */}
-        <div className={`${styles.value} row mx-auto p-5 my-5`}>
+        <div className={`${styles.value} customContainer row mx-auto p-5 my-5`}>
           <div className={`${styles.text} col-md-6`}>
             <h3 className={`${styles.subTitle} pb-2 mb-4`}>values</h3>
             <div className={`${styles.row}`}>

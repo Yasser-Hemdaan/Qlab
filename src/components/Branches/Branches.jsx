@@ -13,12 +13,14 @@ const Branches = () => {
   return (
     <div>
       <div className={`${styles.branchesWrapper}`}>
-        <div className={`${styles.text} text-center sectionBody mx-auto pt-5`}>
+        <div className={`${styles.text} text-center mx-auto pt-5`}>
           <h2 className={`${styles.mainTitle} mb-5 mx-auto`}>
             عناوين جميع الفروع لدينا
           </h2>
         </div>
-        <div className={`${styles.branchesBody} row g-4 mx-auto`}>
+        <div
+          className={`${styles.branchesBody} customContainer row g-4 mx-auto`}
+        >
           <div className={`${styles.item} col-lg-4 col-md-6`}>
             <div className={`${styles.card}`}>
               <div className={`${styles.header}`}></div>

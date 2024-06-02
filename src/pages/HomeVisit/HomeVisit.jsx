@@ -27,12 +27,12 @@ const HomeVisit = () => {
         <div dir={i18n.language === "ar" ? "rtl" : "ltr"}></div>
       </div>
       <div className={`${styles.book}`}>
-        <div className={`${styles.text} text-center sectionBody mx-auto pt-5`}>
+        <div className={`${styles.text} text-center customContainer mx-auto pt-5`}>
           <h2 className={`${styles.mainTitle} mb-5 mx-auto`}>
             دلوقتي تقدر تحجز زيارتك المنزلية مع معامل كيولاب
           </h2>
         </div>
-        <div className={`${styles.formWrapper} row mx-auto p-4 mb-4`}>
+        <div className={`${styles.formWrapper} customContainer row mx-auto p-4 mb-4`}>
           <div className={`${styles.content} col-lg-6`}>
             <div className={`${styles.text} mb-5`}>
               <h3 className={`${styles.subtitle}`}>book an</h3>

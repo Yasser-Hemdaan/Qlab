@@ -23,6 +23,16 @@
   -o-border-radius: 20px;
 }
 
+@media screen and (max-width: 992px) {
+  .bookBanner {
+    padding: 0 !important;
+  }
+
+  .bookBanner::before {
+    height: 100%;
+  }
+}
+
 .bookBanner .image {
   position: relative;
   width: 100%;

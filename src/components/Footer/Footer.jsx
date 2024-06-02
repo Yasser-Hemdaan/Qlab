@@ -18,12 +18,14 @@ const Footer = () => {
     <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
       <div className={`${styles.footer} pb-5`}>
         <ScrollToTop />
-        <div className="sectionBody mx-auto">
-          <div className={`${styles.footerBody} row gy-5`}>
+        <div className=" mx-auto">
+          <div
+            className={`${styles.footerBody} customContainer mx-auto row gy-5`}
+          >
             <div className={` ${styles.main} col-xl-4 col-md-12 order-1`}>
               <div className={`${styles.logo}`}>
                 <picture>
-                  <img src={logo} className="w-100 mb-3" alt="" />
+                  <img src={logo} className="w-100 mb-4" alt="" />
                 </picture>
               </div>
               <div className={`${styles.description} mb-3`}>
@@ -56,7 +58,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-xl-2 col-md-3 col-sm-12 order-2">
-              <h4 className={`${styles.title} mb-4`}>
+              <h4 className={`${styles.title} mb-5`}>
                 {t("footer.quickLinks.title")}
               </h4>
               <ul className={styles.quickLinks}>
@@ -80,7 +82,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-xl-3 col-md-4 col-sm-12 order-3">
-              <h4 className={`${styles.title} mb-4`}>
+              <h4 className={`${styles.title} mb-5`}>
                 {t("footer.contactUS.title")}
               </h4>
               <ul className={`${styles.contacts}`}>
@@ -111,7 +113,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-xl-3 col-md-5 col-sm-12 order-4">
-              <h4 className={`${styles.title} mb-4`}>
+              <h4 className={`${styles.title} mb-5`}>
                 {t("footer.openingHours.title")}
               </h4>
               <ul className={`${styles.openingHours} w-100`}>

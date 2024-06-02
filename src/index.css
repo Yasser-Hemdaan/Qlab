@@ -7,6 +7,7 @@
   /* fonts */
   --sub-title-size: clamp(20px, 2vw, 28px);
   --main-title-size: clamp(28px, 3vw, 40px);
+  --h3-title-size: clamp(18px, 2.5vw, 22px);
   --h4-size: clamp(16px, 2vw, 20px);
   --description-size: clamp(12px, 2vw, 14px);
 }
@@ -47,6 +48,14 @@
   font-family: exBoldFont;
   src: url(assets/fonts/STCForward-ExtraBold.otf);
   font-weight: 900;
+}
+
+/* Custom container */
+
+.customContainer {
+  width: 90%;
+  max-width: 1330px;
+  margin: auto;
 }
 
 /* scroll to top button */
@@ -157,7 +166,6 @@ textarea {
   background-color: #ffc506;
   transition: 0.5s ease;
 }
-
 .btn:hover {
   color: #1e1e2b;
   transition-delay: 0.5s;
@@ -185,7 +193,7 @@ textarea {
   color: aliceblue;
 }
 
-.sectionBody {
+/* .sectionBody {
   width: 85%;
 }
 
@@ -199,7 +207,7 @@ textarea {
   .sectionBody {
     width: 100%;
   }
-}
+} */
 
 /* LOADING Component */
 /* UI Element */

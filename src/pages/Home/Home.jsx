@@ -64,25 +64,13 @@ const Home = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
+    <div>
       <div className={`${styles.home}`}>
         {/* Hero */}
-        <div
-          className={`${styles.hero}`}
-          style={
-            i18n.language === "ar"
-              ? {
-                  backgroundImage:
-                    "linear-gradient(to left, var(--main-color), #ac62ad)",
-                }
-              : {
-                  backgroundImage:
-                    "linear-gradient(to right, var(--main-color), #ac62ad)",
-                }
-          }
-        >
-          <div className="container-lg">
+        <div className={`${styles.hero}`}>
+          <div className="customContainer">
             <div className="row">
+              <div className={`${styles.images} col-lg-5`}></div>
               <div className={`${styles.content} py-5 col-lg-7`}>
                 <div className={`${styles.text} mb-5`}>
                   <p>علشان انت واحد من العيلة</p>
@@ -128,38 +116,11 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className={`${styles.images} col-lg-5`}></div>
             </div>
           </div>
-          {/* <Swiper
-          navigation={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          modules={[Autoplay]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <picture>
-              <img src={cover1} className="w-100" alt="" />
-            </picture>
-          </SwiperSlide>
-          <SwiperSlide>
-            <picture>
-              <img src={cover2} className="w-100" alt="" />
-            </picture>
-          </SwiperSlide>
-          <SwiperSlide>
-            <picture>
-              <img src={cover3} className="w-100" alt="" />
-            </picture>
-          </SwiperSlide>
-        </Swiper> */}
         </div>
 
-        <div className={`${styles.wrapper}`}>
+        <div className={`${styles.wrapper} `}>
           {/* Examinations */}
           <Examinations ExaminationsNumber={6} />
           <div className={`${styles.link} mx-auto px-3 py-2 mb-5`}>
@@ -179,7 +140,7 @@ const Home = () => {
           </div>
           {/* Statistics */}
           <div className=" px-4 mb-5">
-            <div className={`${styles.statistics} sectionBody mx-auto`}>
+            <div className={`${styles.statistics} customContainer mx-auto`}>
               <div className="row">
                 <div className="col-sm-6 col-md-3">
                   <div className={`${styles.item}`}>
@@ -255,35 +216,35 @@ const Home = () => {
             </div>
           </div>
           {/* Advantages Banner */}
-          
-            <div className={`row g-0 sectionBody mx-auto ${styles.advantages}`}>
-              <div className="col-lg-6">
-                <div className={`${styles.image} w-100 mx-auto`}>
-                  <picture className="col-md-6">
-                    <img src={advantages} className="w-100" alt="" />
-                  </picture>
-                </div>
+
+          <div className={`row g-5 customContainer mx-auto ${styles.advantages}`}>
+            <div className="col-lg-6 order-lg-1 order-2">
+              <div className={`${styles.image} w-100 mx-auto`}>
+                <picture className="col-md-6">
+                  <img src={advantages} className="w-100" alt="" />
+                </picture>
               </div>
-              <div className="col-lg-6">
-                <div className={`${styles.text}`}>
-                  <h3 className={`${styles.title}`}>
-                    {t("home.advantages.title")}
-                  </h3>
-                  <p className={`${styles.description}`}>
-                    {t("home.advantages.description")}
-                  </p>
-                  <div className={`${styles.advantagesTopics} `}>
-                    <div className={`${styles.topic} p-2`}>
-                      <span>{t("home.advantages.topics.topic1")}</span>
-                    </div>
-                    <div className={`${styles.topic} p-2`}>
-                      <span>{t("home.advantages.topics.topic2")}</span>
-                    </div>
+            </div>
+            <div className="col-lg-6 order-lg-2 order-1">
+              <div className={`${styles.text}`}>
+                <h3 className={`${styles.title}`}>
+                  {t("home.advantages.title")}
+                </h3>
+                <p className={`${styles.description}`}>
+                  {t("home.advantages.description")}
+                </p>
+                <div className={`${styles.advantagesTopics} `}>
+                  <div className={`${styles.topic} p-2`}>
+                    <span>{t("home.advantages.topics.topic1")}</span>
+                  </div>
+                  <div className={`${styles.topic} p-2`}>
+                    <span>{t("home.advantages.topics.topic2")}</span>
                   </div>
                 </div>
               </div>
             </div>
-          
+          </div>
+
           {/* Packages */}
           <Packages PackagesNumber={6} />
           <div className={`${styles.link} mx-auto px-3 py-2`}>
@@ -304,187 +265,177 @@ const Home = () => {
         </div>
         {/* Testmonials */}
         <div className={`${styles.testmonials} py-5`}>
-          
-            <div className={`${styles.testmonialsBody} sectionBody mx-auto`}>
-              <h3 className={`${styles.title} mb-4`}>clients testmonials</h3>
-              <Carousel
-                swipeable={true}
-                draggable={true}
-                ssr={true}
-                infinite={true}
-                autoPlay={true}
-                autoPlaySpeed={1750}
-                removeArrowOnDeviceType={["desktop", "mobile"]}
-                responsive={responsive}
-                dir={i18n.language === "ar" ? "rtl" : "ltr"}
-              >
-                <div className={`${styles.opinion}`}>
-                  <div
-                    className={styles.personalInfo}
-                    dir={i18n.language === "ar" ? "rtl" : "ltr"}
-                  >
-                    <div className={`${styles.profileImage}`}>
-                      <div className={`${styles.image}`}>
-                        <picture>
-                          <img src={avatar} alt="" />
-                        </picture>
-                      </div>
-                      <div className={`${styles.qoute}`}>
-                        <i className="fa-solid fa-quote-right"></i>
-                      </div>
+          <div className={`${styles.testmonialsBody} customContainer mx-auto`}>
+            <h3 className={`${styles.title} mb-4`}>clients testmonials</h3>
+            <Carousel
+              swipeable={true}
+              draggable={true}
+              ssr={true}
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={1750}
+              removeArrowOnDeviceType={["desktop", "mobile"]}
+              responsive={responsive}
+              dir={i18n.language === "ar" ? "rtl" : "ltr"}
+            >
+              <div className={`${styles.opinion}`}>
+                <div
+                  className={styles.personalInfo}
+                  dir={i18n.language === "ar" ? "rtl" : "ltr"}
+                >
+                  <div className={`${styles.profileImage}`}>
+                    <div className={`${styles.image}`}>
+                      <picture>
+                        <img src={avatar} alt="" />
+                      </picture>
                     </div>
-                    <div className={`${styles.data}`}>
-                      <p className={`${styles.name}`}>
-                        yasser hamada abdelmonem
-                      </p>
-                      <div className={`${styles.rating}`}>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                      </div>
+                    <div className={`${styles.qoute}`}>
+                      <i className="fa-solid fa-quote-right"></i>
                     </div>
                   </div>
-                  <p
-                    className={`${styles.details} ${
-                      i18n.language === "ar" ? "text-end" : "text-start"
-                    }`}
-                  >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Corporis, officiis eos id ex maiores deserunt totam
-                    exercitationem impedit earum reprehenderit recusandae
-                    praesentium dolorem, consectetur saepe! Tenetur, sequi! Quos
-                    aspernatur odit ratione nisi dignissimos aut praesentium
-                    ipsa. Libero officiis sit repellat unde nostrum.
-                  </p>
-                </div>
-                <div className={`${styles.opinion}`}>
-                  <div
-                    className={styles.personalInfo}
-                    dir={i18n.language === "ar" ? "rtl" : "ltr"}
-                  >
-                    <div className={`${styles.profileImage}`}>
-                      <div className={`${styles.image}`}>
-                        <picture>
-                          <img src={avatar} alt="" />
-                        </picture>
-                      </div>
-                      <div className={`${styles.qoute}`}>
-                        <i className="fa-solid fa-quote-right"></i>
-                      </div>
-                    </div>
-                    <div className={`${styles.data}`}>
-                      <p className={`${styles.name}`}>
-                        yasser hamada abdelmonem
-                      </p>
-                      <div className={`${styles.rating}`}>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                      </div>
+                  <div className={`${styles.data}`}>
+                    <p className={`${styles.name}`}>yasser hamada abdelmonem</p>
+                    <div className={`${styles.rating}`}>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </div>
                   </div>
-                  <p
-                    className={`${styles.details} ${
-                      i18n.language === "ar" ? "text-end" : "text-start"
-                    }`}
-                  >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Corporis, officiis eos id ex maiores deserunt totam
-                    exercitationem impedit earum reprehenderit recusandae
-                    praesentium dolorem, consectetur saepe! Tenetur, sequi! Quos
-                    aspernatur odit ratione nisi dignissimos aut praesentium
-                    ipsa. Libero officiis sit repellat unde nostrum.
-                  </p>
                 </div>
-                <div className={`${styles.opinion}`}>
-                  <div
-                    className={styles.personalInfo}
-                    dir={i18n.language === "ar" ? "rtl" : "ltr"}
-                  >
-                    <div className={`${styles.profileImage}`}>
-                      <div className={`${styles.image}`}>
-                        <picture>
-                          <img src={avatar} alt="" />
-                        </picture>
-                      </div>
-                      <div className={`${styles.qoute}`}>
-                        <i className="fa-solid fa-quote-right"></i>
-                      </div>
+                <p
+                  className={`${styles.details} ${
+                    i18n.language === "ar" ? "text-end" : "text-start"
+                  }`}
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis, officiis eos id ex maiores deserunt totam
+                  exercitationem impedit earum reprehenderit recusandae
+                  praesentium dolorem, consectetur saepe! Tenetur, sequi! Quos
+                  aspernatur odit ratione nisi dignissimos aut praesentium ipsa.
+                  Libero officiis sit repellat unde nostrum.
+                </p>
+              </div>
+              <div className={`${styles.opinion}`}>
+                <div
+                  className={styles.personalInfo}
+                  dir={i18n.language === "ar" ? "rtl" : "ltr"}
+                >
+                  <div className={`${styles.profileImage}`}>
+                    <div className={`${styles.image}`}>
+                      <picture>
+                        <img src={avatar} alt="" />
+                      </picture>
                     </div>
-                    <div className={`${styles.data}`}>
-                      <p className={`${styles.name}`}>
-                        yasser hamada abdelmonem
-                      </p>
-                      <div className={`${styles.rating}`}>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                      </div>
+                    <div className={`${styles.qoute}`}>
+                      <i className="fa-solid fa-quote-right"></i>
                     </div>
                   </div>
-                  <p
-                    className={`${styles.details} ${
-                      i18n.language === "ar" ? "text-end" : "text-start"
-                    }`}
-                  >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Corporis, officiis eos id ex maiores deserunt totam
-                    exercitationem impedit earum reprehenderit recusandae
-                    praesentium dolorem, consectetur saepe! Tenetur, sequi! Quos
-                    aspernatur odit ratione nisi dignissimos aut praesentium
-                    ipsa. Libero officiis sit repellat unde nostrum.
-                  </p>
-                </div>
-                <div className={`${styles.opinion}`}>
-                  <div
-                    className={styles.personalInfo}
-                    dir={i18n.language === "ar" ? "rtl" : "ltr"}
-                  >
-                    <div className={`${styles.profileImage}`}>
-                      <div className={`${styles.image}`}>
-                        <picture>
-                          <img src={avatar} alt="" />
-                        </picture>
-                      </div>
-                      <div className={`${styles.qoute}`}>
-                        <i className="fa-solid fa-quote-right"></i>
-                      </div>
-                    </div>
-                    <div className={`${styles.data}`}>
-                      <p className={`${styles.name}`}>
-                        yasser hamada abdelmonem
-                      </p>
-                      <div className={`${styles.rating}`}>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                        <i className="fa-solid fa-star"></i>
-                      </div>
+                  <div className={`${styles.data}`}>
+                    <p className={`${styles.name}`}>yasser hamada abdelmonem</p>
+                    <div className={`${styles.rating}`}>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
                     </div>
                   </div>
-                  <p
-                    className={`${styles.details} ${
-                      i18n.language === "ar" ? "text-end" : "text-start"
-                    }`}
-                  >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Corporis, officiis eos id ex maiores deserunt totam
-                    exercitationem impedit earum reprehenderit recusandae
-                    praesentium dolorem, consectetur saepe! Tenetur, sequi! Quos
-                    aspernatur odit ratione nisi dignissimos aut praesentium
-                    ipsa. Libero officiis sit repellat unde nostrum.
-                  </p>
                 </div>
-              </Carousel>
-            </div>
-          
+                <p
+                  className={`${styles.details} ${
+                    i18n.language === "ar" ? "text-end" : "text-start"
+                  }`}
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis, officiis eos id ex maiores deserunt totam
+                  exercitationem impedit earum reprehenderit recusandae
+                  praesentium dolorem, consectetur saepe! Tenetur, sequi! Quos
+                  aspernatur odit ratione nisi dignissimos aut praesentium ipsa.
+                  Libero officiis sit repellat unde nostrum.
+                </p>
+              </div>
+              <div className={`${styles.opinion}`}>
+                <div
+                  className={styles.personalInfo}
+                  dir={i18n.language === "ar" ? "rtl" : "ltr"}
+                >
+                  <div className={`${styles.profileImage}`}>
+                    <div className={`${styles.image}`}>
+                      <picture>
+                        <img src={avatar} alt="" />
+                      </picture>
+                    </div>
+                    <div className={`${styles.qoute}`}>
+                      <i className="fa-solid fa-quote-right"></i>
+                    </div>
+                  </div>
+                  <div className={`${styles.data}`}>
+                    <p className={`${styles.name}`}>yasser hamada abdelmonem</p>
+                    <div className={`${styles.rating}`}>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  className={`${styles.details} ${
+                    i18n.language === "ar" ? "text-end" : "text-start"
+                  }`}
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis, officiis eos id ex maiores deserunt totam
+                  exercitationem impedit earum reprehenderit recusandae
+                  praesentium dolorem, consectetur saepe! Tenetur, sequi! Quos
+                  aspernatur odit ratione nisi dignissimos aut praesentium ipsa.
+                  Libero officiis sit repellat unde nostrum.
+                </p>
+              </div>
+              <div className={`${styles.opinion}`}>
+                <div
+                  className={styles.personalInfo}
+                  dir={i18n.language === "ar" ? "rtl" : "ltr"}
+                >
+                  <div className={`${styles.profileImage}`}>
+                    <div className={`${styles.image}`}>
+                      <picture>
+                        <img src={avatar} alt="" />
+                      </picture>
+                    </div>
+                    <div className={`${styles.qoute}`}>
+                      <i className="fa-solid fa-quote-right"></i>
+                    </div>
+                  </div>
+                  <div className={`${styles.data}`}>
+                    <p className={`${styles.name}`}>yasser hamada abdelmonem</p>
+                    <div className={`${styles.rating}`}>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                      <i className="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <p
+                  className={`${styles.details} ${
+                    i18n.language === "ar" ? "text-end" : "text-start"
+                  }`}
+                >
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis, officiis eos id ex maiores deserunt totam
+                  exercitationem impedit earum reprehenderit recusandae
+                  praesentium dolorem, consectetur saepe! Tenetur, sequi! Quos
+                  aspernatur odit ratione nisi dignissimos aut praesentium ipsa.
+                  Libero officiis sit repellat unde nostrum.
+                </p>
+              </div>
+            </Carousel>
+          </div>
         </div>
         <Awards />
         <BookBanner />

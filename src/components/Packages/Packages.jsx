@@ -5,14 +5,15 @@ import { useTranslation } from "react-i18next";
 import styles from "./Packages.module.css";
 
 // DB
-import packages from "../../DB/Packages.js";
+import examinations from "../../DB/Examinations.js";
+// import packages from "../../DB/Packages.js";
 
 // eslint-disable-next-line react/prop-types
 const Packages = ({ PackagesNumber }) => {
   const { t } = useTranslation();
   return (
     <div className={`${styles.packages}`}>
-      <div className={`${styles.packagesBody} sectionBody mx-auto pt-5`}>
+      <div className={`${styles.packagesBody} customContainer mx-auto pt-5`}>
         <div className={`${styles.text} text-center`}>
           <h3 className={`${styles.subTitle} mb-3`}>
             {t("home.packages.mainTitle")}
@@ -24,9 +25,11 @@ const Packages = ({ PackagesNumber }) => {
             {t("home.packages.description")}
           </p>
         </div>
-        <div className={`${styles.packagesCardsContainer} mx-auto p-4 mb-5`}>
+        <div
+          className={`${styles.packagesCardsContainer} customContainer mx-auto p-4 mb-5`}
+        >
           <div className="row g-3">
-            {packages.slice(0, PackagesNumber).map((card, index) => (
+            {examinations.slice(0, PackagesNumber).map((card, index) => (
               <div key={index} className="col-sm-6 col-xl-4">
                 <div className={`${styles.packagesCard}`}>
                   <div className={`${styles.image}`}>

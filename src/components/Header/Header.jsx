@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
-      <div className="container-lg">
+      <div className="customContainer">
         <div className="header py-4">
           <div className="logo">
             <picture>

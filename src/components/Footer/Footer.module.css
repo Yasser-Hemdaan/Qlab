@@ -58,7 +58,7 @@
 }
 
 .footerBody .title {
-  font-size: var(--h4-size);
+  font-size: var(--h3-title-size);
   font-weight: bold;
   text-transform: capitalize;
   position: relative;
