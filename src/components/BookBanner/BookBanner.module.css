@@ -6,6 +6,7 @@
   max-height: 475px;
   align-items: center;
   position: relative;
+  overflow-y: hidden;
 }
 
 .bookBanner::before {

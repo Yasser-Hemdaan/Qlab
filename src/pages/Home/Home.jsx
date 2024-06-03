@@ -120,7 +120,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={`${styles.wrapper} `}>
+        <div className={`${styles.wrapper}  `}>
           {/* Examinations */}
           <Examinations ExaminationsNumber={6} />
           <div className={`${styles.link} mx-auto px-3 py-2 mb-5`}>
@@ -217,9 +217,7 @@ const Home = () => {
           </div>
           {/* Advantages Banner */}
 
-          <div
-            className={`row g-5 customContainer mx-auto ${styles.advantages}`}
-          >
+          <div className={`row g-5 customContainer mx-auto ${styles.advantages}`}>
             <div className="col-lg-6 order-lg-1 order-2">
               <div className={`${styles.image} w-100 mx-auto`}>
                 <picture className="col-md-6">
@@ -266,7 +264,7 @@ const Home = () => {
           </div>
         </div>
         {/* Testmonials */}
-        <div className={`${styles.testmonials} py-5`}>
+        <div className={`${styles.testmonials} py-5 `}>
           <div className={`${styles.testmonialsBody} customContainer mx-auto`}>
             <h3 className={`${styles.title} mb-4`}>clients testmonials</h3>
             <Carousel
