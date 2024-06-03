@@ -13,7 +13,7 @@ const Examinations = ({ ExaminationsNumber }) => {
   return (
     <div className={`${styles.examinations}`}>
       <div
-        className={`${styles.examinationsBody} customContainer mx-auto pt-5`}
+        className={`${styles.examinationsBody} customContainer  mx-auto pt-5`}
       >
         <div className={`${styles.text} text-center`}>
           <h3 className={`${styles.subTitle} mb-3`}>
@@ -28,7 +28,7 @@ const Examinations = ({ ExaminationsNumber }) => {
           </p>
         </div>
         <div
-          className={`${styles.examinationsCardsContainer} customContainer mx-auto p-4 mb-4`}
+          className={`${styles.examinationsCardsContainer} customContainer mx-auto py-4 mb-4`}
         >
           <div className="row g-3">
             {examinations.slice(0, ExaminationsNumber).map((card, index) => (

@@ -217,7 +217,9 @@ const Home = () => {
           </div>
           {/* Advantages Banner */}
 
-          <div className={`row g-5 customContainer mx-auto ${styles.advantages}`}>
+          <div
+            className={`row g-5 customContainer mx-auto ${styles.advantages}`}
+          >
             <div className="col-lg-6 order-lg-1 order-2">
               <div className={`${styles.image} w-100 mx-auto`}>
                 <picture className="col-md-6">
@@ -277,6 +279,7 @@ const Home = () => {
               removeArrowOnDeviceType={["desktop", "mobile"]}
               responsive={responsive}
               dir={i18n.language === "ar" ? "rtl" : "ltr"}
+              className={`${styles.opinionWrapper}`}
             >
               <div className={`${styles.opinion}`}>
                 <div

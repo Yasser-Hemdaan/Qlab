@@ -26,7 +26,7 @@ const Packages = ({ PackagesNumber }) => {
           </p>
         </div>
         <div
-          className={`${styles.packagesCardsContainer} customContainer mx-auto p-4 mb-5`}
+          className={`${styles.packagesCardsContainer} customContainer mx-auto py-4 mb-5`}
         >
           <div className="row g-3">
             {examinations.slice(0, PackagesNumber).map((card, index) => (

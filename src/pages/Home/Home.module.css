@@ -7,6 +7,10 @@
 .hero {
   position: relative;
   background-image: linear-gradient(to left, var(--main-color), #ac62ad);
+  height: 80vh;
+  max-height: 600px;
+  display: flex;
+  align-items: center;
 }
 
 .hero .content .text {
@@ -254,6 +258,8 @@
 
 .advantages {
   width: 100%;
+  height: 62vh;
+  max-height: 475px;
   align-items: center;
   position: relative;
 }
@@ -286,9 +292,8 @@
 
 .advantages .image {
   position: relative;
-
   width: 100%;
-  max-width: 400px;
+  max-width: 530px;
 }
 
 .advantages .text {
@@ -348,6 +353,14 @@
 /* testmonials */
 .testmonials {
   background-color: var(--main-color);
+}
+
+.testmonials .testmonialsBody {
+  height: 80vh;
+  max-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .testmonials .testmonialsBody .title {
