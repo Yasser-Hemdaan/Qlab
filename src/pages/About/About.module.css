@@ -24,14 +24,14 @@
   color: var(--main-color);
   font-size: var(--description-size);
   /* text-transform: uppercase; */
-  font-family: boldFont !important;
+
   border-block-end: 2px solid rgba(128, 128, 128, 0.241);
 }
 
 .mainAbout .text .mainTitle {
   color: var(--main-color);
   text-transform: capitalize;
-  font-family: mediumFont;
+
   font-size: var(--main-title-size);
 }
 
@@ -41,7 +41,6 @@
 }
 
 .mainAbout .text .numbers .title {
-  font-family: mediumFont;
 }
 .mainAbout .text .numbers .data {
   font-size: var(--description-size);
@@ -77,13 +76,12 @@
 
 .value .text .subTitle {
   font-size: var(--sub-title-size);
-  font-family: mediumFont;
+
   text-transform: uppercase;
 }
 
 .value .text .row .title {
   font-size: var(--h4-size);
-  font-family: mediumFont;
 }
 
 .value .text .row .description {

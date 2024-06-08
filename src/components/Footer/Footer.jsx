@@ -22,7 +22,7 @@ const Footer = () => {
           <div
             className={`${styles.footerBody} customContainer mx-auto row gy-5`}
           >
-            <div className={` ${styles.main} col-xl-4 col-md-12 order-1`}>
+            <div className={`${styles.main} col-xl-4 col-md-12 order-1`}>
               <div className={`${styles.logo}`}>
                 <picture>
                   <img src={logo} className="w-100 mb-4" alt="" />
@@ -31,7 +31,11 @@ const Footer = () => {
               <div className={`${styles.description} mb-3`}>
                 <p>
                   patholab laboratory is a very well equipped laboratory of this
-                  country and thy promised to provide best services
+                  country and thy promised to provide best services, patholab
+                  laboratory is a very well equipped laboratory of this country
+                  and thy promised to provide best services, patholab laboratory
+                  is a very well equipped laboratory of this country and thy
+                  promised to provide best services
                 </p>
               </div>
               <ul className={`${styles.sci}`}>
@@ -52,13 +56,13 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="">
-                    <i className="fa-brands fa-pinterest-p"></i>
+                    <i className="fa-brands fa-tiktok"></i>
                   </a>
                 </li>
               </ul>
             </div>
             <div className="col-xl-2 col-md-3 col-sm-12 order-2">
-              <h4 className={`${styles.title} mb-5`}>
+              <h4 className={`${styles.title} mb-4`}>
                 {t("footer.quickLinks.title")}
               </h4>
               <ul className={styles.quickLinks}>
@@ -82,7 +86,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-xl-3 col-md-4 col-sm-12 order-3">
-              <h4 className={`${styles.title} mb-5`}>
+              <h4 className={`${styles.title} mb-4`}>
                 {t("footer.contactUS.title")}
               </h4>
               <ul className={`${styles.contacts}`}>
@@ -113,7 +117,7 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-xl-3 col-md-5 col-sm-12 order-4">
-              <h4 className={`${styles.title} mb-5`}>
+              <h4 className={`${styles.title} mb-4`}>
                 {t("footer.openingHours.title")}
               </h4>
               <ul className={`${styles.openingHours} w-100`}>

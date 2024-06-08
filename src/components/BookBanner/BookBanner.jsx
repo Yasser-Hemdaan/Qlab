@@ -9,9 +9,9 @@ import styles from "./BookBanner.module.css";
 import bannerImage from "/bookBanner/image.png";
 
 const BookBanner = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
-    <div>
+    <div dir={`${i18n.language === "ar" ? "rtl" : "ltr"}`}>
       <div
         className={`row g-3 customContainer mx-auto px-4 ${styles.bookBanner}`}
       >
@@ -24,8 +24,9 @@ const BookBanner = () => {
         </div>
         <div className="col-lg-6 order-lg-2 order-1">
           <div className={`${styles.text}`}>
-            <h3 className={`${styles.title} mb-4`}>{t("home.book.title")}</h3>
-            {/* <NavLink to="">{t("home.book.link")}</NavLink> */}
+            <h3 className={`${styles.title} fw-bold mb-4`}>
+              {t("home.book.title")}
+            </h3>
           </div>
           <form action="" className={`row g-2 ${styles.form}`}>
             <div className="col-md-4">
@@ -92,7 +93,7 @@ const BookBanner = () => {
                 placeholder="time"
               />
             </div>
-            <button type="submit" className="form-control w-25 mx-1">
+            <button type="submit" className="form-control w-25 mx-1 fw-bold">
               {t("home.book.link")}
             </button>
           </form>

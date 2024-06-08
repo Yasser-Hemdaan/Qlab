@@ -18,16 +18,14 @@ const Packages = ({ PackagesNumber }) => {
           <h3 className={`${styles.subTitle} mb-3`}>
             {t("home.packages.mainTitle")}
           </h3>
-          <h2 className={`${styles.mainTitle} mb-4 mx-auto`}>
+          <h2 className={`${styles.mainTitle} mb-4 mx-auto fw-bold`}>
             {t("home.packages.subTitle")}
           </h2>
           <p className={`${styles.description}`}>
             {t("home.packages.description")}
           </p>
         </div>
-        <div
-          className={`${styles.packagesCardsContainer} customContainer mx-auto py-4 mb-5`}
-        >
+        <div className={`${styles.packagesCardsContainer} mx-auto py-4 mb-5`}>
           <div className="row g-3">
             {examinations.slice(0, PackagesNumber).map((card, index) => (
               <div key={index} className="col-sm-6 col-xl-4">
@@ -38,7 +36,7 @@ const Packages = ({ PackagesNumber }) => {
                     </picture>
                   </div>
                   <div className={`${styles.cardBody} m-4`}>
-                    <h4 className={`${styles.title}`}>
+                    <h4 className={`${styles.title} fw-bold`}>
                       {t(
                         `home.packages.packagesCards.package${index + 1}.title`
                       )}

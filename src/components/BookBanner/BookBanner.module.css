@@ -1,9 +1,6 @@
 /* bookBanner */
 
 .bookBanner {
-  width: 100%;
-  height: 62vh;
-  max-height: 475px;
   align-items: center;
   position: relative;
   overflow-y: hidden;
@@ -52,7 +49,6 @@
   font-weight: bold;
   max-width: 450px;
   text-transform: capitalize;
-  font-family: boldFont;
 }
 
 .bookBanner .text a {
@@ -61,7 +57,7 @@
   font-size: large;
   padding: 7.5px 15px;
   color: var(--main-color) !important;
-  font-family: boldFont;
+
   border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -103,7 +99,7 @@
 
 .form button[type="submit"] {
   font-size: var(--description-size);
-  font-family: boldFont;
+
   color: var(--main-color);
   text-transform: capitalize;
   background-color: white;

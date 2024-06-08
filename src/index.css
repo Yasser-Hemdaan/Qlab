@@ -12,42 +12,121 @@
   --description-size: clamp(12px, 2vw, 14px);
 }
 
-/* fonts */
+/* Arabic Font */
 
 @font-face {
-  font-family: thinFont;
-  src: url(assets/fonts/STCForward-Thin.otf);
+  font-family: thinArFont;
+  src: url(assets/fonts/Arabic1HeaderFont/IBMPlexSansArabic-Thin.ttf);
   font-weight: 100;
 }
 
 @font-face {
-  font-family: lightFont;
-  src: url(assets/fonts/STCForward-Light.otf);
+  font-family: exLightArFont;
+  src: url(assets/fonts/Arabic1HeaderFont/IBMPlexSansArabic-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: lightArFont;
+  src: url(assets/fonts/Arabic1HeaderFont/IBMPlexSansArabic-Light.ttf);
   font-weight: 300;
 }
 
 @font-face {
-  font-family: regularFont;
-  src: url(assets/fonts/STCForward-Regular.otf);
+  font-family: regularArFont;
+  src: url(assets/fonts/Arabic1HeaderFont/IBMPlexSansArabic-Regular.ttf);
   font-weight: 400;
 }
 
 @font-face {
-  font-family: mediumFont;
-  src: url(assets/fonts/STCForward-Medium.otf);
+  font-family: mediumArFont;
+  src: url(assets/fonts/Arabic1HeaderFont/IBMPlexSansArabic-Medium.ttf);
   font-weight: 500;
 }
 
 @font-face {
-  font-family: boldFont;
-  src: url(assets/fonts/STCForward-Bold.otf);
+  font-family: semiBoldArFont;
+  src: url(assets/fonts/Arabic1HeaderFont/IBMPlexSansArabic-SemiBold.ttf);
   font-weight: 600;
 }
 
 @font-face {
-  font-family: exBoldFont;
-  src: url(assets/fonts/STCForward-ExtraBold.otf);
+  font-family: boldArFont;
+  src: url(assets/fonts/Arabic1HeaderFont/IBMPlexSansArabic-Bold.ttf);
   font-weight: 900;
+}
+
+@font-face {
+  font-family: specialArFont;
+  src: url(assets/fonts/Arabic2HeaderFont/dastnevis.otf);
+}
+
+/* English Font */
+
+@font-face {
+  font-family: thinEnFont;
+  src: url(assets/fonts/English1/Trinket-Thin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: lightEnFont;
+  src: url(assets/fonts/English1/Trinket-Light.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: exLightEnFont;
+  src: url(assets/fonts/English1/Trinket-Extra-Light.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: regularEnFont;
+  src: url(assets/fonts/English1/Trinket-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: mediumEnFont;
+  src: url(assets/fonts/English1/Trinket-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: semiBoldEnFont;
+  src: url(assets/fonts/English1/Trinket-Semi-Bold.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: boldEnFont;
+  src: url(assets/fonts/English1/Trinket-Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: exBoldEnFont;
+  src: url(assets/fonts/English1/Trinket-Extra-Bold.otf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: blackEnFont;
+  src: url(assets/fonts/English1/Trinket-Black.otf);
+  font-weight: 900;
+}
+
+.enFont {
+  font-family: regularEnFont !important;
+}
+
+.arFont {
+  font-family: regularArFont !important;
+}
+
+.specialArabicFont {
+  font-family: specialArFont !important;
 }
 
 /* Custom container */
@@ -56,6 +135,7 @@
   width: 90%;
   max-width: 1330px;
   margin: auto;
+  /* background-color: gray; */
 }
 
 /* scroll to top button */
@@ -100,7 +180,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: regularFont;
+  /* font-family: regularFont; */
 }
 
 body {
@@ -363,13 +443,19 @@ textarea {
   gap: 10px;
 }
 
+.navigation li{
+  display: flex;
+  align-items: center;
+}
+
 .navigation li a {
-  font-family: mediumFont;
+  /*  */
+  font-weight: 600;
   color: var(--main-color);
 }
 
 .sci li a {
-  font-family: mediumFont;
+  /*  */
   color: var(--second-color);
   background-color: rgb(241, 246, 255);
   display: block;

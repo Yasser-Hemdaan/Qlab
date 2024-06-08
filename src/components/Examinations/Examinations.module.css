@@ -21,25 +21,23 @@
 
 .examinationsBody .text .subTitle {
   font-size: var(--sub-title-size);
-  font-family: mediumFont;
 }
 
 .examinationsBody .text .mainTitle {
   font-size: var(--main-title-size);
-  font-family: boldFont;
+
   max-width: 450px;
 }
 
 .examinationsBody .text .description,
 .examinationsBody .text .description span {
   font-size: var(--description-size);
-  font-family: mediumFont;
+
   color: var(--gray-color);
 }
 
 .examinationsBody .text .description span {
   color: var(--main-color) !important;
-  font-family: mediumFont !important;
 }
 
 .examinationsCardsContainer {
@@ -72,7 +70,7 @@
   color: var(--main-color);
   font-size: var(--h4-size);
   /* text-transform: capitalize; */
-  font-family: mediumFont;
+
   height: 50px;
   overflow: hidden;
   display: -webkit-box;

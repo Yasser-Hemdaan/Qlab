@@ -22,9 +22,11 @@ import "react-multi-carousel/lib/styles.css";
 // import { Autoplay } from "swiper/modules";
 
 // images
-// import cover1 from "../../assets/images/Home/Hero/1.jpg";
+import Doc from "../../assets/images/Home/Hero/Doc.png";
+import objitems from "../../assets/images/Home/Hero/objitems.png";
 // import cover2 from "../../assets/images/Home/Hero/2.jpg";
 // import cover3 from "../../assets/images/Home/Hero/3.jpg";
+
 // advantages
 import advantages from "../../assets/images/Home/advantages/image.png";
 // testmonails
@@ -65,30 +67,60 @@ const Home = () => {
 
   return (
     <div>
-      <div className={`${styles.home}`}>
+      <div
+        className={`${styles.home} ${
+          i18n.language === "ar" ? "arFont" : "enFont"
+        }`}
+      >
         {/* Hero */}
-        <div className={`${styles.hero}`}>
+        <div
+          className={`${styles.hero} ${
+            i18n.language === "ar" ? "arFont" : "enFont"
+          }`}
+        >
           <div className="customContainer">
             <div className="row">
-              <div className={`${styles.images} col-lg-5`}></div>
-              <div className={`${styles.content} py-5 col-lg-7`}>
-                <div className={`${styles.text} mb-5`}>
-                  <p>علشان انت واحد من العيلة</p>
-                  <h1>
-                    احصل على العضوية الآن واستمتع بخصم 50% على جميع التحاليل
-                  </h1>
-                  <p>
-                    تعتبر معاملنا من المعامل الطبية الرائدة في مجال التحليل
-                    الطبية, ونهدف دائما إلى تقديم خدمة طبية عالية المستوى وفائقة
-                    الجودة على ارض مصر
+              <div className={`${styles.images} col-lg-5`}>
+                <picture>
+                  <img src={Doc} className="w-100" alt="" />
+                </picture>
+                <picture className={`${styles.items}`}>
+                  <img src={objitems} alt="" />
+                </picture>
+              </div>
+              <div
+                className={`${styles.content} d-flex flex-column ${
+                  i18n.language === "ar"
+                    ? "align-items-end"
+                    : "align-items-start"
+                } py-5 offset-lg-1 col-lg-6`}
+              >
+                <div
+                  className={`${styles.text} mb-5 `}
+                  dir={`${i18n.language === "ar" ? "rtl" : "ltr"}`}
+                >
+                  <p
+                    className={`${styles.special} ${
+                      i18n.language === "ar" ? "specialArabicFont" : "enFont"
+                    } `}
+                  >
+                    {t("home.hero.special")}
                   </p>
+                  <h1 className="fw-bold">{t("home.hero.main")}</h1>
+                  <p>{t("home.hero.description")}</p>
                 </div>
 
                 <div className={`${styles.offer}`}>
-                  <div className={`${styles.price} px-4 py-4`}>
-                    <p className={`${styles.percentage} px-3`}>50.00% off</p>
-                    <p className={`${styles.after} m-0`}>L.E 500</p>
-                    <p className={`${styles.before} m-0`}>L.E 1000</p>
+                  <div className={`${styles.price} px-4 py-4 fw-bold`}>
+                    <p className={`${styles.percentage} px-3 `}>
+                      50.00% {t("home.hero.off")}
+                    </p>
+                    <p className={`${styles.after} m-0`}>
+                      {t("home.hero.LE")} 500
+                    </p>
+                    <p className={`${styles.before} m-0`}>
+                      {t("home.hero.LE")} 1000
+                    </p>
                   </div>
                   <div className={`${styles.testAndParameters}`}>
                     <div className={`${styles.test}`}>
@@ -96,20 +128,24 @@ const Home = () => {
                         <div className={`${styles.icon}`}>
                           <GrDocumentTest />
                         </div>
-                        <div className={`${styles.data}`}>
+                        <div className={`${styles.data} fw-bold`}>
                           <p className={`${styles.number}`}>10</p>
-                          <p className={`${styles.title}`}>tests</p>
+                          <p className={`${styles.title}`}>
+                            {t("home.hero.test")}
+                          </p>
                         </div>
                       </div>
                     </div>
-                    <div className={`${styles.parameters}`}>
+                    <div className={`${styles.parameters} fw-bold`}>
                       <div className={`${styles.body}`}>
                         <div className={`${styles.icon}`}>
                           <BsSliders />
                         </div>
                         <div className={`${styles.data}`}>
                           <p className={`${styles.number}`}>30</p>
-                          <p className={`${styles.title}`}>tests</p>
+                          <p className={`${styles.title}`}>
+                            {t("home.hero.parameters")}
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -120,13 +156,20 @@ const Home = () => {
           </div>
         </div>
 
-        <div className={`${styles.wrapper}  `}>
+        <div
+          className={`${styles.wrapper}`}
+          dir={`${i18n.language === "ar" ? "rtl" : "ltr"}`}
+        >
           {/* Examinations */}
           <Examinations ExaminationsNumber={6} />
           <div className={`${styles.link} mx-auto px-3 py-2 mb-5`}>
             <span className="me-1">{t("home.examinations.link")}</span>
             <NavLink to="/medicalTest">
-              <span className={i18n.language === "ar" ? "me-2" : "ms-2"}>
+              <span
+                className={
+                  i18n.language === "ar" ? "me-2 fw-bold" : "ms-2 fw-bold"
+                }
+              >
                 {t("home.examinations.click")}
               </span>
               <i
@@ -139,8 +182,10 @@ const Home = () => {
             </NavLink>
           </div>
           {/* Statistics */}
-          <div className=" px-4 mb-5">
-            <div className={`${styles.statistics} customContainer mx-auto`}>
+          <div className=" mb-5">
+            <div
+              className={`${styles.statistics} customContainer mx-auto fw-bold`}
+            >
               <div className="row">
                 <div className="col-sm-6 col-md-3">
                   <div className={`${styles.item}`}>
@@ -217,7 +262,9 @@ const Home = () => {
           </div>
           {/* Advantages Banner */}
 
-          <div className={`row g-5 customContainer mx-auto ${styles.advantages}`}>
+          <div
+            className={`row g-5 customContainer mx-auto ${styles.advantages} fw-bold`}
+          >
             <div className="col-lg-6 order-lg-1 order-2">
               <div className={`${styles.image} w-100 mx-auto`}>
                 <picture className="col-md-6">
@@ -250,7 +297,11 @@ const Home = () => {
           <div className={`${styles.link} mx-auto px-3 py-2`}>
             <span className="me-1">{t("home.packages.link")}</span>
             <NavLink to="/offers">
-              <span className={i18n.language === "ar" ? "me-2" : "ms-2"}>
+              <span
+                className={
+                  i18n.language === "ar" ? "me-2 fw-bold" : "ms-2 fw-bold"
+                }
+              >
                 {t("home.packages.click")}
               </span>
               <i
@@ -264,9 +315,15 @@ const Home = () => {
           </div>
         </div>
         {/* Testmonials */}
-        <div className={`${styles.testmonials} py-5 `}>
+        <div className={`${styles.testmonials} py-5 fw-bold`} dir={i18n.language === "ar" ? "rtl" : "ltr"}>
           <div className={`${styles.testmonialsBody} customContainer mx-auto`}>
             <h3 className={`${styles.title} mb-4`}>clients testmonials</h3>
+            <p className={`${styles.description} mb-4`}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              quisquam magni fugit quaerat amet sapiente esse corrupti eveniet
+              iure, possimus aliquam vero! Delectus quo repellendus nisi dolores
+              saepe, maiores magnam?
+            </p>
             <Carousel
               swipeable={true}
               draggable={true}

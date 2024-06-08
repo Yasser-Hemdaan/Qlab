@@ -13,9 +13,12 @@ import client5 from "/awards/clients/Logo-05.jpg";
 import client6 from "/awards/clients/Logo-06.jpg";
 
 const Awards = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
-    <div className={`${styles.awards} my-5`}>
+    <div
+      className={`${styles.awards} my-5`}
+      dir={`${i18n.language === "ar" ? "rtl" : "ltr"}`}
+    >
       <div className={`${styles.awardsBody} customContainer mx-auto`}>
         <div className="row g-5">
           <div className="col-md-5">
@@ -23,10 +26,10 @@ const Awards = () => {
               <h3 className={`${styles.subTitle} mb-3`}>
                 {t("home.awards.subTitle")}
               </h3>
-              <h2 className={`${styles.mainTitle} mb-4`}>
+              <h2 className={`${styles.mainTitle} fw-bold mb-4`}>
                 {t("home.awards.mainTitle")}
               </h2>
-              <div className={`${styles.overWorld}`}>
+              <div className={`${styles.overWorld} fw-bold`}>
                 <div className={`${styles.number}`}>
                   <span>{t("home.awards.overWorld.number")}</span>
                   <span>+</span>

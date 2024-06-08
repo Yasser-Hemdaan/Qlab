@@ -48,32 +48,32 @@ const Header = () => {
             }`}
           >
             <ul className="navigation m-0 p-0">
-              <li>
+              <li className={`${i18n.language === "ar" ? "arFont" : "enFont"}`}>
                 <NavLink to={"/"} onClick={handleClick}>
                   {t("header.home")}
                 </NavLink>
               </li>
-              <li>
+              <li className={`${i18n.language === "ar" ? "arFont" : "enFont"}`}>
                 <NavLink to={"/about"} onClick={handleClick}>
                   {t("header.about")}
                 </NavLink>
               </li>
-              <li>
+              <li className={`${i18n.language === "ar" ? "arFont" : "enFont"}`}>
                 <NavLink to={"/medicalTest"} onClick={handleClick}>
                   {t("header.medicalTests")}
                 </NavLink>
               </li>
-              <li>
+              <li className={`${i18n.language === "ar" ? "arFont" : "enFont"}`}>
                 <NavLink to={"/offers"} onClick={handleClick}>
                   {t("header.offers")}
                 </NavLink>
               </li>
-              <li>
+              <li className={`${i18n.language === "ar" ? "arFont" : "enFont"}`}>
                 <NavLink to={"/homeVisit"} onClick={handleClick}>
                   {t("header.homeVisit")}
                 </NavLink>
               </li>
-              <li>
+              <li className={`${i18n.language === "ar" ? "enFont" : "arFont"}`}>
                 <NavLink onClick={switchLanguage}>
                   {t("header.language")}
                 </NavLink>
@@ -98,7 +98,7 @@ const Header = () => {
               </li>
               <li>
                 <a href="">
-                  <i className="fa-brands fa-pinterest-p"></i>
+                  <i className="fa-brands fa-tiktok"></i>
                 </a>
               </li>
             </ul>

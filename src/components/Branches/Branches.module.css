@@ -1,7 +1,6 @@
 .branchesWrapper .text .mainTitle {
   color: var(--main-color);
   text-transform: capitalize;
-  font-family: boldFont;
 }
 
 .branchesBody {
@@ -37,7 +36,7 @@
 .branchesBody .item .card .cardBody .hours .title {
   color: var(--main-color);
   text-transform: capitalize;
-  font-family: mediumFont;
+  /*  */
   font-size: var(--h4-size);
 }
 
@@ -92,7 +91,7 @@
 }
 
 .branchesBody .item .card .cardBody .hours .close {
-  font-family: mediumFont;
+  /*  */
   color: var(--main-color);
 }
 

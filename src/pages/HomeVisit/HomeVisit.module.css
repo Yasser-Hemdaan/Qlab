@@ -10,7 +10,7 @@
 
 .book .text .mainTitle {
   color: var(--main-color);
-  font-family: boldFont;
+
   max-width: 500px;
   font-size: var(--main-title-size);
 }
@@ -18,13 +18,12 @@
 .formWrapper .content .subtitle {
   color: var(--main-color);
   text-transform: uppercase;
-  font-family: regularFont;
+  /* font-family: regularFont; */
 }
 
 .formWrapper .content .mainTitle {
   color: var(--main-color);
   text-transform: capitalize;
-  font-family: boldFont;
 }
 
 form input:focus {
@@ -45,4 +44,3 @@ form button[type="submit"] {
   background-color: var(--main-color);
   color: white;
 }
-

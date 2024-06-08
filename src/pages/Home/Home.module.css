@@ -7,15 +7,105 @@
 .hero {
   position: relative;
   background-image: linear-gradient(to left, var(--main-color), #ac62ad);
-  height: 80vh;
-  max-height: 600px;
+  /* height: 100vh;
+  max-height: 660px; */
   display: flex;
   align-items: center;
 }
 
+.hero .content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
 .hero .content .text {
   color: white;
 }
+
+.hero .content .text .special {
+  font-size: var(--sub-title-size);
+}
+
+.hero .content .text h1 {
+  font-weight: 600;
+}
+
+.hero .images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .images picture:first-of-type img {
+  width: 100%;
+  max-width: 350px !important;
+  position: relative;
+  z-index: 1;
+}
+
+.hero .images picture.items {
+  position: absolute;
+  top: 50px;
+  animation: rotate 10s linear 0s infinite;
+  -webkit-animation: rotate 10s linear 0s infinite;
+}
+
+.hero .images picture.items img {
+  width: 100%;
+  max-width: 550px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+.hero .images img {
+  /* width: 100%;
+  max-width: 250px; */
+}
+
+/* .hero .images {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .images picture img {
+  width: 100%;
+  max-width: 350px !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.hero .images picture:first-child img {
+  z-index: 1;
+}
+
+.hero .images picture:last-child img {
+  z-index: 0;
+  max-width: 500px !important;
+} */
 
 .offer {
   display: flex;
@@ -27,7 +117,7 @@
 
 .offer p {
   margin: 0;
-  font-family: mediumFont !important;
+  /*  */
 }
 
 .offer .price {
@@ -47,7 +137,7 @@
   text-align: center;
   background-color: var(--main-color);
   color: white;
-  width: 125px;
+  width: 150px;
   height: 35px;
   display: grid;
   place-items: center;
@@ -87,13 +177,13 @@
 }
 
 .offer .price .after {
-  font-family: boldFont !important;
+  /*  */
 }
 
 .testAndParameters {
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  gap: 20px;
 }
 
 .offer .test,
@@ -108,12 +198,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
   height: 60px;
 }
 
 .offer .parameters .body {
-  padding-inline-start: 50px;
+  width: 175px;
   border-inline-start: 2px white solid;
 }
 
@@ -140,19 +230,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: mediumFont !important;
+  /*  */
 }
 
 .offer .test .data p.number,
 .offer .parameters .data p.number {
-  font-family: boldFont !important;
+  /*  */
   font-size: var(--sub-title-size);
   line-height: 30px;
 }
 
 .offer .test .data p.title,
 .offer .parameters .data p.title {
-  font-family: boldFont !important;
+  /*  */
   font-size: var(--description-size);
   text-transform: capitalize;
 }
@@ -203,7 +293,7 @@
 
 .statistics .item .info .number {
   font-size: var(--sub-title-size);
-  font-family: mediumFont;
+  /*  */
 }
 
 .statistics .item .description {
@@ -258,8 +348,8 @@
 
 .advantages {
   width: 100%;
-  height: 62vh;
-  max-height: 475px;
+  /* height: 62vh;
+  max-height: 475px; */
   align-items: center;
   position: relative;
 }
@@ -356,8 +446,6 @@
 }
 
 .testmonials .testmonialsBody {
-  height: 80vh;
-  max-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -369,6 +457,14 @@
   font-weight: bold;
   color: white;
 }
+
+.testmonials .testmonialsBody .description {
+  font-size: var(--description-size);
+  color: white;
+  width: 100%;
+  max-width: 750px;
+}
+
 .testmonials .testmonialsBody .opinion {
   background-color: white;
   margin-inline-end: 15px !important;
@@ -393,12 +489,12 @@
   .image
   picture
   img {
-  width: 100px;
+  width: 150px;
 }
 .testmonials .testmonialsBody .opinion .personalInfo .profileImage .qoute {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 27.5px;
+  right: 27.5px;
   background-color: var(--blue-color);
   color: white;
   width: 25px;
@@ -431,6 +527,6 @@
 }
 
 .testmonials .testmonialsBody .opinion .details {
-  font-size: 10px;
+  font-size: 14px;
   color: var(--gray-color);
 }

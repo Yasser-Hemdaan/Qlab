@@ -15,11 +15,11 @@ const Examinations = ({ ExaminationsNumber }) => {
       <div
         className={`${styles.examinationsBody} customContainer  mx-auto pt-5`}
       >
-        <div className={`${styles.text} text-center`}>
-          <h3 className={`${styles.subTitle} mb-3`}>
+        <div className={`${styles.text} text-center fw-bold`}>
+          <h3 className={`${styles.subTitle} mb-3 `}>
             {t("home.examinations.mainTitle")}
           </h3>
-          <h2 className={`${styles.mainTitle} mb-4 mx-auto`}>
+          <h2 className={`${styles.mainTitle} mb-4 mx-auto fw-bold`}>
             {t("home.examinations.subTitle")}
           </h2>
           <p className={`${styles.description}`}>
@@ -28,7 +28,7 @@ const Examinations = ({ ExaminationsNumber }) => {
           </p>
         </div>
         <div
-          className={`${styles.examinationsCardsContainer} customContainer mx-auto py-4 mb-4`}
+          className={`${styles.examinationsCardsContainer} mx-auto py-4 mb-4`}
         >
           <div className="row g-3">
             {examinations.slice(0, ExaminationsNumber).map((card, index) => (
@@ -40,7 +40,7 @@ const Examinations = ({ ExaminationsNumber }) => {
                     </picture>
                   </div>
                   <div className={`${styles.cardBody} m-4`}>
-                    <h4 className={`${styles.title}`}>
+                    <h4 className={`${styles.title} fw-bold`}>
                       {t(
                         `home.examinations.examinationsCards.examination${
                           index + 1
@@ -52,7 +52,7 @@ const Examinations = ({ ExaminationsNumber }) => {
                         <span>
                           {t(`home.examinations.examinationsCards.priceTitle`)}
                         </span>{" "}
-                        <span>
+                        <span className="fw-bold">
                           {t(
                             `home.examinations.examinationsCards.examination${
                               index + 1
@@ -68,7 +68,7 @@ const Examinations = ({ ExaminationsNumber }) => {
                         </span>
                       </p>
                     </div>
-                    <p className={`${styles.description}`}>
+                    <p className={`${styles.description} `}>
                       {t(
                         `home.examinations.examinationsCards.examination${
                           index + 1

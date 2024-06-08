@@ -19,6 +19,16 @@ i18n.use(initReactI18next).init({
           language: "العربيـة",
         },
         home: {
+          hero: {
+            special: "Because you are one of the family",
+            main: "Get a membership now and enjoy a 50% discount on all tests",
+            description:
+              "Our laboratories are considered one of the leading medical laboratories in the field of medical analysis, and we always aim to provide a high-level and high-quality medical service in Egypt.",
+            off: "OFF",
+            LE: "L.E",
+            test: "tests",
+            parameters: "parameters",
+          },
           examinations: {
             mainTitle: "Qlab laboratories services",
             subTitle: "Rest assured that your health is safe at Qlab",
@@ -456,6 +466,16 @@ i18n.use(initReactI18next).init({
           language: "English",
         },
         home: {
+          hero: {
+            special: "علشان انت واحد من العيلة",
+            main: "احصل على العضوية الآن واستمتع بخصم 50% على جميع التحاليل",
+            description:
+              "تعتبر معاملنا من المعامل الطبية الرائدة في مجال التحليل الطبية, ونهدف دائما إلى تقديم خدمة طبية عالية المستوى وفائقة الجودة على ارض مصر",
+            off: "خصم",
+            LE: "ج.م",
+            test: "اختبارات",
+            parameters: "حدود",
+          },
           examinations: {
             mainTitle: "خدمات معامل كيولاب",
             subTitle: "اطمن صحتك فى أمان فى كيولاب",
