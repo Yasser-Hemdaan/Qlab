@@ -23,13 +23,25 @@ const Awards = () => {
         <div className="row g-5">
           <div className="col-md-5">
             <div className={`${styles.content} row`}>
-              <h3 className={`${styles.subTitle} mb-3`}>
+              <h3
+                className={`${styles.subTitle} ${
+                  i18n.language === "ar" ? "mediumArFont" : "mediumEnFont"
+                } mb-3`}
+              >
                 {t("home.awards.subTitle")}
               </h3>
-              <h2 className={`${styles.mainTitle} fw-bold mb-4`}>
+              <h2
+                className={`${styles.mainTitle} ${
+                  i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                } mb-4`}
+              >
                 {t("home.awards.mainTitle")}
               </h2>
-              <div className={`${styles.overWorld} fw-bold`}>
+              <div
+                className={`${styles.overWorld} ${
+                  i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                }`}
+              >
                 <div className={`${styles.number}`}>
                   <span>{t("home.awards.overWorld.number")}</span>
                   <span>+</span>

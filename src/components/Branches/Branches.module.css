@@ -1,5 +1,6 @@
 .branchesWrapper .text .mainTitle {
   color: var(--main-color);
+  font-size: var(--main-title-size);
   text-transform: capitalize;
 }
 
@@ -46,15 +47,18 @@
   align-items: flex-start;
 }
 
+
 .branchesBody .item .card .cardBody .contact .data {
   display: flex;
   gap: 5px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .branchesBody .item .card .cardBody .address .location svg,
 .branchesBody .item .card .cardBody .contact .data svg {
   color: var(--second-color);
+  position: relative;
+  top: 7px;
 }
 
 .branchesBody .item .card .cardBody .address .location .description,

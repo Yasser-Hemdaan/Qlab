@@ -5,21 +5,40 @@ import { useTranslation } from "react-i18next";
 import styles from "./Packages.module.css";
 
 // DB
-import examinations from "../../DB/Examinations.js";
-// import packages from "../../DB/Packages.js";
+// import examinations from "../../DB/Examinations.js";
+import packages from "../../DB/Packages.js";
 
 // eslint-disable-next-line react/prop-types
 const Packages = ({ PackagesNumber }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
-    <div className={`${styles.packages}`}>
+    <div
+      className={`${styles.packages} ${
+        i18n.language === "ar" ? "regularArFont" : "mediumEnFont"
+      }`}
+    >
       <div className={`${styles.packagesBody} customContainer mx-auto pt-5`}>
         <div className={`${styles.text} text-center`}>
-          <h3 className={`${styles.subTitle} mb-3`}>
+          <h3
+            className={`${styles.subTitle} mb-3 ${
+              i18n.language === "ar" ? "semiBoldArFont" : "semiBoldEnFont"
+            }`}
+          >
             {t("home.packages.mainTitle")}
           </h3>
-          <h2 className={`${styles.mainTitle} mb-4 mx-auto fw-bold`}>
-            {t("home.packages.subTitle")}
+          <h2
+            className={`${styles.mainTitle} mb-0 mx-auto ${
+              i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+            } `}
+          >
+            {t("home.packages.subTitle1")}
+          </h2>
+          <h2
+            className={`${styles.mainTitle} mb-4 mx-auto ${
+              i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+            } `}
+          >
+            {t("home.packages.subTitle2")}
           </h2>
           <p className={`${styles.description}`}>
             {t("home.packages.description")}
@@ -27,7 +46,7 @@ const Packages = ({ PackagesNumber }) => {
         </div>
         <div className={`${styles.packagesCardsContainer} mx-auto py-4 mb-5`}>
           <div className="row g-3">
-            {examinations.slice(0, PackagesNumber).map((card, index) => (
+            {packages.slice(0, PackagesNumber).map((card, index) => (
               <div key={index} className="col-sm-6 col-xl-4">
                 <div className={`${styles.packagesCard}`}>
                   <div className={`${styles.image}`}>
@@ -36,13 +55,19 @@ const Packages = ({ PackagesNumber }) => {
                     </picture>
                   </div>
                   <div className={`${styles.cardBody} m-4`}>
-                    <h4 className={`${styles.title} fw-bold`}>
+                    <h4
+                      className={`${styles.title} mb-3 ${
+                        i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                      }`}
+                    >
                       {t(
                         `home.packages.packagesCards.package${index + 1}.title`
                       )}
                     </h4>
                     <div>
-                      <p className={`${styles.price}`}>
+                      <p className={`${styles.price} ${
+                          i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                        }`}>
                         <span>
                           {t(`home.packages.packagesCards.priceTitle`)}
                         </span>{" "}
@@ -70,7 +95,7 @@ const Packages = ({ PackagesNumber }) => {
                       )}
                     </p>
                     <div className={`${styles.includes}`}>
-                      <p>
+                      <p className="m-0">
                         <span>
                           {t(`home.packages.packagesCards.includesTitle`)}
                         </span>{" "}
@@ -85,6 +110,13 @@ const Packages = ({ PackagesNumber }) => {
                           }.testType`
                         )}
                       </p>
+                      <a
+                        href="wa-me:966554754811"
+                        target="_blank"
+                        className={`${styles.more} px-3 py-1`}
+                      >
+                        {t(`home.packages.packagesCards.more`)}
+                      </a>
                     </div>
                   </div>
                 </div>

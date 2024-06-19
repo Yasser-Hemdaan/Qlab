@@ -45,9 +45,9 @@
 }
 
 .bookBanner .text .title {
-  font-size: var(--sub-title-size);
+  font-size: 42px;
   font-weight: bold;
-  max-width: 450px;
+  /* max-width: 450px; */
   text-transform: capitalize;
 }
 
@@ -83,10 +83,16 @@
 
 .form input,
 .form input:focus {
-  background-color: #ffffff3f;
+  background-color: #ffffff3f !important;
   color: white;
   font-size: 14px;
   border: 1.5px solid white;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 10px 15px;
 }
 
 .form input::placeholder {
@@ -95,12 +101,19 @@
 
 ::-webkit-calendar-picker-indicator {
   filter: invert(1);
+  -webkit-filter: invert(1);
 }
 
 .form button[type="submit"] {
-  font-size: var(--description-size);
-
+  font-size: 16px;
+  width: 175px;
   color: var(--main-color);
   text-transform: capitalize;
   background-color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
 }

@@ -9,20 +9,43 @@ import examinations from "../../DB/Examinations.js";
 
 // eslint-disable-next-line react/prop-types
 const Examinations = ({ ExaminationsNumber }) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
-    <div className={`${styles.examinations}`}>
+    <div
+      className={`${styles.examinations} ${
+        i18n.language === "ar" ? "regularArFont" : "mediumEnFont"
+      }`}
+    >
       <div
         className={`${styles.examinationsBody} customContainer  mx-auto pt-5`}
       >
-        <div className={`${styles.text} text-center fw-bold`}>
-          <h3 className={`${styles.subTitle} mb-3 `}>
+        <div className={`${styles.text} text-center`}>
+          <h3
+            className={`${styles.subTitle} mb-3  ${
+              i18n.language === "ar" ? "semiBoldArFont" : "semiBoldEnFont"
+            }`}
+          >
             {t("home.examinations.mainTitle")}
           </h3>
-          <h2 className={`${styles.mainTitle} mb-4 mx-auto fw-bold`}>
-            {t("home.examinations.subTitle")}
+          <h2
+            className={`${styles.mainTitle} mb-0 mx-auto ${
+              i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+            } `}
+          >
+            {t("home.examinations.subTitle1")}
           </h2>
-          <p className={`${styles.description}`}>
+          <h2
+            className={`${styles.mainTitle} mb-4 mx-auto ${
+              i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+            } `}
+          >
+            {t("home.examinations.subTitle2")}
+          </h2>
+          <p
+            className={`${styles.description} ${
+              i18n.language === "ar" ? "semiBoldArFont" : "exBoldEnFont"
+            }  `}
+          >
             {t("home.examinations.description")}
             <span>{t("home.examinations.price")}</span>
           </p>
@@ -40,7 +63,22 @@ const Examinations = ({ ExaminationsNumber }) => {
                     </picture>
                   </div>
                   <div className={`${styles.cardBody} m-4`}>
-                    <h4 className={`${styles.title} fw-bold`}>
+                    <h4
+                      className={`${styles.type} ${
+                        i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                      }`}
+                    >
+                      {t(
+                        `home.examinations.examinationsCards.examination${
+                          index + 1
+                        }.type`
+                      )}
+                    </h4>
+                    <h4
+                      className={`${styles.title} mb-3 ${
+                        i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                      }`}
+                    >
                       {t(
                         `home.examinations.examinationsCards.examination${
                           index + 1
@@ -48,11 +86,15 @@ const Examinations = ({ ExaminationsNumber }) => {
                       )}
                     </h4>
                     <div>
-                      <p className={`${styles.price}`}>
+                      <p
+                        className={`${styles.price} ${
+                          i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                        }`}
+                      >
                         <span>
                           {t(`home.examinations.examinationsCards.priceTitle`)}
                         </span>{" "}
-                        <span className="fw-bold">
+                        <span className="">
                           {t(
                             `home.examinations.examinationsCards.examination${
                               index + 1
@@ -76,7 +118,7 @@ const Examinations = ({ ExaminationsNumber }) => {
                       )}
                     </p>
                     <div className={`${styles.includes}`}>
-                      <p>
+                      <p className="m-0">
                         <span>
                           {t(
                             `home.examinations.examinationsCards.includesTitle`
@@ -93,6 +135,13 @@ const Examinations = ({ ExaminationsNumber }) => {
                           }.testType`
                         )}
                       </p>
+                      <a
+                        href="wa-me:966554754811"
+                        target="_blank"
+                        className={`${styles.more} px-3 py-1`}
+                      >
+                        {t(`home.examinations.examinationsCards.more`)}
+                      </a>
                     </div>
                   </div>
                 </div>

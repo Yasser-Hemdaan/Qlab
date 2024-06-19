@@ -14,7 +14,8 @@ const HomeVisit = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+
   return (
     <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
       <div className={`${styles.homeVisit}`}>
@@ -27,27 +28,44 @@ const HomeVisit = () => {
         <div dir={i18n.language === "ar" ? "rtl" : "ltr"}></div>
       </div>
       <div className={`${styles.book}`}>
-        <div className={`${styles.text} text-center customContainer mx-auto pt-5`}>
-          <h2 className={`${styles.mainTitle} mb-5 mx-auto`}>
-            دلوقتي تقدر تحجز زيارتك المنزلية مع معامل كيولاب
+        <div className={`${styles.text} text-center  mx-auto pt-5`}>
+          <h2
+            className={`${styles.mainTitle} mb-5 mx-auto ${
+              i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+            }`}
+            style={
+              i18n.language === "ar"
+                ? { maxWidth: "660px" }
+                : { maxWidth: "750px" }
+            }
+          >
+            {t("homeVisit.title")}
           </h2>
         </div>
-        <div className={`${styles.formWrapper} customContainer row mx-auto p-4 mb-4`}>
-          <div className={`${styles.content} col-lg-6`}>
+        <div
+          className={`${styles.formWrapper} customContainer row mx-auto mb-4`}
+        >
+          <div className={`${styles.content} col-lg-12`}>
             <div className={`${styles.text} mb-5`}>
-              <h3 className={`${styles.subtitle}`}>book an</h3>
-              <h2 className={`${styles.mainTitle}`}>appointment</h2>
+              <h3 className={`${styles.subtitle}`}>
+                {t("homeVisit.book.subTitle1")}
+              </h3>
+              <h2 className={`${styles.mainTitle}`}>
+                {t("homeVisit.book.subTitle2")}
+              </h2>
             </div>
-            <form action="">
+            <form action="" className="p-0">
               <div className="row g-3">
                 <div className="col-md-12">
                   <input
                     type="text"
                     name="service"
                     id="service"
-                    className="form-control"
+                    className={`form-control ${
+                      i18n.language === "ar" ? "text-end" : "text-start"
+                    }`}
                     required
-                    placeholder="Service Name"
+                    placeholder={t("home.book.formData.serviceName")}
                   />
                 </div>
                 <div className="col-md-6">
@@ -55,9 +73,11 @@ const HomeVisit = () => {
                     type="text"
                     name="name"
                     id="name"
-                    className="form-control"
+                    className={`form-control ${
+                      i18n.language === "ar" ? "text-end" : "text-start"
+                    }`}
                     required
-                    placeholder="Name"
+                    placeholder={t("home.book.formData.Name")}
                   />
                 </div>
                 <div className="col-md-6">
@@ -66,9 +86,11 @@ const HomeVisit = () => {
                     type="tel"
                     name="phone"
                     id="phone"
-                    className="form-control"
+                    className={`form-control ${
+                      i18n.language === "ar" ? "text-end" : "text-start"
+                    }`}
                     required
-                    placeholder="phone"
+                    placeholder={t("home.book.formData.phone")}
                   />
                 </div>
                 <div className="col-md-12">
@@ -77,9 +99,11 @@ const HomeVisit = () => {
                     type="email"
                     name="email"
                     id="email"
-                    className="form-control"
+                    className={`form-control ${
+                      i18n.language === "ar" ? "text-end" : "text-start"
+                    }`}
                     required
-                    placeholder="email"
+                    placeholder={t("home.book.formData.email")}
                   />
                 </div>
                 <div className="col-md-6">
@@ -88,9 +112,8 @@ const HomeVisit = () => {
                     type="date"
                     name="date"
                     id="date"
-                    className="form-control"
+                    className={`form-control`}
                     required
-                    placeholder="mm-dd-yyyy"
                   />
                 </div>
                 <div className="col-md-6">
@@ -99,14 +122,16 @@ const HomeVisit = () => {
                     type="time"
                     name="time"
                     id="time"
-                    className="form-control"
+                    className={`form-control`}
                     required
-                    placeholder="time"
                   />
                 </div>
-                <button type="submit" className="form-control w-25 mx-1">
-                  Book Now
-                </button>
+
+                <div className="col-md-6">
+                  <button type="submit" className="form-control col-md-6">
+                    {t("home.book.link")}
+                  </button>
+                </div>
               </div>
             </form>
           </div>

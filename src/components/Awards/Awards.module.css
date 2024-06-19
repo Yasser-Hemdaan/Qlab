@@ -1,16 +1,14 @@
 .awardsBody .content .subTitle {
   color: #579fe7;
-  font-size: var(--description-size);
+  font-size: 16px;
   font-weight: bold;
   text-transform: capitalize;
 }
 
 .awardsBody .content .mainTitle {
   color: var(--second-color);
-  font-size: var(--sub-title-size);
-
+  font-size: 38px;
   text-transform: capitalize;
-  line-height: 30px;
 }
 
 .awardsBody .content .overWorld {
@@ -38,12 +36,12 @@
 }
 
 .awardsBody .content .overWorld .number span {
-  font-size: 5rem;
+  font-size: 128px;
   /*  */
 }
 
 .awardsBody .content .overWorld .number span:last-child {
-  color: var(--blue-color);
+  color: var(--main-color);
   position: relative;
   bottom: 25px;
 }
@@ -57,7 +55,7 @@
 
 .awardsBody .clients .description {
   color: var(--gray-color);
-  font-size: var(--description-size);
+  font-size: 17px;
 }
 
 .awardsBody .clients .clientsGroup {

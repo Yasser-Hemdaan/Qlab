@@ -8,14 +8,20 @@ import { LiaMapMarkedAltSolid } from "react-icons/lia";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { MdOutlineAddIcCall } from "react-icons/md";
 import { LuClock4 } from "react-icons/lu";
+import { useTranslation } from "react-i18next";
 
 const Branches = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div>
       <div className={`${styles.branchesWrapper}`}>
         <div className={`${styles.text} text-center mx-auto pt-5`}>
-          <h2 className={`${styles.mainTitle} mb-5 mx-auto`}>
-            عناوين جميع الفروع لدينا
+          <h2
+            className={`${styles.mainTitle} mb-5 mx-auto ${
+              i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+            }`}
+          >
+            {t("branches.title")}
           </h2>
         </div>
         <div

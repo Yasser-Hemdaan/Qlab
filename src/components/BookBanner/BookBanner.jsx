@@ -11,32 +11,43 @@ import bannerImage from "/bookBanner/image.png";
 const BookBanner = () => {
   const { t, i18n } = useTranslation();
   return (
-    <div dir={`${i18n.language === "ar" ? "rtl" : "ltr"}`}>
+    <div>
       <div
         className={`row g-3 customContainer mx-auto px-4 ${styles.bookBanner}`}
       >
-        <div className="col-lg-6 order-lg-1 order-2">
+        <div className="col-lg-6 order-2">
           <div className={`${styles.image} w-100 mx-auto`}>
             <picture className="col-md-6">
               <img src={bannerImage} className="w-100" alt="" />
             </picture>
           </div>
         </div>
-        <div className="col-lg-6 order-lg-2 order-1">
+        <div className={`${styles.content} col-lg-6 order-1`}>
           <div className={`${styles.text}`}>
-            <h3 className={`${styles.title} fw-bold mb-4`}>
+            <h3
+              className={`${styles.title} ${
+                i18n.language === "ar" ? "text-end" : "text-start"
+              } mb-4`}
+            >
               {t("home.book.title")}
             </h3>
           </div>
-          <form action="" className={`row g-2 ${styles.form}`}>
+          <form
+            action=""
+            className={`row g-2 ${styles.form} ${
+              i18n.language === "ar" ? "flex-row-reverse" : "flex-row"
+            }`}
+          >
             <div className="col-md-4">
               <input
                 type="text"
                 name="service"
                 id="service"
-                className="form-control"
+                className={`form-control ${
+                  i18n.language === "ar" ? "text-end" : "text-start"
+                }`}
                 required
-                placeholder="Service Name"
+                placeholder={t("home.book.formData.serviceName")}
               />
             </div>
             <div className="col-md-4">
@@ -44,9 +55,11 @@ const BookBanner = () => {
                 type="text"
                 name="name"
                 id="name"
-                className="form-control"
+                className={`form-control ${
+                  i18n.language === "ar" ? "text-end" : "text-start"
+                }`}
                 required
-                placeholder="Name"
+                placeholder={t("home.book.formData.Name")}
               />
             </div>
             <div className="col-md-4">
@@ -55,9 +68,11 @@ const BookBanner = () => {
                 type="tel"
                 name="phone"
                 id="phone"
-                className="form-control"
+                className={`form-control ${
+                  i18n.language === "ar" ? "text-end" : "text-start"
+                }`}
                 required
-                placeholder="phone"
+                placeholder={t("home.book.formData.phone")}
               />
             </div>
             <div className="col-md-4">
@@ -66,9 +81,11 @@ const BookBanner = () => {
                 type="email"
                 name="email"
                 id="email"
-                className="form-control"
+                className={`form-control ${
+                  i18n.language === "ar" ? "text-end" : "text-start"
+                }`}
                 required
-                placeholder="email"
+                placeholder={t("home.book.formData.email")}
               />
             </div>
             <div className="col-md-4">
@@ -77,9 +94,8 @@ const BookBanner = () => {
                 type="date"
                 name="date"
                 id="date"
-                className="form-control"
+                className={`form-control`}
                 required
-                placeholder="mm-dd-yyyy"
               />
             </div>
             <div className="col-md-4">
@@ -88,12 +104,11 @@ const BookBanner = () => {
                 type="time"
                 name="time"
                 id="time"
-                className="form-control"
+                className={`form-control`}
                 required
-                placeholder="time"
               />
             </div>
-            <button type="submit" className="form-control w-25 mx-1 fw-bold">
+            <button type="submit" className="form-control mx-1 fw-bold">
               {t("home.book.link")}
             </button>
           </form>

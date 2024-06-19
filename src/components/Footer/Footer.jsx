@@ -16,26 +16,22 @@ const Footer = () => {
   const { t, i18n } = useTranslation();
   return (
     <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
+      <ScrollToTop />
       <div className={`${styles.footer} pb-5`}>
-        <ScrollToTop />
         <div className=" mx-auto">
           <div
-            className={`${styles.footerBody} customContainer mx-auto row gy-5`}
+            className={`${styles.footerBody} customContainer mx-auto row g-5`}
           >
-            <div className={`${styles.main} col-xl-4 col-md-12 order-1`}>
+            <div className={`${styles.main} col-xl-4 col-md-12 order-1 mt-0`}>
               <div className={`${styles.logo}`}>
                 <picture>
                   <img src={logo} className="w-100 mb-4" alt="" />
                 </picture>
               </div>
-              <div className={`${styles.description} mb-3`}>
+              <div className={`${styles.description} mb-4`}>
                 <p>
                   patholab laboratory is a very well equipped laboratory of this
-                  country and thy promised to provide best services, patholab
-                  laboratory is a very well equipped laboratory of this country
-                  and thy promised to provide best services, patholab laboratory
-                  is a very well equipped laboratory of this country and thy
-                  promised to provide best services
+                  country and thy promised to provide best services.
                 </p>
               </div>
               <ul className={`${styles.sci}`}>
@@ -61,7 +57,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-xl-2 col-md-3 col-sm-12 order-2">
+            <div className="col-xl-2 col-md-3 col-sm-12 order-2 mt-0">
               <h4 className={`${styles.title} mb-4`}>
                 {t("footer.quickLinks.title")}
               </h4>
@@ -85,7 +81,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-xl-3 col-md-4 col-sm-12 order-3">
+            <div className="col-xl-3 col-md-4 col-sm-12 order-3 mt-0">
               <h4 className={`${styles.title} mb-4`}>
                 {t("footer.contactUS.title")}
               </h4>
@@ -116,7 +112,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            <div className="col-xl-3 col-md-5 col-sm-12 order-4">
+            <div className="col-xl-3 col-md-5 col-sm-12 order-4 mt-0">
               <h4 className={`${styles.title} mb-4`}>
                 {t("footer.openingHours.title")}
               </h4>

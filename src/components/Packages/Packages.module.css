@@ -8,8 +8,8 @@
 
 .packagesBody .text .mainTitle {
   font-size: var(--main-title-size);
-
-  max-width: 500px;
+  max-width: 800px;
+  text-transform: capitalize;
 }
 
 .packagesCardsContainer {
@@ -20,8 +20,6 @@
   font-size: var(--description-size);
 
   color: var(--gray-color);
-  max-width: 500px;
-  margin-inline: auto;
 }
 
 .packagesBody .text .description span {
@@ -57,15 +55,12 @@
 
 .packagesCardsContainer .packagesCard .cardBody .title {
   color: var(--main-color);
-  font-size: var(--h4-size);
+  font-size: var(--h3-title-size);
   /* text-transform: capitalize; */
-
-  height: 50px;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
-  white-space: pre-wrap; /* let the text wrap preserving spaces */
+  /* height: 50px; */
+  max-width: 300px !important;
+  min-height: 70px;
+  line-height: 35px;
 }
 
 .packagesCardsContainer .packagesCard .cardBody .price {
@@ -77,35 +72,71 @@
 
 .packagesCardsContainer .packagesCard .cardBody .price span:first-of-type {
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .packagesCardsContainer .packagesCard .cardBody .price span:nth-of-type(2) {
-  color: var(--blue-color);
+  color: var(--main-color);
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .price span:last-of-type {
   text-decoration: line-through;
   color: var(--gray-color);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .packagesCardsContainer .packagesCard .cardBody .description {
   color: var(--gray-color);
-  font-size: 10px;
+  font-size: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
 }
 
 .packagesCardsContainer .packagesCard .cardBody .includes {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .packagesCardsContainer .packagesCard .cardBody .title {
+    min-height: 45px;
+  }
+
+  .packagesCardsContainer .packagesCard .cardBody .includes {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
 .packagesCardsContainer .packagesCard .cardBody .includes > p span {
-  color: var(--blue-color);
+  color: var(--main-color);
   text-transform: capitalize;
 }
 
+.more {
+  font-weight: bold;
+  color: var(--main-color);
+  background-color: var(--main-color);
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+/* 
 .packagesBody .link {
   text-align: center;
   text-transform: capitalize;
@@ -128,5 +159,5 @@
 }
 
 .packagesBody .link a {
-  color: var(--blue-color);
-}
+  color: var(--main-color);
+} */

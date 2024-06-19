@@ -31,7 +31,10 @@ const Header = () => {
   };
 
   return (
-    <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
+    <div
+      className={`${i18n.language === "ar" ? "regularArFont" : "mediumEnFont"}`}
+      dir={i18n.language === "ar" ? "rtl" : "ltr"}
+    >
       <div className="customContainer">
         <div className="header py-4">
           <div className="logo">
@@ -48,32 +51,32 @@ const Header = () => {
             }`}
           >
             <ul className="navigation m-0 p-0">
-              <li className={`${i18n.language === "ar" ? "arFont" : "enFont"}`}>
+              <li>
                 <NavLink to={"/"} onClick={handleClick}>
                   {t("header.home")}
                 </NavLink>
               </li>
-              <li className={`${i18n.language === "ar" ? "arFont" : "enFont"}`}>
+              <li>
                 <NavLink to={"/about"} onClick={handleClick}>
                   {t("header.about")}
                 </NavLink>
               </li>
-              <li className={`${i18n.language === "ar" ? "arFont" : "enFont"}`}>
+              <li>
                 <NavLink to={"/medicalTest"} onClick={handleClick}>
                   {t("header.medicalTests")}
                 </NavLink>
               </li>
-              <li className={`${i18n.language === "ar" ? "arFont" : "enFont"}`}>
+              <li>
                 <NavLink to={"/offers"} onClick={handleClick}>
                   {t("header.offers")}
                 </NavLink>
               </li>
-              <li className={`${i18n.language === "ar" ? "arFont" : "enFont"}`}>
+              <li>
                 <NavLink to={"/homeVisit"} onClick={handleClick}>
                   {t("header.homeVisit")}
                 </NavLink>
               </li>
-              <li className={`${i18n.language === "ar" ? "enFont" : "arFont"}`}>
+              <li className={`${i18n.language === "ar" ? "boldEnFont" : "regularArFont"}`}>
                 <NavLink onClick={switchLanguage}>
                   {t("header.language")}
                 </NavLink>

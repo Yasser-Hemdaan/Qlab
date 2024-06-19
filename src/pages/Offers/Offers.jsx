@@ -28,7 +28,7 @@ const Offers = () => {
       </div>
       <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
         {/* Packages */}
-        <Packages PackagesNumber={6} />
+        <Packages PackagesNumber={17} />
         <Awards />
         <BookBanner />
       </div>

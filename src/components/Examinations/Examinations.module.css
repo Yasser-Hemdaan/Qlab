@@ -26,7 +26,8 @@
 .examinationsBody .text .mainTitle {
   font-size: var(--main-title-size);
 
-  max-width: 450px;
+  max-width: 800px;
+  text-transform: capitalize;
 }
 
 .examinationsBody .text .description,
@@ -66,17 +67,22 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+.examinationsCardsContainer .examinationsCard .cardBody .type,
 .examinationsCardsContainer .examinationsCard .cardBody .title {
   color: var(--main-color);
-  font-size: var(--h4-size);
+  font-size: var(--h3-title-size);
   /* text-transform: capitalize; */
-
-  height: 50px;
+  /* height: 50px; */
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
   white-space: pre-wrap; /* let the text wrap preserving spaces */
+}
+
+.examinationsCardsContainer .examinationsCard .cardBody .type {
+  margin: 0 !important;
+  margin-block-end: 12.5px !important;
 }
 
 .examinationsCardsContainer .examinationsCard .cardBody .price {
@@ -92,7 +98,7 @@
   .price
   span:first-of-type {
   font-weight: bold;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .examinationsCardsContainer
@@ -100,27 +106,49 @@
   .cardBody
   .price
   span:nth-of-type(2) {
-  color: var(--blue-color);
+  color: var(--main-color);
   font-weight: bold;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .price span:last-of-type {
   text-decoration: line-through;
   color: var(--gray-color);
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .examinationsCardsContainer .examinationsCard .cardBody .description {
   color: var(--gray-color);
-  font-size: 10px;
+  font-size: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
 }
 
 .examinationsCardsContainer .examinationsCard .cardBody .includes {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .examinationsCardsContainer .examinationsCard .cardBody .includes > p span {
-  color: var(--blue-color);
+  color: var(--main-color);
   text-transform: capitalize;
+}
+
+.more {
+  font-weight: bold;
+  color: var(--main-color);
+  background-color: var(--main-color);
+  color: white;
+  font-size: 12px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
