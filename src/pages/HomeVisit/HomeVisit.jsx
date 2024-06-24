@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 // images
 import cover1 from "../../assets/images/HomeVisit/Hero/5.jpg";
+import image from "../../../public/testVisit.jpg";
 
 // css
 import styles from "./HomeVisit.module.css";
@@ -28,7 +29,7 @@ const HomeVisit = () => {
         <div dir={i18n.language === "ar" ? "rtl" : "ltr"}></div>
       </div>
       <div className={`${styles.book}`}>
-        <div className={`${styles.text} text-center  mx-auto pt-5`}>
+        <div className={`${styles.text} text-center mx-auto pt-5`}>
           <h2
             className={`${styles.mainTitle} mb-5 mx-auto ${
               i18n.language === "ar" ? "boldArFont" : "blackEnFont"
@@ -43,9 +44,9 @@ const HomeVisit = () => {
           </h2>
         </div>
         <div
-          className={`${styles.formWrapper} customContainer row mx-auto mb-4`}
+          className={`${styles.formWrapper} align-items-center customContainer row mx-auto mb-4`}
         >
-          <div className={`${styles.content} col-lg-12`}>
+          <div className={`${styles.content} col-lg-6`}>
             <div className={`${styles.text} mb-5`}>
               <h3 className={`${styles.subtitle}`}>
                 {t("homeVisit.book.subTitle1")}
@@ -61,7 +62,7 @@ const HomeVisit = () => {
                     type="text"
                     name="service"
                     id="service"
-                    className={`form-control ${
+                    className={`form-control px-4 py-3 ${
                       i18n.language === "ar" ? "text-end" : "text-start"
                     }`}
                     required
@@ -73,7 +74,7 @@ const HomeVisit = () => {
                     type="text"
                     name="name"
                     id="name"
-                    className={`form-control ${
+                    className={`form-control px-4 py-3 ${
                       i18n.language === "ar" ? "text-end" : "text-start"
                     }`}
                     required
@@ -86,7 +87,7 @@ const HomeVisit = () => {
                     type="tel"
                     name="phone"
                     id="phone"
-                    className={`form-control ${
+                    className={`form-control px-4 py-3 ${
                       i18n.language === "ar" ? "text-end" : "text-start"
                     }`}
                     required
@@ -99,7 +100,7 @@ const HomeVisit = () => {
                     type="email"
                     name="email"
                     id="email"
-                    className={`form-control ${
+                    className={`form-control px-4 py-3 ${
                       i18n.language === "ar" ? "text-end" : "text-start"
                     }`}
                     required
@@ -112,7 +113,7 @@ const HomeVisit = () => {
                     type="date"
                     name="date"
                     id="date"
-                    className={`form-control`}
+                    className={`form-control px-4 py-3`}
                     required
                   />
                 </div>
@@ -122,20 +123,24 @@ const HomeVisit = () => {
                     type="time"
                     name="time"
                     id="time"
-                    className={`form-control`}
+                    className={`form-control px-4 py-3`}
                     required
                   />
                 </div>
 
-                <div className="col-md-6">
-                  <button type="submit" className="form-control col-md-6">
+                <div className="col-md-6 mt-4">
+                  <button type="submit" className="form-control col-md-6 px-5 py-3">
                     {t("home.book.link")}
                   </button>
                 </div>
               </div>
             </form>
           </div>
-          <div className={`${styles.images} col-lg-6`}></div>
+          <div className={`${styles.images} col-lg-6`}>
+            <picture>
+              <img src={image} className="w-100" alt="" />
+            </picture>
+          </div>
         </div>
       </div>
       <Branches />

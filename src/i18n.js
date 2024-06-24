@@ -31,8 +31,8 @@ i18n.use(initReactI18next).init({
           },
           examinations: {
             mainTitle: "Qlab laboratories services",
-            subTitle1: "Rest assured that your health",
-            subTitle2: "is safe at Qlab",
+            subTitle1: "Rest assured that your",
+            subTitle2: "health is safe at Qlab",
             description:
               "Comprehensive and important examinations for all ages starting from ",
             price: "300 pounds",
@@ -249,8 +249,8 @@ i18n.use(initReactI18next).init({
             description:
               "Our laboratories are considered among the leading medical laboratories in the field of medical analysis, and we always aim to provide world-class, high-quality medical service in Egypt... based on our commitment to participate in improving the public health of society.",
             topics: {
-              topic1: "Speed and accuracy of analysis results",
-              topic2: "An integrated laboratory in every branch",
+              topic1: "Speed and accuracy",
+              topic2: "An integrated laboratory",
             },
           },
           packages: {
@@ -264,16 +264,18 @@ i18n.use(initReactI18next).init({
               includesTitle: "includes",
               more: "more info",
               package1: {
-                title: "Comprehensive screening test package for adults",
+                type: "package for adults",
+                title: "Comprehensive screening test",
                 oldPrice: "$500",
                 newPrice: "$300",
                 description:
-                  "Complete blood count - lipid profile - liver function - kidney function - random sugar - hepatitis viruses - B, C, cumulative sugar",
+                  "complete blood count - lipid profile - liver function - kidney function - random blood sugar - hepatitis B and C viruses, cumulative sugar",
                 testNumber: 90,
                 testType: "test",
               },
               package2: {
-                title: "Comprehensive examination package for children ",
+                type: "package for children",
+                title: "Comprehensive examination",
                 oldPrice: "$500",
                 newPrice: "$300",
                 description:
@@ -282,8 +284,8 @@ i18n.use(initReactI18next).init({
                 testType: "parameter",
               },
               package3: {
-                title:
-                  "Regular examination package for diabetics every 3 months",
+                type: "package for diabetics",
+                title: "Regular examination every 3 months",
                 oldPrice: "$500",
                 newPrice: "$300",
                 description:
@@ -292,7 +294,8 @@ i18n.use(initReactI18next).init({
                 testType: "test",
               },
               package4: {
-                title: "Periodic examination package for diabetics annually",
+                type: "package for diabetics",
+                title: "Periodic examination annually",
                 oldPrice: "$500",
                 newPrice: "$300",
                 description:
@@ -301,6 +304,7 @@ i18n.use(initReactI18next).init({
                 testType: "parameter",
               },
               package5: {
+                type: "package for men and women",
                 title: "Hair loss package",
                 oldPrice: "$500",
                 newPrice: "$300",
@@ -310,7 +314,8 @@ i18n.use(initReactI18next).init({
                 testType: "test",
               },
               package6: {
-                title: "Pregnancy follow-up package",
+                type: "package for women",
+                title: "Pregnancy follow-up journy",
                 oldPrice: "$500",
                 newPrice: "$300",
                 description:
@@ -319,15 +324,8 @@ i18n.use(initReactI18next).init({
                 testType: "parameter",
               },
               package7: {
-                title: "Thyroid hormone monitoring package",
-                oldPrice: "$500",
-                newPrice: "$300",
-                description: "TSH - FT3 - FT4",
-                testNumber: 90,
-                testType: "test",
-              },
-              package8: {
-                title: "Pre-diet analysis package",
+                type: "package for men and women",
+                title: "Pre-diet analysis",
                 oldPrice: "$500",
                 newPrice: "$300",
                 description:
@@ -335,8 +333,9 @@ i18n.use(initReactI18next).init({
                 testNumber: 50,
                 testType: "parameter",
               },
-              package9: {
-                title: "A package of tests before fasting the month of Ramadan",
+              package8: {
+                type: "package for all",
+                title: "before fasting the month of Ramadan",
                 oldPrice: "$500",
                 newPrice: "$300",
                 description:
@@ -344,24 +343,9 @@ i18n.use(initReactI18next).init({
                 testNumber: 90,
                 testType: "test",
               },
-              package10: {
-                title: "Basic food allergy testing package",
-                oldPrice: "$500",
-                newPrice: "$300",
-                description: "Food Detective tests for 60 types of food",
-                testNumber: 50,
-                testType: "parameter",
-              },
-              package11: {
-                title: "Comprehensive food allergy testing package",
-                oldPrice: "$500",
-                newPrice: "$300",
-                description: "Food Print Test for 220 types of food",
-                testNumber: 90,
-                testType: "test",
-              },
-              package12: {
-                title: "Fitness analysis package",
+              package9: {
+                type: "package for men and women",
+                title: "Basic food allergy testing",
                 oldPrice: "$500",
                 newPrice: "$300",
                 description:
@@ -369,8 +353,9 @@ i18n.use(initReactI18next).init({
                 testNumber: 50,
                 testType: "parameter",
               },
-              package13: {
-                title: "Women's health package, age less than 50 years",
+              package10: {
+                type: "package for women",
+                title: "health package, age less than 50 years",
                 oldPrice: "$500",
                 newPrice: "$300",
                 description:
@@ -378,16 +363,18 @@ i18n.use(initReactI18next).init({
                 testNumber: 90,
                 testType: "test",
               },
-              package14: {
-                title: "Women's health package, age over 50 years",
+              package11: {
+                type: "package for women",
+                title: "health package, age over 50 years",
                 oldPrice: "$500",
                 newPrice: "$300",
                 description:
-                  "Blood picture - calcium - vitamin D - sugar - cholesterol - triglycerides - iron - iron stores - TSH Liver functions - kidney functions - CA15.3 - CEA - CA125 - CA19.9",
+                  "Blood picture - calcium - vitamin D - sugar - cholesterol - triglycerides - iron - iron stores - TSH - Liver functions - kidney functions - CA15.3 - CEA - CA125 - CA19.9",
                 testNumber: 50,
                 testType: "parameter",
               },
-              package15: {
+              package12: {
+                type: "package",
                 title: "Tumor analysis package for men",
                 oldPrice: "$500",
                 newPrice: "$300",
@@ -395,20 +382,31 @@ i18n.use(initReactI18next).init({
                 testNumber: 90,
                 testType: "test",
               },
-              package16: {
-                title: "Tumor analysis package for women",
+              package13: {
+                type: "package for all",
+                title: "Thyroid hormone monitoring",
                 oldPrice: "$500",
                 newPrice: "$300",
-                description: "CA15.3 - CEA - CA125 - CA19.9 - AFP",
-                testNumber: 50,
-                testType: "parameter",
+                description: "TSH - FT3 - FT4",
+                testNumber: 90,
+                testType: "test",
               },
-              package17: {
-                title: "Vitamin analysis package",
+
+              package14: {
+                type: "package for all",
+                title: "Basic food allergy testing package",
                 oldPrice: "$500",
                 newPrice: "$300",
-                description:
-                  "Vitamin D - Vitamin B12 - Vitamin B6 - Folic Acid",
+                description: "Food Detective tests for 60 types of food",
+                testNumber: 90,
+                testType: "test",
+              },
+              package15: {
+                type: "package for all",
+                title: "Comprehensive food allergy testing",
+                oldPrice: "$500",
+                newPrice: "$300",
+                description: "Food Print Test for 220 types of food",
                 testNumber: 90,
                 testType: "test",
               },
@@ -424,7 +422,7 @@ i18n.use(initReactI18next).init({
               title: "Awards From All Over the world",
             },
             description:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ab fuga quaerat molestiae voluptatem, ipsam, aliquid nesciunt sunt, cum reiciendis accusantium veritatis repellat temporibus consequuntur aspernatur itaque delectus maiores nemo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ab fuga quaerat molestiae voluptatem, ipsam, aliquid nesciunt sunt, cum reiciendis accusantium veritatis repellat temporibus consequuntur aspernatur itaque delectus maiores nemo.",
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ab fuga quaerat molestiae voluptatem, ipsam, aliquid nesciunt sunt, cum reiciendis accusantium veritatis repellat temporibus consequuntur aspernatur itaque delectus maiores nemo Lorem ipsum dolor .",
           },
           book: {
             title: "now you can book your home visit with Qlab ",
@@ -435,6 +433,50 @@ i18n.use(initReactI18next).init({
               phone: "phone",
               email: "email",
               time: "time",
+            },
+          },
+        },
+        about: {
+          subTitle: "About QLAB",
+          mainTitle: "Best Medical Test Laboratory Solution",
+          description:
+            "The main goal of the quality assurance program in Q-Labs is to provide high-quality results in a timely manner to our clients. Analysis performance is monitored during external and internal programs.",
+          values: {
+            title: "values",
+            value1: {
+              title: "Patient-Centered Care",
+              description:
+                "In all their accomplishments, QLab Medical Laboratories are guided by the needs of its patients.",
+            },
+            value2: {
+              title: "Continuous Learning",
+              description:
+                "In all their accomplishments, QLab Medical Laboratories are guided by the needs of its patients.",
+            },
+            value3: {
+              title: "Communication",
+              description:
+                "QLab Medical Laboratories strive to acquire and understand relevant information, and shares it clearly and effectively.",
+            },
+            value4: {
+              title: "Relationships",
+              description:
+                "QLab Medical Laboratories develop and strengthen collaborative relationships with all of their customers, including their patients, their families, their employees, volunteers, medical staff, and their business partners.",
+            },
+            value5: {
+              title: "Human Resources",
+              description:
+                "QLab Medical Laboratories support the professional and personal growth of their employees in their pursuit of the laboratory’s mission.",
+            },
+            value6: {
+              title: "Organizational Ethics",
+              description:
+                "QLab Medical Laboratories are steered by ethical values that emphasize integrity, honesty, fairness, dignity, and respect for all individuals.",
+            },
+            value7: {
+              title: "Superior Performance",
+              description:
+                "QLab Medical Laboratories strive for superior performance in all their activities, to preserve the laboratories’ clinical, organizational and financial strength.",
             },
           },
         },
@@ -473,42 +515,37 @@ i18n.use(initReactI18next).init({
         },
         branches: {
           title: "Addresses of all our branches",
-          branches: {
-            Branch1: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
+          address: "Our Address",
+          contactInformation: "Contact Information",
+          openingHour: "Opening Hour",
+          allBranches: {
+            branch1: {
+              addressTitle: "Hurghada Mubarak 2 above Samir Library and Ali",
+              email: "info@qlab-eg.com",
+              phone: "01122240120",
             },
-            Branch2: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
+            branch2: {
+              addressTitle: "Hurghada, Dahar, above Spinneys supermarket",
+              email: "info@qlab-eg.com",
+              phone: "01111652872",
             },
-            Branch3: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
+            branch3: {
+              addressTitle:
+                "Giza, October 6, Central Spine, Al-Abaza Mall, next to Al-Tawheed and Al-Nour",
+              email: "info@qlab-eg.com",
+              phone: "01111652943",
             },
-            Branch4: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
+            branch4: {
+              addressTitle:
+                "Cairo, Helmeyat El-Zaytoun, Ibn Al-Hakam Street, Al-Marmar Tower, in front of Donia El-Gambari, next to WE branch",
+              email: "info@qlab-eg.com",
+              phone: "01111652983",
             },
-            Branch5: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
-            },
-            Branch6: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
+            branch5: {
+              addressTitle:
+                "Qalyubia, 10th of Ramadan Street, next to Taqa gas station, in front of Bin Abdul Aziz",
+              email: "info@qlab-eg.com",
+              phone: "01111652913",
             },
           },
         },
@@ -772,16 +809,18 @@ i18n.use(initReactI18next).init({
               includesTitle: "يحتوي على",
               more: "للمزيد",
               package1: {
-                title: "باقة تحاليل الفحص الشامل للكبار",
+                type: "باقة",
+                title: "تحاليل الفحص الشامل للكبار",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "تشمل  صورة دم كاملة - ملف دهون - وظائف كبد - وظائف كلى - سكرعشوائى - فيروسات الكبد الوبائى - B,C سكر تراكمى",
+                  "صورة دم كاملة - ملف دهون - وظائف كبد - وظائف كلى - سكرعشوائى - فيروسات الكبد الوبائى - B,C سكر تراكمى",
                 testNumber: 90,
                 testType: "اختبار",
               },
               package2: {
-                title: "باقة فحص شامل للأطفال",
+                type: "باقة",
+                title: "الفحص الشامل للأطفال",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
@@ -790,7 +829,8 @@ i18n.use(initReactI18next).init({
                 testType: "مُدخل",
               },
               package3: {
-                title: "باقة الفحص الدورى لمرضى السكر كل 3 شهور",
+                type: "باقة الفحص الدورى",
+                title: "لمرضى السكر كل 3 شهور",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description: "سكر تراكمى - سكر صايم - سكر فاطر",
@@ -798,7 +838,8 @@ i18n.use(initReactI18next).init({
                 testType: "اختبار",
               },
               package4: {
-                title: "باقة الفحص الدورى لمرضى السكر سنويا",
+                type: "باقة الفحص الدورى",
+                title: "لمرضى السكر سنويا",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
@@ -807,7 +848,8 @@ i18n.use(initReactI18next).init({
                 testType: "مُدخل",
               },
               package5: {
-                title: "باقة تساقط الشعر",
+                type: "باقة للسيدات والرجال",
+                title: "لتساقط الشعر",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
@@ -816,7 +858,8 @@ i18n.use(initReactI18next).init({
                 testType: "اختبار",
               },
               package6: {
-                title: "باقة متابعة الحمل",
+                type: "باقة للسيدات",
+                title: "لمتابعة الحمل",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
@@ -825,15 +868,8 @@ i18n.use(initReactI18next).init({
                 testType: "مُدخل",
               },
               package7: {
-                title: "باقة متابعة هرمونات الغدة الدرقية ",
-                oldPrice: "500 L.E",
-                newPrice: "300 L.E",
-                description: "TSH - FT3 - FT4",
-                testNumber: 90,
-                testType: "اختبار",
-              },
-              package8: {
-                title: "باقة تحاليل ما قبل الدايت",
+                type: "باقة للسيدات والرجال",
+                title: "لتحاليل ما قبل الدايت",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
@@ -841,8 +877,9 @@ i18n.use(initReactI18next).init({
                 testNumber: 50,
                 testType: "مُدخل",
               },
-              package9: {
-                title: "باقة تحاليل قبل صيام شهر رمضان",
+              package8: {
+                type: "باقة للسيدات والرجال",
+                title: "لتحاليل ما قبل صيام شهر رمضان",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
@@ -850,25 +887,9 @@ i18n.use(initReactI18next).init({
                 testNumber: 90,
                 testType: "اختبار",
               },
-              package10: {
-                title: "باقة تحاليل حساسية الاطعمة الاساسية",
-                oldPrice: "500 L.E",
-                newPrice: "300 L.E",
-                description:
-                  "Food Detectiveاختبار ل 60 نوع من المواد الغذائية ",
-                testNumber: 50,
-                testType: "مُدخل",
-              },
-              package11: {
-                title: "باقة تحاليل حساسية الاطعمة الشاملة",
-                oldPrice: "500 L.E",
-                newPrice: "300 L.E",
-                description: "Food Printاختبار ل 220 نوع من المواد الغذئية ",
-                testNumber: 90,
-                testType: "اختبار",
-              },
-              package12: {
-                title: "باقة تحاليل اللياقة البدنية",
+              package9: {
+                type: "باقة للسيدات والرجال",
+                title: "لتحاليل اللياقة البدنية",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
@@ -876,8 +897,9 @@ i18n.use(initReactI18next).init({
                 testNumber: 50,
                 testType: "مُدخل",
               },
-              package13: {
-                title: "باقة صحة المرأه السن اقل من 50 عام",
+              package10: {
+                type: "باقة للسيدات",
+                title: "لصحة المرأة لسن اقل من 50 عام",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
@@ -885,37 +907,50 @@ i18n.use(initReactI18next).init({
                 testNumber: 90,
                 testType: "اختبار",
               },
-              package14: {
-                title: "باقة صحة المرأه السن اكبر من 50 سنة",
+              package11: {
+                type: "باقة للسيدات",
+                title: "لصحة المرأة لسن اكبر من 50 عام",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "صورة دم - كالسيوم - فتامين د - سكر  - كوليسترول - دهون ثلاثية - حديد - مخزون حديد - TSH وظائف كبد - وظائف كلى - CA15.3 - CEA - CA125 - CA19.9",
+                  "صورصورة دم - كالسيوم - فتامين د - سكر  - كوليسترول - دهون ثلاثية - حديد - مخزون حديد - TSH - وظائف كبد - وظائف كلى - CA15.3 - CEA - CA125 - CA19.9",
                 testNumber: 50,
                 testType: "مُدخل",
               },
-              package15: {
-                title: "باقة تحاليل دلالات الأورام للرجل",
+              package12: {
+                type: "باقة للرجال",
+                title: "لتحاليل دلالات الأورام",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description: "PSA - AFP - CEA - CA19.9",
                 testNumber: 90,
                 testType: "اختبار",
               },
-              package16: {
-                title: "باقة تحاليل دلالات الأورام للمرأه",
+              package13: {
+                type: "باقة للسيدات والرجال",
+                title: "لمتابعة هرمونات الغدة الدرقية ",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
-                description: "CA15.3 - CEA - CA125 - CA19.9 - AFP",
-                testNumber: 50,
-                testType: "مُدخل",
+                description: "TSH - FT3 - FT4",
+                testNumber: 90,
+                testType: "اختبار",
               },
-              package17: {
-                title: "باقة تحاليل الفيتامينات",
+              package14: {
+                type: "باقة للسيدات والرجال",
+                title: "لتحاليل حساسية الاطعمة الاساسية",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Vitamin D - Vitamin B12 - Vitamin B6 - Folic Acid",
+                  "Food Detectiveاختبار ل 60 نوع من المواد الغذائية ",
+                testNumber: 50,
+                testType: "مُدخل",
+              },
+              package15: {
+                type: "باقة للجميع",
+                title: "لتحاليل حساسية الاطعمة الشاملة",
+                oldPrice: "500 L.E",
+                newPrice: "300 L.E",
+                description: "Food Printاختبار ل 220 نوع من المواد الغذئية ",
                 testNumber: 90,
                 testType: "اختبار",
               },
@@ -931,10 +966,10 @@ i18n.use(initReactI18next).init({
               title: "جوائز من جميع أنحاء العالم",
             },
             description:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ab fuga quaerat molestiae voluptatem, ipsam, aliquid nesciunt sunt, cum reiciendis accusantium veritatis repellat temporibus consequuntur aspernatur itaque delectus maiores nemo Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ab fuga quaerat molestiae voluptatem, ipsam, aliquid nesciunt sunt, cum reiciendis accusantium veritatis repellat temporibus consequuntur aspernatur itaque delectus maiores nemo.",
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ab fuga quaerat molestiae voluptatem, ipsam, aliquid nesciunt sunt, cum reiciendis accusantium veritatis repellat temporibus consequuntur aspernatur itaque delectus maiores nemo Lorem ipsum dolor .",
           },
           book: {
-            title: "دلوقتي تقدر تحخجز زيارتك المنزلية مع معامل كيولاب",
+            title: "دلوقتي تقدر تحجز زيارتك المنزلية مع معامل كيولاب",
             link: "احجز الآن",
             formData: {
               serviceName: "نوع الخدمة",
@@ -942,6 +977,50 @@ i18n.use(initReactI18next).init({
               phone: "رقم الهاتف",
               email: "البريد الالكتروني",
               time: "التوقيت",
+            },
+          },
+        },
+        about: {
+          subTitle: "عن كيولاب",
+          mainTitle: "أفضل الحلول المعملية للتحاليل الطبية",
+          description:
+            "يعد الهدف الرئيسي لبرنامج ضمان الجودة في معامل كيو لاب هو تقديم نتائج عالية الجودة في الوقت المناسب لعملاءنا, ويتم رصد أداء التحليل خلال البرامج الخارجية والداخلية.",
+          values: {
+            title: "قيمُنا",
+            value1: {
+              title: "تمحور الرعاية حول المريض",
+              description:
+                "تسترشد معامل كيولاب باحتياجات المريض لتحقيق أهداف الخدمة المعملية.",
+            },
+            value2: {
+              title: "التعلم المستمر",
+              description:
+                "تسترشد معامل كيولاب باحتياجات المريض لتحقيق أهداف الخدمة المعملية.",
+            },
+            value3: {
+              title: "التواصل",
+              description:
+                "تسعي معامل كيولاب الطبية نسعى جاهدة لاكتساب وفهم المعلومات ذات الصلة، والأسهام بشكل واضح وفعال مع المجتمع.",
+            },
+            value4: {
+              title: "العلاقات",
+              description:
+                "تعمل مختبرات كيولاب الطبية على تطوير وتقوية العلاقات التعاونية مع جميع عملائها ، بما في ذلك المرضى وعائلاتهم. و أيضا مع موظفوهم والطاقم الطبي وشركائهم التجاريين.",
+            },
+            value5: {
+              title: "الموارد البشرية",
+              description:
+                "تدعم معامل كيولاب النمو المهني والشخصي لموظفيها لأداء مهامهم الوظيفية.",
+            },
+            value6: {
+              title: "القيم المهنية للمؤسسة",
+              description:
+                "تؤكد القيم الأساسية لمعامل كيولاب علي النزاهة والأمانة والكرامة والاحترام لجميع الأفراد.",
+            },
+            value7: {
+              title: "الأداء المتميز",
+              description:
+                "تسعى معامل كيولاب للحصول على أداء متفوق في جميع أنشطتها، للحفاظ على القوة الاكلينكية والتنظيمية والمالية.",
             },
           },
         },
@@ -979,42 +1058,37 @@ i18n.use(initReactI18next).init({
         },
         branches: {
           title: "عناوين جميع الفروع لدينا",
-          branches: {
-            Branch1: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
+          address: "عنوان الفرع",
+          contactInformation: "معلومات الاتصال",
+          openingHour: "ساعات العمل",
+          allBranches: {
+            branch1: {
+              addressTitle: "الغردقة مبارك 2 فوق مكتبة سمير و على",
+              email: "info@qlab-eg.com",
+              phone: "01122240120",
             },
-            Branch2: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
+            branch2: {
+              addressTitle: "الغردقة، الدهار، فوق سوبر ماركت سبينيس",
+              email: "info@qlab-eg.com",
+              phone: "01111652872",
             },
-            Branch3: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
+            branch3: {
+              addressTitle:
+                "الجيزة 6 أكتوبر المحور المركزي الأباظية مول بجوار التوحيد والنور",
+              email: "info@qlab-eg.com",
+              phone: "01111652943",
             },
-            Branch4: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
+            branch4: {
+              addressTitle:
+                "القاهرة حلمية الزيتون شارع ابن الحكم برج المرمر امام دنيا الجمبري بجوار فرع WE",
+              email: "info@qlab-eg.com",
+              phone: "01111652983",
             },
-            Branch5: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
-            },
-            Branch6: {
-              address:
-                "183 marina avenue, miami central mall united state of america",
-              email: "183 marina avenue, miami central mall",
-              phone: "183 marina avenue, miami central mall",
+            branch5: {
+              addressTitle:
+                "القليوبية شارع العاشر من رمضان بجوار بنزينة طاقة أمام بن عبد العزيز",
+              email: "info@qlab-eg.com",
+              phone: "01111652913",
             },
           },
         },

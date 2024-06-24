@@ -40,7 +40,7 @@ const Packages = ({ PackagesNumber }) => {
           >
             {t("home.packages.subTitle2")}
           </h2>
-          <p className={`${styles.description}`}>
+          <p className={`${styles.description} mx-auto`}>
             {t("home.packages.description")}
           </p>
         </div>
@@ -54,7 +54,16 @@ const Packages = ({ PackagesNumber }) => {
                       <img src={card.image} width={"100%"} alt="" />
                     </picture>
                   </div>
-                  <div className={`${styles.cardBody} m-4`}>
+                  <div className={`${styles.cardBody} m-4 px-3`}>
+                    <h4
+                      className={`${styles.type} mb-3 ${
+                        i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                      }`}
+                    >
+                      {t(
+                        `home.packages.packagesCards.package${index + 1}.type`
+                      )}
+                    </h4>
                     <h4
                       className={`${styles.title} mb-3 ${
                         i18n.language === "ar" ? "boldArFont" : "blackEnFont"
@@ -65,9 +74,11 @@ const Packages = ({ PackagesNumber }) => {
                       )}
                     </h4>
                     <div>
-                      <p className={`${styles.price} ${
+                      <p
+                        className={`${styles.price} ${
                           i18n.language === "ar" ? "boldArFont" : "blackEnFont"
-                        }`}>
+                        }`}
+                      >
                         <span>
                           {t(`home.packages.packagesCards.priceTitle`)}
                         </span>{" "}

@@ -32,16 +32,17 @@ const Awards = () => {
               </h3>
               <h2
                 className={`${styles.mainTitle} ${
-                  i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                  i18n.language === "ar" ? "boldArFont" : "exBoldEnFont"
                 } mb-4`}
+                style={
+                  i18n.language === "ar"
+                    ? { maxWidth: "360px" }
+                    : { maxWidth: "660px" }
+                }
               >
                 {t("home.awards.mainTitle")}
               </h2>
-              <div
-                className={`${styles.overWorld} ${
-                  i18n.language === "ar" ? "boldArFont" : "blackEnFont"
-                }`}
-              >
+              <div className={`${styles.overWorld} blackEnFont`}>
                 <div className={`${styles.number}`}>
                   <span>{t("home.awards.overWorld.number")}</span>
                   <span>+</span>

@@ -17,9 +17,154 @@ const Footer = () => {
   return (
     <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
       <ScrollToTop />
-      <div className={`${styles.footer} pb-5`}>
+      <div
+        className={`${styles.footer} pb-5 ${
+          i18n.language === "ar" ? "mediumArFont" : "mediumEnFont"
+        }`}
+      >
         <div className=" mx-auto">
           <div
+            className={`${styles.footerBody} customContainer `}
+          >
+            <div className={`${styles.main} order-1 mt-0`}>
+              <div className={`${styles.logo}`}>
+                <picture>
+                  <img src={logo} className="w-100 mb-4" alt="" />
+                </picture>
+              </div>
+              <div className={`${styles.description} mb-4`}>
+                <p>
+                  patholab laboratory is a very well equipped laboratory of this
+                  country and thy promised to provide best services.
+                </p>
+              </div>
+              <ul className={`${styles.sci}`}>
+                <li>
+                  <a href="">
+                    <i className="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i className="fa-brands fa-x-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i className="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <i className="fa-brands fa-tiktok"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className={`${styles.quickWrapper} order-2 mt-0`}>
+              <h4
+                className={`${styles.title} mb-4 ${
+                  i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                }`}
+              >
+                {t("footer.quickLinks.title")}
+              </h4>
+              <ul className={styles.quickLinks}>
+                <li>
+                  <NavLink to={"/"}>{t("header.home")}</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/about"}>{t("header.about")}</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/medicalTest"}>
+                    {t("header.medicalTests")}
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/offers"}>{t("header.offers")}</NavLink>
+                </li>
+                <li>
+                  <NavLink to={"/homeVisit"}>{t("header.homeVisit")}</NavLink>
+                </li>
+              </ul>
+            </div>
+            <div className={`${styles.contactWrapper} order-3 mt-0`}>
+              <h4
+                className={`${styles.title} mb-4 ${
+                  i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                }`}
+              >
+                {t("footer.contactUS.title")}
+              </h4>
+              <ul className={`${styles.contacts}`}>
+                <li className={`${styles.data}`}>
+                  <a href="">
+                    <i className="fa-solid fa-phone"></i>
+                    <span>+20 11 222 40 120</span>
+                  </a>
+                </li>
+                <li className={`${styles.data}`}>
+                  <a href="">
+                    <i className="fa-brands fa-whatsapp"></i>
+                    <span>info@qlab-eg.com</span>
+                  </a>
+                </li>
+                <li className={`${styles.data}`}>
+                  <a href="">
+                    <i className="fa-regular fa-envelope"></i>
+                    <span>info@qlab-eg.com</span>
+                  </a>
+                </li>
+                <li className={`${styles.data}`}>
+                  <a href="">
+                    <i className="fa-solid fa-location-dot"></i>
+                    <span>{t("footer.contactUS.location")}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className={`${styles.openingHoursWrapper} order-4 mt-0`}>
+              <h4
+                className={`${styles.title} mb-4 ${
+                  i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                }`}
+              >
+                {t("footer.openingHours.title")}
+              </h4>
+              <ul className={`${styles.openingHours} w-100`}>
+                <li>
+                  <span>{t("footer.openingHours.monday")}</span>
+                  <span>9am - 7pm</span>
+                </li>
+                <li>
+                  <span>{t("footer.openingHours.tuesday")}</span>
+                  <span>9am - 7pm</span>
+                </li>
+                <li>
+                  <span>{t("footer.openingHours.wednesday")}</span>
+                  <span>9am - 7pm</span>
+                </li>
+                <li>
+                  <span>{t("footer.openingHours.thursday")}</span>
+                  <span>9am - 7pm</span>
+                </li>
+                <li>
+                  <span>{t("footer.openingHours.friday")}</span>
+                  <span>9am - 7pm</span>
+                </li>
+                <li>
+                  <span>{t("footer.openingHours.saturday")}</span>
+                  <span>9am - 7pm</span>
+                </li>
+                <li>
+                  <span>{t("footer.openingHours.sunday")}</span>
+                  <span>{t("footer.openingHours.closed")}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          {/* <div
             className={`${styles.footerBody} customContainer mx-auto row g-5`}
           >
             <div className={`${styles.main} col-xl-4 col-md-12 order-1 mt-0`}>
@@ -58,7 +203,11 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-xl-2 col-md-3 col-sm-12 order-2 mt-0">
-              <h4 className={`${styles.title} mb-4`}>
+              <h4
+                className={`${styles.title} mb-4 ${
+                  i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                }`}
+              >
                 {t("footer.quickLinks.title")}
               </h4>
               <ul className={styles.quickLinks}>
@@ -82,7 +231,11 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-xl-3 col-md-4 col-sm-12 order-3 mt-0">
-              <h4 className={`${styles.title} mb-4`}>
+              <h4
+                className={`${styles.title} mb-4 ${
+                  i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                }`}
+              >
                 {t("footer.contactUS.title")}
               </h4>
               <ul className={`${styles.contacts}`}>
@@ -113,7 +266,11 @@ const Footer = () => {
               </ul>
             </div>
             <div className="col-xl-3 col-md-5 col-sm-12 order-4 mt-0">
-              <h4 className={`${styles.title} mb-4`}>
+              <h4
+                className={`${styles.title} mb-4 ${
+                  i18n.language === "ar" ? "boldArFont" : "blackEnFont"
+                }`}
+              >
                 {t("footer.openingHours.title")}
               </h4>
               <ul className={`${styles.openingHours} w-100`}>
@@ -147,7 +304,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

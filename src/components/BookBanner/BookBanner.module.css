@@ -4,6 +4,8 @@
   align-items: center;
   position: relative;
   overflow-y: hidden;
+  display: flex;
+  padding-inline: 50px 25px !important;
 }
 
 .bookBanner::before {
@@ -39,15 +41,22 @@
   max-width: 575px;
 }
 
+.bookBanner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 25px;
+}
+
 .bookBanner .text {
   color: white;
   position: relative;
 }
 
 .bookBanner .text .title {
-  font-size: 42px;
+  font-size: 50px;
   font-weight: bold;
-  /* max-width: 450px; */
   text-transform: capitalize;
 }
 
@@ -71,13 +80,17 @@
     padding-block-end: 50px;
     text-align: center;
     gap: 25px;
+    padding: 25px 25px 0 25px !important;
+  }
+  .bookBanner .content {
+    top: 0;
   }
   .bookBanner .image {
     max-width: 350px;
   }
   .bookBanner .text .title {
     margin-inline: auto;
-    max-width: 350px;
+    max-width: 100%;
   }
 }
 
@@ -116,4 +129,5 @@
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
+  margin-block-start: 20px;
 }

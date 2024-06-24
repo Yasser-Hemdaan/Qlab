@@ -13,16 +13,16 @@ const BookBanner = () => {
   return (
     <div>
       <div
-        className={`row g-3 customContainer mx-auto px-4 ${styles.bookBanner}`}
+        className={`row g-3 customContainer mx-auto ${styles.bookBanner}`}
       >
         <div className="col-lg-6 order-2">
           <div className={`${styles.image} w-100 mx-auto`}>
-            <picture className="col-md-6">
+            <picture className="col-md-12">
               <img src={bannerImage} className="w-100" alt="" />
             </picture>
           </div>
         </div>
-        <div className={`${styles.content} col-lg-6 order-1`}>
+        <div className={`${styles.content} col-lg-6 order-1 m-0`}>
           <div className={`${styles.text}`}>
             <h3
               className={`${styles.title} ${

@@ -62,7 +62,7 @@ const Examinations = ({ ExaminationsNumber }) => {
                       <img src={card.image} width={"100%"} alt="" />
                     </picture>
                   </div>
-                  <div className={`${styles.cardBody} m-4`}>
+                  <div className={`${styles.cardBody} m-4 px-3`}>
                     <h4
                       className={`${styles.type} ${
                         i18n.language === "ar" ? "boldArFont" : "blackEnFont"
@@ -110,7 +110,7 @@ const Examinations = ({ ExaminationsNumber }) => {
                         </span>
                       </p>
                     </div>
-                    <p className={`${styles.description} `}>
+                    <p className={`${styles.description}`}>
                       {t(
                         `home.examinations.examinationsCards.examination${
                           index + 1

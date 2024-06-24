@@ -25,7 +25,6 @@
 
 .examinationsBody .text .mainTitle {
   font-size: var(--main-title-size);
-
   max-width: 800px;
   text-transform: capitalize;
 }
@@ -70,8 +69,8 @@
 .examinationsCardsContainer .examinationsCard .cardBody .type,
 .examinationsCardsContainer .examinationsCard .cardBody .title {
   color: var(--main-color);
-  font-size: var(--h3-title-size);
-  /* text-transform: capitalize; */
+  font-size: 26px;
+  text-transform: capitalize;
   /* height: 50px; */
   overflow: hidden;
   display: -webkit-box;
@@ -82,7 +81,7 @@
 
 .examinationsCardsContainer .examinationsCard .cardBody .type {
   margin: 0 !important;
-  margin-block-end: 12.5px !important;
+  margin-block-end: 2.5px !important;
 }
 
 .examinationsCardsContainer .examinationsCard .cardBody .price {

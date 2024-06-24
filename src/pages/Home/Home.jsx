@@ -89,7 +89,7 @@ const Home = () => {
                   i18n.language === "ar"
                     ? "align-items-end"
                     : "align-items-start"
-                } py-5 offset-lg-1 col-lg-6`}
+                } offset-lg-1 col-lg-6`}
               >
                 <div
                   className={`${styles.text} mb-3 `}
@@ -313,7 +313,7 @@ const Home = () => {
                 dir={`${i18n.language === "ar" ? "rtl" : "ltr"}`}
               >
                 <h3
-                  className={`${styles.title} mb-2`}
+                  className={`${styles.title} mb-4`}
                   style={
                     i18n.language === "ar"
                       ? { fontSize: "44px" }
@@ -323,7 +323,7 @@ const Home = () => {
                   {t("home.advantages.title")}
                 </h3>
                 <p
-                  className={`${styles.description} mb-2 mb-2 ${
+                  className={`${styles.description} mb-4 ${
                     i18n.language === "ar" ? "mediumArFont" : "mediumEnFont"
                   }`}
                   style={
@@ -342,10 +342,10 @@ const Home = () => {
                       : { fontSize: "12px" }
                   }
                 >
-                  <div className={`${styles.topic} px-3 py-2`}>
+                  <div className={`${styles.topic} px-4 py-3`}>
                     <span>{t("home.advantages.topics.topic1")}</span>
                   </div>
-                  <div className={`${styles.topic} px-3 py-2`}>
+                  <div className={`${styles.topic} px-4 py-3`}>
                     <span>{t("home.advantages.topics.topic2")}</span>
                   </div>
                 </div>
@@ -377,7 +377,7 @@ const Home = () => {
         </div>
         {/* Testmonials */}
         <div
-          className={`${styles.testmonials} py-5 fw-bold`}
+          className={`${styles.testmonials}  fw-bold`}
           dir={i18n.language === "ar" ? "rtl" : "ltr"}
         >
           <div className={`${styles.testmonialsBody} customContainer mx-auto`}>

@@ -47,6 +47,10 @@
   align-items: flex-start;
 }
 
+.branchesBody .item .card .cardBody .address .location .icon,
+.branchesBody .item .card .cardBody .contact .data .icon {
+  display: flex;
+}
 
 .branchesBody .item .card .cardBody .contact .data {
   display: flex;

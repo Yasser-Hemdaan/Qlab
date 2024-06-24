@@ -10,24 +10,27 @@
   display: flex;
   align-items: center;
   /* overflow: hidden; */
-  padding-block-start: 100px !important;
+  /* min-height: 50vw; */
+  padding-block-start: 150px !important;
 }
 
-@media screen and (max-width: 9920px) {
+@media screen and (max-width: 992px) {
   .hero {
-    padding-block-start: 50px;
+    padding-block: 50px;
   }
 }
 
 .heroBody {
   /* height: 100vh; */
-  align-items: flex-end;
+  /* align-items: flex-end; */
 }
 
 .hero .content {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  padding-block-end: 150px !important;
+  text-transform: capitalize;
   /* min-height: 100vh; */
 }
 .hero .content .text {
@@ -125,7 +128,7 @@
 
 .hero .images picture.items {
   position: absolute;
-  top: -100px;
+  top: -50px;
   animation: rotate 20s linear 0s infinite;
   -webkit-animation: rotate 20s linear 0s infinite;
 }
@@ -527,10 +530,9 @@
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-around;
-  padding-inline: 25px;
   padding: 0 !important;
-  gap: 25px;
-  padding-inline: 50px !important;
+  gap: 50px;
+  padding-inline: 25px 65px !important;
 }
 
 .bannerOverlay {
@@ -575,7 +577,7 @@
 .advantages .text .title {
   text-transform: capitalize;
   font-weight: bold;
-  font-size: 35px !important;
+  font-size: 32px !important;
   /* text-align: justify; */
 }
 
@@ -595,11 +597,12 @@
   background-color: white;
   width: fit-content;
   color: var(--main-color);
-  border-radius: 15px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1200px) {
@@ -672,12 +675,30 @@
 /* testmonials */
 .testmonials {
   background-color: var(--main-color);
+  padding-block: 100px;
+  position: relative;
+}
+.testmonials::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("/public/packages/1.jpg");
+  background-position: center;
+  z-index: 0;
+  opacity: 0.05;
 }
 
 .testmonials .testmonialsBody {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .testmonials .testmonialsBody .title {

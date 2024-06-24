@@ -18,7 +18,7 @@
 
 .packagesBody .text .description {
   font-size: var(--description-size);
-
+  max-width: 850px;
   color: var(--gray-color);
 }
 
@@ -53,14 +53,20 @@
   background-color: white;
 }
 
+.packagesCardsContainer .packagesCard .cardBody .type,
 .packagesCardsContainer .packagesCard .cardBody .title {
   color: var(--main-color);
   font-size: var(--h3-title-size);
-  /* text-transform: capitalize; */
+  text-transform: capitalize;
   /* height: 50px; */
   max-width: 300px !important;
-  min-height: 70px;
+  /* min-height: 70px; */
   line-height: 35px;
+}
+
+.packagesCardsContainer .packagesCard .cardBody .type {
+  margin: 0 !important;
+  margin-block-end: 2.5px !important;
 }
 
 .packagesCardsContainer .packagesCard .cardBody .price {
@@ -68,6 +74,11 @@
   gap: 5px;
   text-transform: capitalize;
   align-items: baseline;
+}
+
+.packagesCardsContainer .packagesCard .cardBody .price span:first-of-type {
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .packagesCardsContainer .packagesCard .cardBody .price span:first-of-type {
@@ -90,6 +101,8 @@
 .packagesCardsContainer .packagesCard .cardBody .description {
   color: var(--gray-color);
   font-size: 16px;
+  min-height: 100px;
+  text-transform: capitalize;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
