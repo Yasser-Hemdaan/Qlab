@@ -75,7 +75,7 @@ const Home = () => {
         {/* Hero */}
         <div className={`${styles.hero}`}>
           <div className="customContainer">
-            <div className={`${styles.heroBody} row`}>
+            <div className={`${styles.heroBody} row gy-5`}>
               <div className={`${styles.images} col-lg-5`}>
                 <picture>
                   <img src={Doc} className="w-100" alt="" />

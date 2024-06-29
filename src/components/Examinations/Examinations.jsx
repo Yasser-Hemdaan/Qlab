@@ -55,7 +55,7 @@ const Examinations = ({ ExaminationsNumber }) => {
         >
           <div className="row g-3">
             {examinations.slice(0, ExaminationsNumber).map((card, index) => (
-              <div key={index} className="col-sm-6 col-xl-4">
+              <div key={index} className="col-md-6 col-xl-4">
                 <div className={`${styles.examinationsCard}`}>
                   <div className={`${styles.image}`}>
                     <picture>

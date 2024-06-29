@@ -47,7 +47,7 @@ const Packages = ({ PackagesNumber }) => {
         <div className={`${styles.packagesCardsContainer} mx-auto py-4 mb-5`}>
           <div className="row g-3">
             {packages.slice(0, PackagesNumber).map((card, index) => (
-              <div key={index} className="col-sm-6 col-xl-4">
+              <div key={index} className="col-md-6 col-xl-4">
                 <div className={`${styles.packagesCard}`}>
                   <div className={`${styles.image}`}>
                     <picture>
@@ -98,13 +98,51 @@ const Packages = ({ PackagesNumber }) => {
                         </span>
                       </p>
                     </div>
-                    <p className={`${styles.description}`}>
+                    <ul className={`${styles.description}`}>
+                      <li>
+                        <span>
+                          {t(
+                            `home.packages.packagesCards.package${
+                              index + 1
+                            }.description.d1`
+                          )}
+                        </span>
+                      </li>
+                      <li>
+                        <span>
+                          {t(
+                            `home.packages.packagesCards.package${
+                              index + 1
+                            }.description.d2`
+                          )}
+                        </span>
+                      </li>
+                      <li>
+                        <span>
+                          {t(
+                            `home.packages.packagesCards.package${
+                              index + 1
+                            }.description.d3`
+                          )}
+                        </span>
+                      </li>
+                      <li>
+                        <span>
+                          {t(
+                            `home.packages.packagesCards.package${
+                              index + 1
+                            }.description.d4`
+                          )}
+                        </span>
+                      </li>
+                    </ul>
+                    {/* <p className={`${styles.description}`}>
                       {t(
                         `home.packages.packagesCards.package${
                           index + 1
                         }.description`
                       )}
-                    </p>
+                    </p> */}
                     <div className={`${styles.includes}`}>
                       <p className="m-0">
                         <span>

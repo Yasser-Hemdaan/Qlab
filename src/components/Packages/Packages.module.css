@@ -101,17 +101,48 @@
 .packagesCardsContainer .packagesCard .cardBody .description {
   color: var(--gray-color);
   font-size: 16px;
-  min-height: 100px;
+  /* min-height: 100px; */
   text-transform: capitalize;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4; /* start showing ellipsis when 3rd line is reached */
-  white-space: pre-wrap; /* let the text wrap preserving spaces */
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+@media screen and (min-width: 1300px) {
+  .packagesCardsContainer .packagesCard .cardBody .description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .packagesCardsContainer .packagesCard .cardBody .description {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .packagesCardsContainer .packagesCard .cardBody .description {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .packagesCardsContainer .packagesCard .cardBody .description {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .packagesCardsContainer .packagesCard .cardBody .description {
+    font-size: var(--description-size);
+  }
+}
+
+.packagesCardsContainer .packagesCard .cardBody .description li {
+  position: relative;
 }
 
 .packagesCardsContainer .packagesCard .cardBody .includes {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
