@@ -473,6 +473,34 @@ i18n.use(initReactI18next).init({
             link: "Would you like to explore all our healthcare and screening offers?",
             click: "click here",
           },
+          testmonials: {
+            title: "Clients Testmonials",
+            description:
+              "Patholab is the best diagnostic lab in the city. The reasons to be best in what we do is the process of maintain the laboratory with patholab",
+            opinions: {
+              person1: {
+                name: "Mohamed Ali",
+                jobTitle: "Internal Medicine Doctor",
+                rating: "Rating",
+                opinionDescription:
+                  "The laboratory services are excellent and accurate. I always receive results quickly, which helps me provide the best care for my patients. The staff is very professional and cooperative.",
+              },
+              person2: {
+                name: "Sara Mahmoud",
+                jobTitle: "Administrative Officer in a Company",
+                rating: "Rating",
+                opinionDescription:
+                  "We rely on this laboratory for regular employee screenings. The service is excellent, and the results are always reliable and prompt. I feel at ease knowing our employees are in good hands.",
+              },
+              person3: {
+                name: "Ahmed Abdelrahman",
+                jobTitle: "Nurse",
+                rating: "Rating",
+                opinionDescription:
+                  "I regularly deal with the laboratory and find the service unmatched. The results are accurate and quick, and the medical team is always cooperative and friendly. I highly recommend their services.",
+              },
+            },
+          },
           awards: {
             subTitle: "Versatile Laboratory Service Provider",
             mainTitle: "We Have Got Prestigious Awards For Our Work",
@@ -481,7 +509,7 @@ i18n.use(initReactI18next).init({
               title: "Awards From All Over the world",
             },
             description:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ab fuga quaerat molestiae voluptatem, ipsam, aliquid nesciunt sunt, cum reiciendis accusantium veritatis repellat temporibus consequuntur aspernatur itaque delectus maiores nemo Lorem ipsum dolor .",
+              "Our laboratory serves a diverse clientele, including individual patients seeking diagnostic tests, healthcare providers referring patients for specialized analyses, and corporate clients requiring comprehensive health screening for employees. We are committed to delivering accurate and reliable results to all our clients.",
           },
           book: {
             title: "now you can book your home visit with Qlab ",
@@ -613,7 +641,6 @@ i18n.use(initReactI18next).init({
             },
           },
         },
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam veritatis natus id doloremque dicta. Nam voluptatibus minima nostrum. Soluta ullam incidunt officia cum nobis nam! Dolores eius est illum quos.",
       },
     },
     ar: {
@@ -1076,6 +1103,34 @@ i18n.use(initReactI18next).init({
             link: "هل ترغب في استكشاف جميع عروض الرعاية الصحية والفحوصات لدينا؟",
             click: "انقر هنا",
           },
+          testmonials: {
+            title: "آراء العملاء",
+            description:
+              "Patholab هو أفضل مختبر تشخيصي في المدينة. الأسباب التي تجعلنا الأفضل فيما نقوم به هي عملية الحفاظ على المختبر مع Patholab.",
+            opinions: {
+              person1: {
+                name: "محمد علي",
+                jobTitle: "طبيب باطني",
+                rating: "التقييم",
+                opinionDescription:
+                  "خدمات المختبر ممتازة ودقيقة. دائماً أحصل على النتائج بسرعة، مما يساعدني على تقديم الرعاية الأفضل لمرضاي. فريق العمل محترف ومتعاون للغاية.",
+              },
+              person2: {
+                name: "سارة محمود",
+                jobTitle: "إدارية في شركة",
+                rating: "التقييم",
+                opinionDescription:
+                  "نعتمد على هذا المختبر لفحص الموظفين بشكل دوري. الخدمة ممتازة، والنتائج دائماً موثوقة وسريعة. أشعر بالراحة عندما أعلم أن موظفينا في أيدٍ أمينة.",
+              },
+              person3: {
+                name: "أحمد عبد الرحمن",
+                jobTitle: "ممرض",
+                rating: "التقييم",
+                opinionDescription:
+                  "أتعامل مع المختبر بانتظام وأجد أن الخدمة لا تُضاهى. النتائج دقيقة وسريعة، والفريق الطبي دائماً متعاون وودود. أنصح بشدة باستخدام خدماتهم.",
+              },
+            },
+          },
           awards: {
             subTitle: "مزود خدمات مختبرية متعدد الاستخدامات",
             mainTitle: "لقد حصلنا على جوائز مرموقة لعملنا",
@@ -1084,7 +1139,7 @@ i18n.use(initReactI18next).init({
               title: "جوائز من جميع أنحاء العالم",
             },
             description:
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ab fuga quaerat molestiae voluptatem, ipsam, aliquid nesciunt sunt, cum reiciendis accusantium veritatis repellat temporibus consequuntur aspernatur itaque delectus maiores nemo Lorem ipsum dolor .",
+              "مختبرنا يخدم عملاء متنوعين، بما في ذلك المرضى الأفراد الذين يبحثون عن اختبارات تشخيصية، ومقدمي الرعاية الصحية الذين يحيلون المرضى لإجراء تحليلات متخصصة، والعملاء من الشركات الذين يحتاجون إلى فحوصات صحية شاملة للموظفين. نحن ملتزمون بتقديم نتائج دقيقة وموثوقة لجميع عملائنا.",
           },
           book: {
             title: "دلوقتي تقدر تحجز زيارتك المنزلية مع معامل كيولاب",

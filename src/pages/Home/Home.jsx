@@ -381,11 +381,11 @@ const Home = () => {
           dir={i18n.language === "ar" ? "rtl" : "ltr"}
         >
           <div className={`${styles.testmonialsBody} customContainer mx-auto`}>
-            <h3 className={`${styles.title} mb-4`}>clients testmonials</h3>
+            <h3 className={`${styles.title} mb-4`}>
+              {t("home.testmonials.title")}
+            </h3>
             <p className={`${styles.description} mb-4`}>
-              Patholab is the best diagnostic lab in the city. The reasons to be
-              best in what we do is the process of maintain the laboratory with
-              patholab
+              {t("home.testmonials.description")}
             </p>
             <Carousel
               swipeable={true}
@@ -426,11 +426,17 @@ const Home = () => {
                     </div>
                   </div>
                   <div className={`${styles.data}`}>
-                    <p className={`${styles.name}`}>yasser hamada</p>
-                    <p className={`${styles.jobTitle} m-0`}>art director</p>
+                    <p className={`${styles.name}`}>
+                      {t("home.testmonials.opinions.person1.name")}
+                    </p>
+                    <p className={`${styles.jobTitle} m-0`}>
+                      {t("home.testmonials.opinions.person1.jobTitle")}
+                    </p>
                   </div>
                   <div className={`${styles.rating}`}>
-                    <span>rating: </span>
+                    <span>
+                      {t("home.testmonials.opinions.person1.rating")}:{" "}
+                    </span>
                     <div className={`${styles.stars}`}>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
@@ -445,10 +451,7 @@ const Home = () => {
                     i18n.language === "ar" ? "text-end" : "text-start"
                   }`}
                 >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-                  id, ab asperiores nam iure earum mollitia, laborum obcaecati
-                  tenetur corporis ipsam ullam ex fuga omnis iusto repudiandae
-                  nisi reprehenderit distinctio qui.
+                  {t("home.testmonials.opinions.person1.opinionDescription")}
                 </p>
               </div>
               <div className={`${styles.opinion}`}>
@@ -478,11 +481,17 @@ const Home = () => {
                     </div>
                   </div>
                   <div className={`${styles.data}`}>
-                    <p className={`${styles.name}`}>yasser hamada</p>
-                    <p className={`${styles.jobTitle} m-0`}>art director</p>
+                    <p className={`${styles.name}`}>
+                      {t("home.testmonials.opinions.person2.name")}
+                    </p>
+                    <p className={`${styles.jobTitle} m-0`}>
+                      {t("home.testmonials.opinions.person2.jobTitle")}
+                    </p>
                   </div>
                   <div className={`${styles.rating}`}>
-                    <span>rating: </span>
+                    <span>
+                      {t("home.testmonials.opinions.person2.rating")}:{" "}
+                    </span>
                     <div className={`${styles.stars}`}>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
@@ -497,10 +506,7 @@ const Home = () => {
                     i18n.language === "ar" ? "text-end" : "text-start"
                   }`}
                 >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-                  id, ab asperiores nam iure earum mollitia, laborum obcaecati
-                  tenetur corporis ipsam ullam ex fuga omnis iusto repudiandae
-                  nisi reprehenderit distinctio qui.
+                  {t("home.testmonials.opinions.person2.opinionDescription")}
                 </p>
               </div>
               <div className={`${styles.opinion}`}>
@@ -530,11 +536,17 @@ const Home = () => {
                     </div>
                   </div>
                   <div className={`${styles.data}`}>
-                    <p className={`${styles.name}`}>yasser hamada</p>
-                    <p className={`${styles.jobTitle} m-0`}>art director</p>
+                    <p className={`${styles.name}`}>
+                      {t("home.testmonials.opinions.person3.name")}
+                    </p>
+                    <p className={`${styles.jobTitle} m-0`}>
+                      {t("home.testmonials.opinions.person3.jobTitle")}
+                    </p>
                   </div>
                   <div className={`${styles.rating}`}>
-                    <span>rating: </span>
+                    <span>
+                      {t("home.testmonials.opinions.person3.rating")}:{" "}
+                    </span>
                     <div className={`${styles.stars}`}>
                       <i className="fa-solid fa-star"></i>
                       <i className="fa-solid fa-star"></i>
@@ -549,114 +561,7 @@ const Home = () => {
                     i18n.language === "ar" ? "text-end" : "text-start"
                   }`}
                 >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-                  id, ab asperiores nam iure earum mollitia, laborum obcaecati
-                  tenetur corporis ipsam ullam ex fuga omnis iusto repudiandae
-                  nisi reprehenderit distinctio qui.
-                </p>
-              </div>
-              <div className={`${styles.opinion}`}>
-                <div
-                  className={styles.personalInfo}
-                  dir={i18n.language === "ar" ? "rtl" : "ltr"}
-                >
-                  <div
-                    className={`${styles.profileImage} ${
-                      i18n.language === "ar" ? "ms-3" : "me-3"
-                    }`}
-                  >
-                    <div className={`${styles.image}`}>
-                      <picture>
-                        <img src={avatar} alt="" />
-                      </picture>
-                    </div>
-                    <div
-                      className={`${styles.qoute}`}
-                      style={
-                        i18n.language === "ar"
-                          ? { left: "0px" }
-                          : { right: "0px" }
-                      }
-                    >
-                      <i className="fa-solid fa-quote-right"></i>
-                    </div>
-                  </div>
-                  <div className={`${styles.data}`}>
-                    <p className={`${styles.name}`}>yasser hamada</p>
-                    <p className={`${styles.jobTitle} m-0`}>art director</p>
-                  </div>
-                  <div className={`${styles.rating}`}>
-                    <span>rating: </span>
-                    <div className={`${styles.stars}`}>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                </div>
-                <p
-                  className={`${styles.details} mt-3 ${
-                    i18n.language === "ar" ? "text-end" : "text-start"
-                  }`}
-                >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-                  id, ab asperiores nam iure earum mollitia, laborum obcaecati
-                  tenetur corporis ipsam ullam ex fuga omnis iusto repudiandae
-                  nisi reprehenderit distinctio qui.
-                </p>
-              </div>
-              <div className={`${styles.opinion}`}>
-                <div
-                  className={styles.personalInfo}
-                  dir={i18n.language === "ar" ? "rtl" : "ltr"}
-                >
-                  <div
-                    className={`${styles.profileImage} ${
-                      i18n.language === "ar" ? "ms-3" : "me-3"
-                    }`}
-                  >
-                    <div className={`${styles.image}`}>
-                      <picture>
-                        <img src={avatar} alt="" />
-                      </picture>
-                    </div>
-                    <div
-                      className={`${styles.qoute}`}
-                      style={
-                        i18n.language === "ar"
-                          ? { left: "0px" }
-                          : { right: "0px" }
-                      }
-                    >
-                      <i className="fa-solid fa-quote-right"></i>
-                    </div>
-                  </div>
-                  <div className={`${styles.data}`}>
-                    <p className={`${styles.name}`}>yasser hamada</p>
-                    <p className={`${styles.jobTitle} m-0`}>art director</p>
-                  </div>
-                  <div className={`${styles.rating}`}>
-                    <span>rating: </span>
-                    <div className={`${styles.stars}`}>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                      <i className="fa-solid fa-star"></i>
-                    </div>
-                  </div>
-                </div>
-                <p
-                  className={`${styles.details} mt-3 ${
-                    i18n.language === "ar" ? "text-end" : "text-start"
-                  }`}
-                >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos
-                  id, ab asperiores nam iure earum mollitia, laborum obcaecati
-                  tenetur corporis ipsam ullam ex fuga omnis iusto repudiandae
-                  nisi reprehenderit distinctio qui.
+                  {t("home.testmonials.opinions.person3.opinionDescription")}
                 </p>
               </div>
             </Carousel>
