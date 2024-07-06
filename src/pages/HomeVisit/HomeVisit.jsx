@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 // images
 import cover1 from "../../assets/images/HomeVisit/Hero/5.jpg";
-import image from "../../../public/testVisit.jpg";
+import image from "../../assets/images/HomeVisit/1.jpg";
 
 // css
 import styles from "./HomeVisit.module.css";
@@ -18,7 +18,12 @@ const HomeVisit = () => {
   const { t, i18n } = useTranslation();
 
   return (
-    <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
+    <div
+      dir={i18n.language === "ar" ? "rtl" : "ltr"}
+      className={`${styles.home} ${
+        i18n.language === "ar" ? "regularArFont" : "mediumEnFont"
+      }`}
+    >
       <div className={`${styles.homeVisit}`}>
         {/* Hero */}
         <div className={`${styles.hero} `}>
@@ -31,7 +36,7 @@ const HomeVisit = () => {
       <div className={`${styles.book}`}>
         <div className={`${styles.text} text-center mx-auto pt-5`}>
           <h2
-            className={`${styles.mainTitle} mb-5 mx-auto ${
+            className={`${styles.mainTitle} mx-auto ${
               i18n.language === "ar" ? "boldArFont" : "blackEnFont"
             }`}
             style={
@@ -44,11 +49,11 @@ const HomeVisit = () => {
           </h2>
         </div>
         <div
-          className={`${styles.formWrapper} align-items-center customContainer row mx-auto mb-4`}
+          className={`${styles.formWrapper} align-items-center customContainer row mx-auto gy-4 mb-4`}
         >
           <div className={`${styles.content} col-lg-6`}>
             <div className={`${styles.text} mb-5`}>
-              <h3 className={`${styles.subtitle}`}>
+              <h3 className={`${styles.subtitle} fw-bold`}>
                 {t("homeVisit.book.subTitle1")}
               </h3>
               <h2 className={`${styles.mainTitle}`}>
@@ -72,16 +77,28 @@ const HomeVisit = () => {
                 <div className="col-md-6">
                   <input
                     type="text"
-                    name="name"
-                    id="name"
+                    name="firstname"
+                    id="firstname"
                     className={`form-control px-4 py-3 ${
                       i18n.language === "ar" ? "text-end" : "text-start"
                     }`}
                     required
-                    placeholder={t("home.book.formData.Name")}
+                    placeholder={t("home.book.formData.FName")}
                   />
                 </div>
                 <div className="col-md-6">
+                  <input
+                    type="text"
+                    name="lastname"
+                    id="lastname"
+                    className={`form-control px-4 py-3 ${
+                      i18n.language === "ar" ? "text-end" : "text-start"
+                    }`}
+                    required
+                    placeholder={t("home.book.formData.LName")}
+                  />
+                </div>
+                <div className="col-md-12">
                   {" "}
                   <input
                     type="tel"
@@ -129,7 +146,10 @@ const HomeVisit = () => {
                 </div>
 
                 <div className="col-md-6 mt-4">
-                  <button type="submit" className="form-control col-md-6 px-5 py-3">
+                  <button
+                    type="submit"
+                    className="form-control col-md-6 px-5 py-3"
+                  >
                     {t("home.book.link")}
                   </button>
                 </div>

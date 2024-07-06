@@ -46,7 +46,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a test to measure the number and type of blood cells in the body. It can help diagnose and monitor many medical conditions",
                 testNumber: 90,
                 testType: "test",
               },
@@ -56,7 +56,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a group of blood tests that measure the levels of some enzymes, proteins, and bilirubin in the blood",
                 testNumber: 50,
                 testType: "parameter",
               },
@@ -66,7 +66,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a group of blood and urinary tests that measure the efficiency of the kidneys in filtering waste and toxins from the blood and regulating water, salts and hormones.",
                 testNumber: 90,
                 testType: "test",
               },
@@ -76,7 +76,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a group of blood tests that measure the levels of fats and cholesterol in the blood, which affect the health of the heart and blood vessels.",
                 testNumber: 50,
                 testType: "parameter",
               },
@@ -86,7 +86,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a test that measures the amount of iron available in the blood, which is used in the production of red blood cells and hemoglobin.",
                 testNumber: 90,
                 testType: "test",
               },
@@ -96,7 +96,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a test that measures the level of 25-hydroxyvitamin D in the blood, which is an indicator of the amount of vitamin D available in the body.",
                 testNumber: 50,
                 testType: "parameter",
               },
@@ -106,7 +106,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a test that measures the level of this vitamin in the blood, which plays an important role in the health of the blood and nervous system.",
                 testNumber: 90,
                 testType: "test",
               },
@@ -116,7 +116,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a test that measures the level of folic acid (vitamin B9) in the blood, which is one of the important vitamins for the manufacture of red blood cells and DNA.",
                 testNumber: 50,
                 testType: "parameter",
               },
@@ -126,7 +126,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a test that measures the level of glucose, or blood sugar, and is used to diagnose and monitor diabetes.",
                 testNumber: 90,
                 testType: "test",
               },
@@ -136,7 +136,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a test that measures the level of glycated hemoglobin in the blood, which is an indicator of the average blood sugar level during the previous three months.",
                 testNumber: 50,
                 testType: "parameter",
               },
@@ -146,7 +146,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a group of blood tests that aim to detect the presence of infection with hepatitis C viruses.",
                 testNumber: 90,
                 testType: "test",
               },
@@ -156,7 +156,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a test aimed at detecting the presence of infection with the human immunodeficiency virus (HIV), which causes acquired immunodeficiency syndrome",
                 testNumber: 50,
                 testType: "parameter",
               },
@@ -166,7 +166,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "These are blood tests that measure the levels of hormones produced by the thyroid gland that affect metabolism, growth, and energy processes in the body.",
                 testNumber: 90,
                 testType: "test",
               },
@@ -176,7 +176,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "These are blood tests that measure hormone levels that affect fertility and sexual functions in men and women.",
                 testNumber: 50,
                 testType: "parameter",
               },
@@ -186,7 +186,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a test that measures the level of this hormone in the blood, which is the main male sex hormone that affects fertility, sexual functions, and general health for men and women.",
                 testNumber: 90,
                 testType: "test",
               },
@@ -196,7 +196,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "These are tests that measure the levels of certain chemicals that are linked to the presence or activity of cancerous tumors in the body.",
                 testNumber: 50,
                 testType: "parameter",
               },
@@ -206,7 +206,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "It is a group of blood tests that measure the blood's ability to clot and control bleeding.",
                 testNumber: 90,
                 testType: "test",
               },
@@ -216,7 +216,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "These are tests that measure the levels of IGE and IGG antibodies produced by the immune system against specific substances that cause allergies.",
                 testNumber: 50,
                 testType: "parameter",
               },
@@ -300,7 +300,7 @@ i18n.use(initReactI18next).init({
                   d1: "Cumulative sugar",
                   d2: "fasting sugar",
                   d3: "breakfast sugar",
-                  d4: "fasting sugar",
+                  d4: "",
                 },
                 testNumber: 90,
                 testType: "test",
@@ -436,7 +436,7 @@ i18n.use(initReactI18next).init({
                 title: "Thyroid hormone monitoring",
                 oldPrice: "$500",
                 newPrice: "$300",
-                description: { d1: "TSH", d2: "FT3", d3: "FT4", d4: "FT4" },
+                description: { d1: "TSH", d2: "FT3", d3: "FT4", d4: "" },
                 testNumber: 90,
                 testType: "test",
               },
@@ -447,10 +447,10 @@ i18n.use(initReactI18next).init({
                 oldPrice: "$500",
                 newPrice: "$300",
                 description: {
-                  d1: "Food Detective",
-                  d2: "tests ",
-                  d3: "for 60",
-                  d4: "types of food",
+                  d1: "Food Detective tests for 60 types of food",
+                  d2: "",
+                  d3: "",
+                  d4: "",
                 },
                 testNumber: 90,
                 testType: "test",
@@ -461,10 +461,10 @@ i18n.use(initReactI18next).init({
                 oldPrice: "$500",
                 newPrice: "$300",
                 description: {
-                  d1: "Food Print",
-                  d2: "tests ",
-                  d3: "for 220",
-                  d4: "types of food",
+                  d1: "Food Print tests for 220 types of food",
+                  d2: "",
+                  d3: "",
+                  d4: "",
                 },
                 testNumber: 90,
                 testType: "test",
@@ -488,7 +488,8 @@ i18n.use(initReactI18next).init({
             link: "book now",
             formData: {
               serviceName: "Service Name",
-              Name: "Name",
+              FName: "First Name",
+              LName: "Last Name",
               phone: "phone",
               email: "email",
               time: "time",
@@ -544,6 +545,10 @@ i18n.use(initReactI18next).init({
             title1: "for latest update",
             title2: "subscribe to our newsletter",
             button: "subscribe",
+          },
+          main: {
+            description:
+              "Our Laboratories Are Considered One Of The Leading Medical Laboratories In The Field Of Medical Analysis, And We Always Aim To Provide A High-Level And High-Quality Medical Service In Egypt.",
           },
           quickLinks: {
             title: "quick links",
@@ -652,7 +657,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هى مجموعه من الاختبارات الدموية التي تقيس مستويات بعض الانزيمات والبروتينات والبيليروبين فى الدم",
                 testNumber: 90,
                 testType: "اختبار",
               },
@@ -662,7 +667,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هي مجموعة من الفحوصات الدموية والبولية التي تقيس مدى كفاءة الكلى في تصفية الدم من الفضالت والسموم وتنظيم الماء والاملاح والهرمونات.",
                 testNumber: 50,
                 testType: "مُدخل",
               },
@@ -672,7 +677,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هي مجموعة من الفحوصات الدموية والبولية التي تقيس مدى كفاءة الكلى في تصفية الدم من الفضالت والسموم وتنظيم الماء والاملاح والهرمونات.",
                 testNumber: 90,
                 testType: "اختبار",
               },
@@ -682,7 +687,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هي مجموعة من الفحوصات الدموية التي تقيس مستويات الدهون والكوليسترول في الدم، والتي تؤثر على صحة القلب والاوعية الدموية.",
                 testNumber: 50,
                 testType: "مُدخل",
               },
@@ -692,7 +697,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هو فحص يقيس كمية الحديد المتوفرة في الدم، والتي تستخدم في إنتاج خاليا الدم الحمراء والهيموغلوبين.",
                 testNumber: 90,
                 testType: "اختبار",
               },
@@ -702,7 +707,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هو فحص يقيس مستوى هيدروكسي فيتامين (D25) D في الدم، وهو مؤشر على كمية فيتامين D المتوفرة في الجسم.",
                 testNumber: 50,
                 testType: "مُدخل",
               },
@@ -712,7 +717,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هو فحص يقيس مستوى هذا الفيتامين في الدم، والذي يلعب دورا مهما في صحة الدم والجهاز العصبي.",
                 testNumber: 90,
                 testType: "اختبار",
               },
@@ -722,7 +727,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هو فحص يقيس مستوى حمض الفوليك (فيتامين ب9 ) في الدم، وهو أحد الفيتامينات الهامة لتصنيع خاليا الدم الحمراء والحمض النووي.",
                 testNumber: 50,
                 testType: "مُدخل",
               },
@@ -732,7 +737,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هو فحص يقيس مستوى الجلوكوز أو السكر في الدم، ويستخدم لتشخيص ومراقبة مرض السكري.",
                 testNumber: 90,
                 testType: "اختبار",
               },
@@ -742,7 +747,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هو فحص يقيس نسبة الهيموغلوبين السكري في الدم، وهو مؤشر على متوسط مستوى السكر في الدم خالل الثالثة أشهر السابقة.",
                 testNumber: 50,
                 testType: "مُدخل",
               },
@@ -752,7 +757,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هي مجموعة من الفحوصات الدموية التي تهدف إلى كشف وجود العدوى بفيروسات التهاب الكبد الوبائي .",
                 testNumber: 90,
                 testType: "اختبار",
               },
@@ -762,7 +767,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هو فحص يهدف إلى كشف وجود العدوى بفيروس نقص المناعة البشرية (HIV) والذي يسبب متالزمة نقص المناعة المكتسبة",
                 testNumber: 50,
                 testType: "مُدخل",
               },
@@ -772,7 +777,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هي فحوصات دم تقيس مستويات الهرمونات التي تنتجها الغدة الدرقية والتي تؤثر على عمليات األيض والنمو والطاقة في الجسم.",
                 testNumber: 90,
                 testType: "اختبار",
               },
@@ -782,7 +787,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هي فحوصات دم تقيس مستويات الهرمونات التي تؤثر على الخصوبة والوظائف الجنسية لدى الرجال والنساء.",
                 testNumber: 50,
                 testType: "مُدخل",
               },
@@ -792,7 +797,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هو فحص يقيس مستوى هذا الهرمون في الدم، وهو الهرمون الجنسي الذكري الرئيسي الذي يؤثر على الخصوبة والوظائف الجنسية والصحة العامة للرجال والنساء.",
                 testNumber: 90,
                 testType: "اختبار",
               },
@@ -802,7 +807,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هي فحوصات تقيس مستويات بعض المواد الكيميائية التي ترتبط بوجود أو نشاط األورام السرطانية في الجسم.",
                 testNumber: 50,
                 testType: "مُدخل",
               },
@@ -812,7 +817,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هي مجموعة من الفحوصات الدموية التي تقيس قدرة الدم على التخثر والسيطرة على النزيف.",
                 testNumber: 90,
                 testType: "اختبار",
               },
@@ -822,7 +827,7 @@ i18n.use(initReactI18next).init({
                 oldPrice: "500 جنيه",
                 newPrice: "300 جنيه",
                 description:
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in animi obcaecati itaque! Culpa eligendi ad reiciendis voluptate commodi sit tempore",
+                  "هي فحوصات تقيس مستويات األجسام المضادة من نوع IGE والـ IGG التي تنتجها المناعة ضد مواد محددة تسبب الحساسية.",
                 testNumber: 50,
                 testType: "مُدخل",
               },
@@ -904,7 +909,7 @@ i18n.use(initReactI18next).init({
                   d1: "سكر تراكمى",
                   d2: "سكر صايم",
                   d3: "سكر فاطر",
-                  d4: "سكر فاطر",
+                  d4: "",
                 },
                 testNumber: 90,
                 testType: "اختبار",
@@ -1035,7 +1040,7 @@ i18n.use(initReactI18next).init({
                 title: "لمتابعة هرمونات الغدة الدرقية ",
                 oldPrice: "500 L.E",
                 newPrice: "300 L.E",
-                description: { d1: "TSH", d2: "FT3", d3: "FT4", d4: "FT4" },
+                description: { d1: "TSH", d2: "FT3", d3: "FT4", d4: "" },
                 testNumber: 90,
                 testType: "اختبار",
               },
@@ -1086,7 +1091,8 @@ i18n.use(initReactI18next).init({
             link: "احجز الآن",
             formData: {
               serviceName: "نوع الخدمة",
-              Name: "الاسم",
+              FName: "الاسم الاول",
+              LName: "اسم العائلة",
               phone: "رقم الهاتف",
               email: "البريد الالكتروني",
               time: "التوقيت",
@@ -1143,6 +1149,10 @@ i18n.use(initReactI18next).init({
             title2: "اشترك في نشرتنا الإخبارية",
             button: "اشترك",
           },
+          main: {
+            description:
+              "تُعتبر مختبراتنا واحدة من المختبرات الطبية الرائدة في مجال التحاليل الطبية، ونسعى دائماً لتقديم خدمة طبية عالية المستوى والجودة في مصر.",
+          },
           quickLinks: {
             title: "روابط سريعة",
           },
@@ -1166,7 +1176,7 @@ i18n.use(initReactI18next).init({
           title: "دلوقتي تقدر تحجز زيارتك المنزلية مع معامل كيولاب",
           book: {
             subTitle1: "احجز",
-            subTitle2: "ميعاد",
+            subTitle2: "زيارتك الآن",
           },
         },
         branches: {

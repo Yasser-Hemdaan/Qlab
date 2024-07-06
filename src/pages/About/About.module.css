@@ -3,7 +3,7 @@
 }
 
 .hero {
-  max-height: 600px;
+  /* max-height: 600px; */
   overflow: hidden;
   position: relative;
 }
@@ -18,11 +18,14 @@
 
 .mainAbout .text {
   max-width: 575px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mainAbout .text .subTitle {
   color: var(--main-color);
-  font-size: var(--description-size);
+  font-size: var(--sub-title-size);
   /* text-transform: uppercase; */
 
   border-block-end: 2px solid rgba(128, 128, 128, 0.241);
@@ -87,4 +90,10 @@
 .value .text .row .description {
   font-size: var(--description-size);
   color: var(--gray-color);
+}
+
+.value .images {
+  display: flex;
+  align-items: center;
+  
 }

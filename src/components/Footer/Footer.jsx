@@ -23,9 +23,7 @@ const Footer = () => {
         }`}
       >
         <div className=" mx-auto">
-          <div
-            className={`${styles.footerBody} customContainer `}
-          >
+          <div className={`${styles.footerBody} customContainer `}>
             <div className={`${styles.main} order-1 mt-0`}>
               <div className={`${styles.logo}`}>
                 <picture>
@@ -33,10 +31,7 @@ const Footer = () => {
                 </picture>
               </div>
               <div className={`${styles.description} mb-4`}>
-                <p>
-                  patholab laboratory is a very well equipped laboratory of this
-                  country and thy promised to provide best services.
-                </p>
+                <p>{t("footer.main.description")}</p>
               </div>
               <ul className={`${styles.sci}`}>
                 <li>

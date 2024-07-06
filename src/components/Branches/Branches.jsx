@@ -32,7 +32,9 @@ const Branches = () => {
               <div className={`${styles.header}`}></div>
               <div className={`${styles.cardBody} p-4`}>
                 <div className={`${styles.address} py-4`}>
-                  <h3 className={`${styles.title}`}>{t("branches.address")}</h3>
+                  <h3 className={`${styles.title} fw-bold`}>
+                    {t("branches.address")}
+                  </h3>
                   <div className={styles.location}>
                     <div className={`${styles.icon}`}>
                       <LiaMapMarkedAltSolid />
@@ -43,7 +45,7 @@ const Branches = () => {
                   </div>
                 </div>
                 <div className={`${styles.contact} py-4`}>
-                  <h3 className={`${styles.title}`}>
+                  <h3 className={`${styles.title} fw-bold`}>
                     {t("branches.contactInformation")}
                   </h3>
 
@@ -70,7 +72,7 @@ const Branches = () => {
                     <LuClock4 />
                   </div>
                   <div className={`${styles.text}`}>
-                    <h3 className={`${styles.title}`}>
+                    <h3 className={`${styles.title} fw-bold`}>
                       {t("branches.openingHour")}
                     </h3>
                     <p className={`${styles.work} ${styles.description}`}>
@@ -89,7 +91,9 @@ const Branches = () => {
               <div className={`${styles.header}`}></div>
               <div className={`${styles.cardBody} p-4`}>
                 <div className={`${styles.address} py-4`}>
-                  <h3 className={`${styles.title}`}>{t("branches.address")}</h3>
+                  <h3 className={`${styles.title} fw-bold`}>
+                    {t("branches.address")}
+                  </h3>
                   <div className={styles.location}>
                     <div className={`${styles.icon}`}>
                       <LiaMapMarkedAltSolid />
@@ -100,7 +104,7 @@ const Branches = () => {
                   </div>
                 </div>
                 <div className={`${styles.contact} py-4`}>
-                  <h3 className={`${styles.title}`}>
+                  <h3 className={`${styles.title} fw-bold`}>
                     {t("branches.contactInformation")}
                   </h3>
 
@@ -126,7 +130,7 @@ const Branches = () => {
                     <LuClock4 />
                   </div>
                   <div className={`${styles.text}`}>
-                    <h3 className={`${styles.title}`}>
+                    <h3 className={`${styles.title} fw-bold`}>
                       {t("branches.openingHour")}
                     </h3>
                     <p className={`${styles.work} ${styles.description}`}>
@@ -145,7 +149,9 @@ const Branches = () => {
               <div className={`${styles.header}`}></div>
               <div className={`${styles.cardBody} p-4`}>
                 <div className={`${styles.address} py-4`}>
-                  <h3 className={`${styles.title}`}>{t("branches.address")}</h3>
+                  <h3 className={`${styles.title} fw-bold`}>
+                    {t("branches.address")}
+                  </h3>
                   <div className={styles.location}>
                     <div className={`${styles.icon}`}>
                       <LiaMapMarkedAltSolid />
@@ -156,7 +162,7 @@ const Branches = () => {
                   </div>
                 </div>
                 <div className={`${styles.contact} py-4`}>
-                  <h3 className={`${styles.title}`}>
+                  <h3 className={`${styles.title} fw-bold`}>
                     {t("branches.contactInformation")}
                   </h3>
 
@@ -182,7 +188,7 @@ const Branches = () => {
                     <LuClock4 />
                   </div>
                   <div className={`${styles.text}`}>
-                    <h3 className={`${styles.title}`}>
+                    <h3 className={`${styles.title} fw-bold`}>
                       {t("branches.openingHour")}
                     </h3>
                     <p className={`${styles.work} ${styles.description}`}>
@@ -201,7 +207,9 @@ const Branches = () => {
               <div className={`${styles.header}`}></div>
               <div className={`${styles.cardBody} p-4`}>
                 <div className={`${styles.address} py-4`}>
-                  <h3 className={`${styles.title}`}>{t("branches.address")}</h3>
+                  <h3 className={`${styles.title} fw-bold`}>
+                    {t("branches.address")}
+                  </h3>
                   <div className={styles.location}>
                     <div className={`${styles.icon}`}>
                       <LiaMapMarkedAltSolid />
@@ -212,7 +220,7 @@ const Branches = () => {
                   </div>
                 </div>
                 <div className={`${styles.contact} py-4`}>
-                  <h3 className={`${styles.title}`}>
+                  <h3 className={`${styles.title} fw-bold`}>
                     {t("branches.contactInformation")}
                   </h3>
 
@@ -238,7 +246,7 @@ const Branches = () => {
                     <LuClock4 />
                   </div>
                   <div className={`${styles.text}`}>
-                    <h3 className={`${styles.title}`}>
+                    <h3 className={`${styles.title} fw-bold`}>
                       {t("branches.openingHour")}
                     </h3>
                     <p className={`${styles.work} ${styles.description}`}>
@@ -257,7 +265,9 @@ const Branches = () => {
               <div className={`${styles.header}`}></div>
               <div className={`${styles.cardBody} p-4`}>
                 <div className={`${styles.address} py-4`}>
-                  <h3 className={`${styles.title}`}>{t("branches.address")}</h3>
+                  <h3 className={`${styles.title} fw-bold`}>
+                    {t("branches.address")}
+                  </h3>
                   <div className={styles.location}>
                     <div className={`${styles.icon}`}>
                       <LiaMapMarkedAltSolid />
@@ -268,7 +278,7 @@ const Branches = () => {
                   </div>
                 </div>
                 <div className={`${styles.contact} py-4`}>
-                  <h3 className={`${styles.title}`}>
+                  <h3 className={`${styles.title} fw-bold`}>
                     {t("branches.contactInformation")}
                   </h3>
 
@@ -294,7 +304,7 @@ const Branches = () => {
                     <LuClock4 />
                   </div>
                   <div className={`${styles.text}`}>
-                    <h3 className={`${styles.title}`}>
+                    <h3 className={`${styles.title} fw-bold`}>
                       {t("branches.openingHour")}
                     </h3>
                     <p className={`${styles.work} ${styles.description}`}>

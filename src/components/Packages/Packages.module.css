@@ -2,6 +2,10 @@
   color: var(--main-color);
 }
 
+ul {
+  list-style-type: none !important;
+}
+
 .packagesBody .text .subTitle {
   font-size: var(--sub-title-size);
 }
@@ -56,12 +60,14 @@
 .packagesCardsContainer .packagesCard .cardBody .type,
 .packagesCardsContainer .packagesCard .cardBody .title {
   color: var(--main-color);
-  font-size: var(--h3-title-size);
+  font-size: 26px;
   text-transform: capitalize;
   /* height: 50px; */
-  max-width: 300px !important;
-  /* min-height: 70px; */
-  line-height: 35px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
+  white-space: pre-wrap; /* let the text wrap preserving spaces */
 }
 
 .packagesCardsContainer .packagesCard .cardBody .type {
@@ -101,10 +107,11 @@
 .packagesCardsContainer .packagesCard .cardBody .description {
   color: var(--gray-color);
   font-size: 16px;
-  /* min-height: 100px; */
+  min-height: 100px;
   text-transform: capitalize;
   list-style-type: disc;
   list-style-position: inside;
+  
 }
 
 @media screen and (min-width: 1300px) {

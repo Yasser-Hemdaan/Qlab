@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 
 // images
 import cover1 from "../../assets/images/About/Hero/2.jpg";
+import image from "../../assets/images/HomeVisit/1.jpg";
+import image2 from "../../assets/images/HomeVisit/01.jpg";
 
 // css
 import styles from "./About.module.css";
@@ -17,7 +19,12 @@ const About = () => {
   }, []);
   const { t, i18n } = useTranslation();
   return (
-    <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
+    <div
+      dir={i18n.language === "ar" ? "rtl" : "ltr"}
+      className={`${styles.home} ${
+        i18n.language === "ar" ? "regularArFont" : "mediumEnFont"
+      }`}
+    >
       <div className={`${styles.about}`}>
         {/* Hero */}
         <div className={`${styles.hero} mb-5`}>
@@ -29,12 +36,16 @@ const About = () => {
         <div
           className={`${styles.mainAbout} customContainer row mx-auto py-5 my-5`}
         >
-          <div className={`${styles.images} col-md-6`}></div>
+          <div className={`${styles.images} col-md-6`}>
+            <picture>
+              <img src={image} className="w-100" alt="" />
+            </picture>
+          </div>
           <div className={`${styles.text} col-md-6`}>
-            <h3 className={`${styles.subTitle} pb-2 mb-4`}>
+            <h3 className={`${styles.subTitle} pb-2 mb-4 fw-bold`}>
               {t("about.subTitle")}
             </h3>
-            <h2 className={`${styles.mainTitle} mb-4`}>
+            <h2 className={`${styles.mainTitle} fw-bold mb-4`}>
               {t("about.mainTitle")}
             </h2>
             <p className={`${styles.description}`}>{t("about.description")}</p>
@@ -113,7 +124,11 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className={`${styles.images} col-md-6`}></div>
+          <div className={`${styles.images} col-md-6`}>
+            <picture>
+              <img src={image2} className="w-100" alt="" />
+            </picture>
+          </div>
         </div>
       </div>
       <Branches />

@@ -1,9 +1,9 @@
 .medicalTest {
-    overflow-x: hidden;
-  }
-  
-  .hero {
-    max-height: 600px;
-    overflow: hidden ;
-    position: relative;
-  }
+  overflow-x: hidden;
+}
+
+.hero {
+  max-height: 600px;
+  overflow: hidden;
+  position: relative;
+}
