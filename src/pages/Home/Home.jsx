@@ -448,7 +448,9 @@ const Home = () => {
                 </div>
                 <p
                   className={`${styles.details} mt-3 ${
-                    i18n.language === "ar" ? "text-end" : "text-start"
+                    i18n.language === "ar"
+                      ? "text-end semiBoldArFont"
+                      : "text-start boldEnFont"
                   }`}
                 >
                   {t("home.testmonials.opinions.person1.opinionDescription")}
@@ -503,7 +505,9 @@ const Home = () => {
                 </div>
                 <p
                   className={`${styles.details} mt-3 ${
-                    i18n.language === "ar" ? "text-end" : "text-start"
+                    i18n.language === "ar"
+                      ? "text-end semiBoldArFont"
+                      : "text-start boldEnFont"
                   }`}
                 >
                   {t("home.testmonials.opinions.person2.opinionDescription")}
@@ -558,7 +562,9 @@ const Home = () => {
                 </div>
                 <p
                   className={`${styles.details} mt-3 ${
-                    i18n.language === "ar" ? "text-end" : "text-start"
+                    i18n.language === "ar"
+                      ? "text-end semiBoldArFont"
+                      : "text-start boldEnFont"
                   }`}
                 >
                   {t("home.testmonials.opinions.person3.opinionDescription")}

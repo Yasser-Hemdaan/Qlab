@@ -110,7 +110,13 @@ const Examinations = ({ ExaminationsNumber }) => {
                         </span>
                       </p>
                     </div>
-                    <p className={`${styles.description}`}>
+                    <p
+                      className={`${styles.description} ${
+                        i18n.language === "ar"
+                          ? "semiBoldArFont"
+                          : "boldEnFont"
+                      }`}
+                    >
                       {t(
                         `home.examinations.examinationsCards.examination${
                           index + 1

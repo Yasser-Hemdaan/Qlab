@@ -516,6 +516,7 @@ i18n.use(initReactI18next).init({
             link: "book now",
             formData: {
               serviceName: "Service Name",
+              Name: "Full Name",
               FName: "First Name",
               LName: "Last Name",
               phone: "phone",
@@ -1146,6 +1147,7 @@ i18n.use(initReactI18next).init({
             link: "احجز الآن",
             formData: {
               serviceName: "نوع الخدمة",
+              Name: "الاسم بالكامل",
               FName: "الاسم الاول",
               LName: "اسم العائلة",
               phone: "رقم الهاتف",

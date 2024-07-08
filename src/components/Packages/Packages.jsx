@@ -98,7 +98,11 @@ const Packages = ({ PackagesNumber }) => {
                         </span>
                       </p>
                     </div>
-                    <ul className={`${styles.description}`}>
+                    <ul
+                      className={`${styles.description} ${
+                        i18n.language === "ar" ? "semiBoldArFont" : "boldEnFont"
+                      }`}
+                    >
                       <li>
                         <span>
                           {t(

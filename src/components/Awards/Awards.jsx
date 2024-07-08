@@ -55,7 +55,7 @@ const Awards = () => {
           </div>
           <div className="col-md-7">
             <div className={`${styles.clients}`}>
-              <p className={`${styles.description} mb-4`}>
+              <p className={`${styles.description} fw-bold mb-4`}>
                 <span>{t("home.awards.description")}</span>
               </p>
               <div className={`${styles.clientsGroup} row g-3 pb-3`}>
