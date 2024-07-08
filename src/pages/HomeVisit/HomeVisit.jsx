@@ -1,5 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import emailjs from "@emailjs/browser";
 
 // images
 import cover1 from "../../assets/images/HomeVisit/Hero/5.jpg";
@@ -15,7 +16,48 @@ const HomeVisit = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const form = useRef();
+
+  const [serviceName, setServiceName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [date, setDate] = useState("");
+  const [time, setTime] = useState("");
+  const [isSuccessMessage, setIsSuccessMessage] = useState(false);
+
   const { t, i18n } = useTranslation();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    setIsSuccessMessage(true);
+
+    setServiceName("");
+    setFirstName("");
+    setLastName("");
+    setPhone("");
+    setEmail("");
+    setTime("");
+    setDate("");
+    
+
+    emailjs
+      .sendForm(
+        "service_lnxyiud",
+        "template_97gt4ip",
+        form.current,
+        "JR9tVyoPLDJWeTjlV"
+      )
+      .then(
+        () => {},
+        () => {}
+      );
+    setTimeout(function () {
+      setIsSuccessMessage(false);
+    }, 5000);
+  };
 
   return (
     <div
@@ -24,6 +66,12 @@ const HomeVisit = () => {
         i18n.language === "ar" ? "regularArFont" : "mediumEnFont"
       }`}
     >
+      {isSuccessMessage && (
+        <div className={styles.successMessage}>
+          <p>Your email is sent</p>
+          <i className="fa-regular fa-circle-check"></i>
+        </div>
+      )}
       <div className={`${styles.homeVisit}`}>
         {/* Hero */}
         <div className={`${styles.hero} `}>
@@ -60,41 +108,53 @@ const HomeVisit = () => {
                 {t("homeVisit.book.subTitle2")}
               </h2>
             </div>
-            <form action="" className="p-0">
+            <form ref={form} onSubmit={sendEmail} className="p-0">
               <div className="row g-3">
                 <div className="col-md-12">
                   <input
                     type="text"
-                    name="service"
+                    name="from_service"
                     id="service"
                     className={`form-control px-4 py-3 ${
                       i18n.language === "ar" ? "text-end" : "text-start"
                     }`}
-                    required
+                    pattern="^([a-zA-Z]{3,}\s?)+$"
+                    title="Please enter a valid service (more than 3 letters) (only letters)"
+                    value={serviceName}
+                    onChange={(e) => setServiceName(e.target.value)}
+                    //required
                     placeholder={t("home.book.formData.serviceName")}
                   />
                 </div>
                 <div className="col-md-6">
                   <input
                     type="text"
-                    name="firstname"
+                    name="from_Fname"
                     id="firstname"
                     className={`form-control px-4 py-3 ${
                       i18n.language === "ar" ? "text-end" : "text-start"
                     }`}
-                    required
+                    pattern="^([a-zA-Z]{3,}\s?)+$"
+                    title="Please enter a valid name (more than 3 letters) (only letters)"
+                    value={firstName}
+                    onChange={(e) => setFirstName(e.target.value)}
+                    //required
                     placeholder={t("home.book.formData.FName")}
                   />
                 </div>
                 <div className="col-md-6">
                   <input
                     type="text"
-                    name="lastname"
+                    name="from_Lname"
                     id="lastname"
                     className={`form-control px-4 py-3 ${
                       i18n.language === "ar" ? "text-end" : "text-start"
                     }`}
-                    required
+                    pattern="^([a-zA-Z]{3,}\s?)+$"
+                    title="Please enter a valid name (more than 3 letters) (only letters)"
+                    value={lastName}
+                    onChange={(e) => setLastName(e.target.value)}
+                    //required
                     placeholder={t("home.book.formData.LName")}
                   />
                 </div>
@@ -102,12 +162,16 @@ const HomeVisit = () => {
                   {" "}
                   <input
                     type="tel"
-                    name="phone"
+                    name="from_phone"
                     id="phone"
                     className={`form-control px-4 py-3 ${
                       i18n.language === "ar" ? "text-end" : "text-start"
                     }`}
-                    required
+                    pattern="^\[0-9]{11,13}$"
+                    title="Please enter a valid starts with phone number between (11-13) digits"
+                    //required
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                     placeholder={t("home.book.formData.phone")}
                   />
                 </div>
@@ -115,12 +179,16 @@ const HomeVisit = () => {
                   {" "}
                   <input
                     type="email"
-                    name="email"
+                    name="from_email"
                     id="email"
                     className={`form-control px-4 py-3 ${
                       i18n.language === "ar" ? "text-end" : "text-start"
                     }`}
-                    required
+                    pattern="^(\w{3,}[.-])@([a-z]{3,})((\.[a-z]{2,})+)$"
+                    title="Please enter a valid email address"
+                    //required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     placeholder={t("home.book.formData.email")}
                   />
                 </div>
@@ -128,20 +196,26 @@ const HomeVisit = () => {
                   {" "}
                   <input
                     type="date"
-                    name="date"
+                    name="from_date"
                     id="date"
                     className={`form-control px-4 py-3`}
-                    required
+                    title="Please enter a valid date"
+                    //required
+                    value={date}
+                    onChange={(e) => setDate(e.target.value)}
                   />
                 </div>
                 <div className="col-md-6">
                   {" "}
                   <input
                     type="time"
-                    name="time"
+                    name="from_time"
                     id="time"
                     className={`form-control px-4 py-3`}
-                    required
+                    title="Please enter a valid time"
+                    //required
+                    value={time}
+                    onChange={(e) => setTime(e.target.value)}
                   />
                 </div>
 

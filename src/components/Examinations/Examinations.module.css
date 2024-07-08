@@ -119,7 +119,7 @@
 .examinationsCardsContainer .examinationsCard .cardBody .description {
   color: var(--gray-color);
   font-size: 16px;
-  min-height: 65px;
+  min-height: 100px;
 }
 
 .examinationsCardsContainer .examinationsCard .cardBody .includes {
