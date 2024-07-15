@@ -1,39 +1,39 @@
 const examinations = [
   {
     id: 1,
-    image: "/examinations/1.jpg",
+    image: "/examinations/01.jpg",
   },
   {
     id: 2,
-    image: "/examinations/2.jpg",
+    image: "/examinations/02.jpg",
   },
   {
     id: 3,
-    image: "/examinations/3.jpg",
+    image: "/examinations/03.jpg",
   },
   {
     id: 4,
-    image: "/examinations/4.jpg",
+    image: "/examinations/04.jpg",
   },
   {
     id: 5,
-    image: "/examinations/5.jpg",
+    image: "/examinations/05.jpg",
   },
   {
     id: 6,
-    image: "/examinations/6.jpg",
+    image: "/examinations/06.jpg",
   },
   {
     id: 7,
-    image: "/examinations/7.jpg",
+    image: "/examinations/07.jpg",
   },
   {
     id: 8,
-    image: "/examinations/8.jpg",
+    image: "/examinations/08.jpg",
   },
   {
     id: 9,
-    image: "/examinations/9.jpg",
+    image: "/examinations/09.jpg",
   },
   {
     id: 10,
