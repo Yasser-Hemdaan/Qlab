@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 
 // images
-import cover1 from "../../assets/images/HomeVisit/Hero/5.jpg";
+import cover1 from "../../assets/images/HomeVisit/Hero/hero.jpg";
 import image from "../../assets/images/HomeVisit/1.jpg";
 
 // css
@@ -41,7 +41,6 @@ const HomeVisit = () => {
     setEmail("");
     setTime("");
     setDate("");
-    
 
     emailjs
       .sendForm(

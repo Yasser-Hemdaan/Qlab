@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./Offers.module.css";
 
 // images
-import cover1 from "../../assets/images/Offers/Hero/3.jpg";
+import cover1 from "../../assets/images/Offers/Hero/hero.jpg";
 
 // Components
 import Awards from "../../components/Awards/Awards";

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 // images
-import cover1 from "../../assets/images/About/Hero/2.jpg";
+import cover1 from "../../assets/images/About/Hero/hero.jpg";
 import image from "../../assets/images/HomeVisit/1.jpg";
 import image2 from "../../assets/images/HomeVisit/01.jpg";
 

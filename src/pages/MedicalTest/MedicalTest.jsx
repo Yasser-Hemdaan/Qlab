@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import styles from "./MedicalTest.module.css";
 
 // images
-import cover1 from "../../assets/images/MedicalTests/Hero/2.jpg";
+import cover1 from "../../assets/images/MedicalTests/Hero/hero.jpg";
 
 // Components
 import Awards from "../../components/Awards/Awards";
