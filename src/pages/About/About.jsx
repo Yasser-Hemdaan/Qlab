@@ -4,8 +4,8 @@ import { useTranslation } from "react-i18next";
 
 // images
 import cover1 from "../../assets/images/About/Hero/hero.jpg";
-import image from "../../assets/images/HomeVisit/1.jpg";
-import image2 from "../../assets/images/HomeVisit/01.jpg";
+import image from "../../assets/images/About/1.jpg";
+import Signature from "../../assets/images/About/Signature.png";
 
 // css
 import styles from "./About.module.css";
@@ -36,12 +36,7 @@ const About = () => {
         <div
           className={`${styles.mainAbout} customContainer row mx-auto py-5 my-5`}
         >
-          <div className={`${styles.images} col-md-6`}>
-            <picture>
-              <img src={image} className="w-100" alt="" />
-            </picture>
-          </div>
-          <div className={`${styles.text} col-md-6`}>
+          <div className={`${styles.text} mt-3 col-md-6`}>
             <h3 className={`${styles.subTitle} pb-2 mb-4 fw-bold`}>
               {t("about.subTitle")}
             </h3>
@@ -49,16 +44,16 @@ const About = () => {
               {t("about.mainTitle")}
             </h2>
             <p className={`${styles.description}`}>{t("about.description")}</p>
-            {/* <div className={`${styles.numbers} row`}>
-              <div className={`${styles.item} col-md-5`}>
-                <h4 className={`${styles.title}`}>+33</h4>
-                <p className={`${styles.data}`}>laboratories in +100 states</p>
-              </div>
-              <div className={`${styles.item} col-md-5`}>
-                <h4 className={`${styles.title}`}>+3</h4>
-                <p className={`${styles.data}`}>laboratories in +100 states</p>
-              </div>
-            </div> */}
+            <div className={`${styles.signature}`}>
+              <picture>
+                <img src={Signature} alt="" />
+              </picture>
+            </div>
+          </div>
+          <div className={`${styles.images} col-md-6`}>
+            <picture>
+              <img src={image} className="w-100" alt="" />
+            </picture>
           </div>
         </div>
         {/* Values */}
@@ -124,11 +119,11 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className={`${styles.images} col-md-6`}>
+          {/* <div className={`${styles.images} col-md-6`}>
             <picture>
               <img src={image2} className="w-100" alt="" />
             </picture>
-          </div>
+          </div> */}
         </div>
       </div>
       <Branches />

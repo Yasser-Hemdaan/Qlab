@@ -14,6 +14,22 @@
   padding-block-start: 150px !important;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../../assets/images/Home/Hero/back.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 992px) {
   .hero {
     padding-block: 50px;
@@ -31,6 +47,7 @@
   /* flex-direction: column; */
   padding-block-end: 150px !important;
   text-transform: capitalize;
+  z-index: 1;
   /* min-height: 100vh; */
 }
 .hero .content .text {
@@ -547,6 +564,22 @@
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  overflow: hidden;
+}
+
+.bannerOverlay::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../../assets/images/Home/testmonails/TestmonialsBack.jpg");
+  background-position: center;
+  z-index: 0;
+  opacity: 0.5;
 }
 
 .advantages .image {
@@ -687,10 +720,10 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url("/public/packages/1.jpg");
+  background-image: url("../../assets/images/Home/testmonails/TestmonialsBack.jpg");
   background-position: center;
   z-index: 0;
-  opacity: 0.05;
+  opacity: 1;
 }
 
 .testmonials .testmonialsBody {

@@ -170,7 +170,7 @@ const Footer = () => {
               </div>
               <div className={`${styles.description} mb-4`}>
                 <p>
-                  patholab laboratory is a very well equipped laboratory of this
+                  Qlab laboratory is a very well equipped laboratory of this
                   country and thy promised to provide best services.
                 </p>
               </div>

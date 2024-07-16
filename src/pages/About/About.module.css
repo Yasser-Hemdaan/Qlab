@@ -21,7 +21,7 @@
   max-width: 575px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .mainAbout .text .subTitle {
@@ -42,6 +42,11 @@
 .mainAbout .text .description {
   color: var(--gray-color);
   font-size: var(--description-size);
+}
+
+.mainAbout .text .signature picture img {
+  width: 100%;
+  max-width: 250px;
 }
 
 .mainAbout .text .numbers .title {

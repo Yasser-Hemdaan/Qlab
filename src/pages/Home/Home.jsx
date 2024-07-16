@@ -377,7 +377,7 @@ const Home = () => {
         </div>
         {/* Testmonials */}
         <div
-          className={`${styles.testmonials}  fw-bold`}
+          className={`${styles.testmonials} fw-bold`}
           dir={i18n.language === "ar" ? "rtl" : "ltr"}
         >
           <div className={`${styles.testmonialsBody} customContainer mx-auto`}>
