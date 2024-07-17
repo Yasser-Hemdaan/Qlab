@@ -188,6 +188,15 @@
   /* background-color: gray; */
 }
 
+.accordionTitle button::after {
+  display: none;
+}
+
+.accordionTitle button{
+  display: flex;
+  justify-content: space-between;
+}
+
 /* scroll to top button */
 .scroll-to-top {
   position: fixed;

@@ -63,30 +63,14 @@
   max-width: 1200px;
 }
 
-.value::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  background-color: #ecf5fe;
-  z-index: -1;
-  border-radius: 2rem;
-  -webkit-border-radius: 2rem;
-  -moz-border-radius: 2rem;
-  -ms-border-radius: 2rem;
-  -o-border-radius: 2rem;
-}
-
 .value .text {
 }
 
-.value .text .subTitle {
-  font-size: var(--sub-title-size);
-
-  text-transform: uppercase;
+.value .subTitle {
+  color: var(--main-color);
+  font-size: var(--main-title-size);
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .value .text .row .title {
@@ -101,5 +85,4 @@
 .value .images {
   display: flex;
   align-items: center;
-  
 }
