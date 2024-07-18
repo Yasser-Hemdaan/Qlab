@@ -1,4 +1,6 @@
 // import React from "react";
+import { useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 // css
@@ -7,6 +9,10 @@ import styles from "./Home.module.css";
 // React Icons
 import { GrDocumentTest } from "react-icons/gr";
 import { BsSliders } from "react-icons/bs";
+
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // Import Swiper React components
 // import { Swiper, SwiperSlide } from "swiper/react";
@@ -42,7 +48,7 @@ import Examinations from "../../components/Examinations/Examinations";
 import Packages from "../../components/Packages/Packages";
 import Awards from "../../components/Awards/Awards";
 import BookBanner from "../../components/BookBanner/BookBanner";
-import { NavLink } from "react-router-dom";
+
 // import { useEffect } from "react";
 
 const responsive = {
@@ -59,9 +65,15 @@ const responsive = {
 };
 
 const Home = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    // Scroll to the top when the component is mounted or re-rendered
+    AOS.init({
+      easing: "linear",
+      delay: 300,
+      duration: 600,
+    });
+  });
 
   const { t, i18n } = useTranslation();
 
@@ -76,7 +88,10 @@ const Home = () => {
         <div className={`${styles.hero}`}>
           <div className="customContainer">
             <div className={`${styles.heroBody} row gy-5`}>
-              <div className={`${styles.images} col-lg-5`}>
+              <div
+                className={`${styles.images} col-lg-5`}
+                data-aos="fade-right"
+              >
                 <picture>
                   <img src={Doc} className="w-100" alt="" />
                 </picture>
@@ -90,6 +105,7 @@ const Home = () => {
                     ? "align-items-end"
                     : "align-items-start"
                 } offset-lg-1 col-lg-6`}
+                data-aos="fade-left"
               >
                 <div
                   className={`${styles.text} mb-3 `}
@@ -192,6 +208,8 @@ const Home = () => {
           <Examinations ExaminationsNumber={6} />
           <div
             className={`${styles.link} mx-auto mb-5 px-5 py-2 customContainer`}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
           >
             <span className="me-1">{t("home.examinations.link")}</span>
             <NavLink to="/medicalTest">
@@ -218,7 +236,13 @@ const Home = () => {
             >
               <div className="row">
                 <div className="col-sm-6 col-md-3">
-                  <div className={`${styles.item}`}>
+                  <div
+                    className={`${styles.item}`}
+                    data-aos={
+                      i18n.language === "ar" ? "fade-left" : "fade-right"
+                    }
+                    data-aos-delay="250"
+                  >
                     <div className={`${styles.info}`}>
                       <div className={`${styles.icon}`}>
                         <picture>
@@ -241,7 +265,13 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="col-sm-6 col-md-3">
-                  <div className={`${styles.item}`}>
+                  <div
+                    className={`${styles.item}`}
+                    data-aos={
+                      i18n.language === "ar" ? "fade-left" : "fade-right"
+                    }
+                    data-aos-delay="500"
+                  >
                     <div className={`${styles.info}`}>
                       <div className={`${styles.icon}`}>
                         <picture>
@@ -260,7 +290,13 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="col-sm-6 col-md-3">
-                  <div className={`${styles.item}`}>
+                  <div
+                    className={`${styles.item}`}
+                    data-aos={
+                      i18n.language === "ar" ? "fade-left" : "fade-right"
+                    }
+                    data-aos-delay="750"
+                  >
                     <div className={`${styles.info}`}>
                       <div className={`${styles.icon}`}>
                         <picture>
@@ -277,7 +313,13 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="col-sm-6 col-md-3">
-                  <div className={`${styles.item}`}>
+                  <div
+                    className={`${styles.item}`}
+                    data-aos={
+                      i18n.language === "ar" ? "fade-left" : "fade-right"
+                    }
+                    data-aos-delay="1000"
+                  >
                     <div className={`${styles.info}`}>
                       <div className={`${styles.icon}`}>
                         <picture>
@@ -300,16 +342,20 @@ const Home = () => {
 
           <div className={`customContainer ${styles.advantages}`} dir="rtl">
             <div className={`${styles.bannerOverlay}`}></div>
-            <div className="">
-              <div className={`${styles.image}`}>
-                <picture>
-                  <img src={advantages} alt="" />
-                </picture>
-              </div>
+            <div
+              className={`${styles.image}`}
+              data-aos="fade-left"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <picture>
+                <img src={advantages} alt="" />
+              </picture>
             </div>
             <div>
               <div
                 className={`${styles.text}`}
+                data-aos="fade-right"
+                data-aos-anchor-placement="top-bottom"
                 dir={`${i18n.language === "ar" ? "rtl" : "ltr"}`}
               >
                 <h3
@@ -357,7 +403,11 @@ const Home = () => {
           <Packages PackagesNumber={6} />
           <div className={`${styles.link} mx-auto px-3 py-2 customContainer`}>
             <span className="me-1">{t("home.packages.link")}</span>
-            <NavLink to="/offers">
+            <NavLink
+              to="/offers"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <span
                 className={
                   i18n.language === "ar" ? "me-2 fw-bold" : "ms-2 fw-bold"
@@ -381,10 +431,16 @@ const Home = () => {
           dir={i18n.language === "ar" ? "rtl" : "ltr"}
         >
           <div className={`${styles.testmonialsBody} customContainer mx-auto`}>
-            <h3 className={`${styles.title} mb-4`}>
+            <h3
+              className={`${styles.title} mb-4`}
+              data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+            >
               {t("home.testmonials.title")}
             </h3>
-            <p className={`${styles.description} mb-4`}>
+            <p
+              className={`${styles.description} mb-4`}
+              data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+            >
               {t("home.testmonials.description")}
             </p>
             <Carousel

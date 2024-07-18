@@ -1,8 +1,12 @@
 // import React from "react";
 // import { NavLink } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // css
 import styles from "./BookBanner.module.css";
@@ -11,11 +15,18 @@ import styles from "./BookBanner.module.css";
 import bannerImage from "/bookBanner/image.png";
 
 const BookBanner = () => {
+  useEffect(() => {
+    // Scroll to the top when the component is mounted or re-rendered
+    AOS.init({
+      easing: "linear",
+      delay: 300,
+      duration: 600,
+    });
+  });
   const form = useRef();
 
   const [serviceName, setServiceName] = useState("");
   const [firstName, setFirstName] = useState("");
-
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [date, setDate] = useState("");
@@ -61,13 +72,21 @@ const BookBanner = () => {
       )}
       <div className={`row g-3 customContainer mx-auto ${styles.bookBanner}`}>
         <div className="col-lg-6 order-2">
-          <div className={`${styles.image} w-100 mx-auto`}>
+          <div
+            className={`${styles.image} w-100 mx-auto`}
+            data-aos="fade-left"
+            data-aos-anchor-placement="top-bottom"
+          >
             <picture className="col-md-12">
               <img src={bannerImage} className="w-100" alt="" />
             </picture>
           </div>
         </div>
-        <div className={`${styles.content} col-lg-6 order-1 m-0`}>
+        <div
+          className={`${styles.content} col-lg-6 order-1 m-0`}
+          data-aos="fade-right"
+          data-aos-anchor-placement="top-bottom"
+        >
           <div className={`${styles.text}`}>
             <h3
               className={`${styles.title} ${
@@ -96,7 +115,7 @@ const BookBanner = () => {
                 title="Please enter a valid service (more than 3 letters) (only letters)"
                 value={serviceName}
                 onChange={(e) => setServiceName(e.target.value)}
-                //required
+                required
                 placeholder={t("home.book.formData.serviceName")}
               />
             </div>
@@ -112,7 +131,7 @@ const BookBanner = () => {
                 title="Please enter a valid name (more than 3 letters) (only letters)"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                //required
+                required
                 placeholder={t("home.book.formData.Name")}
               />
             </div>
@@ -127,7 +146,7 @@ const BookBanner = () => {
                 }`}
                 pattern="^\[0-9]{11,13}$"
                 title="Please enter a valid starts with phone number between (11-13) digits"
-                //required
+                required
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 placeholder={t("home.book.formData.phone")}
@@ -144,7 +163,7 @@ const BookBanner = () => {
                 }`}
                 pattern="^(\w{3,}[.-])@([a-z]{3,})((\.[a-z]{2,})+)$"
                 title="Please enter a valid email address"
-                //required
+                required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t("home.book.formData.email")}
@@ -158,7 +177,7 @@ const BookBanner = () => {
                 id="date"
                 className={`form-control`}
                 title="Please enter a valid date"
-                //required
+                required
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
               />
@@ -171,7 +190,7 @@ const BookBanner = () => {
                 id="time"
                 className={`form-control`}
                 title="Please enter a valid time"
-                //required
+                required
                 value={time}
                 onChange={(e) => setTime(e.target.value)}
               />

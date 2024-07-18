@@ -1,4 +1,9 @@
 // import React from "react";
+import { useEffect } from "react";
+
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // css
 import styles from "./Branches.module.css";
@@ -11,6 +16,13 @@ import { LuClock4 } from "react-icons/lu";
 import { useTranslation } from "react-i18next";
 
 const Branches = () => {
+  useEffect(() => {
+    AOS.init({
+      easing: "linear",
+      delay: 300,
+      duration: 600,
+    });
+  });
   const { t, i18n } = useTranslation();
   return (
     <div>
@@ -20,6 +32,8 @@ const Branches = () => {
             className={`${styles.mainTitle} mb-5 mx-auto ${
               i18n.language === "ar" ? "boldArFont" : "blackEnFont"
             }`}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
           >
             {t("branches.title")}
           </h2>
@@ -27,7 +41,11 @@ const Branches = () => {
         <div
           className={`${styles.branchesBody} customContainer row g-4 mx-auto`}
         >
-          <div className={`${styles.item} col-lg-4 col-md-6`}>
+          <div
+            className={`${styles.item} col-lg-4 col-md-6`}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
             <div className={`${styles.card}`}>
               <div className={`${styles.header}`}></div>
               <div className={`${styles.cardBody} p-4`}>
@@ -86,7 +104,11 @@ const Branches = () => {
               </div>
             </div>
           </div>
-          <div className={`${styles.item} col-lg-4 col-md-6`}>
+          <div
+            className={`${styles.item} col-lg-4 col-md-6`}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
             <div className={`${styles.card}`}>
               <div className={`${styles.header}`}></div>
               <div className={`${styles.cardBody} p-4`}>
@@ -144,7 +166,11 @@ const Branches = () => {
               </div>
             </div>
           </div>
-          <div className={`${styles.item} col-lg-4 col-md-6`}>
+          <div
+            className={`${styles.item} col-lg-4 col-md-6`}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
             <div className={`${styles.card}`}>
               <div className={`${styles.header}`}></div>
               <div className={`${styles.cardBody} p-4`}>
@@ -202,7 +228,11 @@ const Branches = () => {
               </div>
             </div>
           </div>
-          <div className={`${styles.item} col-lg-4 col-md-6`}>
+          <div
+            className={`${styles.item} col-lg-4 col-md-6`}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
             <div className={`${styles.card}`}>
               <div className={`${styles.header}`}></div>
               <div className={`${styles.cardBody} p-4`}>
@@ -260,7 +290,11 @@ const Branches = () => {
               </div>
             </div>
           </div>
-          <div className={`${styles.item} col-lg-4 col-md-6`}>
+          <div
+            className={`${styles.item} col-lg-4 col-md-6`}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+          >
             <div className={`${styles.card}`}>
               <div className={`${styles.header}`}></div>
               <div className={`${styles.cardBody} p-4`}>

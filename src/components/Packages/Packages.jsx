@@ -1,5 +1,10 @@
 // import React from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // css
 import styles from "./Packages.module.css";
@@ -10,6 +15,14 @@ import packages from "../../DB/Packages.js";
 
 // eslint-disable-next-line react/prop-types
 const Packages = ({ PackagesNumber }) => {
+  useEffect(() => {
+    // Scroll to the top when the component is mounted or re-rendered
+    AOS.init({
+      easing: "linear",
+      delay: 300,
+      duration: 600,
+    });
+  });
   const { t, i18n } = useTranslation();
   return (
     <div
@@ -23,6 +36,7 @@ const Packages = ({ PackagesNumber }) => {
             className={`${styles.subTitle} mb-3 ${
               i18n.language === "ar" ? "semiBoldArFont" : "semiBoldEnFont"
             }`}
+            data-aos="fade-down"
           >
             {t("home.packages.mainTitle")}
           </h3>
@@ -30,6 +44,7 @@ const Packages = ({ PackagesNumber }) => {
             className={`${styles.mainTitle} mb-0 mx-auto ${
               i18n.language === "ar" ? "boldArFont" : "blackEnFont"
             } `}
+            data-aos="fade-down"
           >
             {t("home.packages.subTitle1")}
           </h2>
@@ -37,17 +52,23 @@ const Packages = ({ PackagesNumber }) => {
             className={`${styles.mainTitle} mb-4 mx-auto ${
               i18n.language === "ar" ? "boldArFont" : "blackEnFont"
             } `}
+            data-aos="fade-down"
           >
             {t("home.packages.subTitle2")}
           </h2>
-          <p className={`${styles.description} mx-auto`}>
+          <p className={`${styles.description} mx-auto`} data-aos="fade-down">
             {t("home.packages.description")}
           </p>
         </div>
         <div className={`${styles.packagesCardsContainer} mx-auto py-4 mb-5`}>
           <div className="row g-3">
             {packages.slice(0, PackagesNumber).map((card, index) => (
-              <div key={index} className="col-md-6 col-xl-4">
+              <div
+                key={index}
+                className="col-md-6 col-xl-4"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+              >
                 <div className={`${styles.packagesCard}`}>
                   <div className={`${styles.image}`}>
                     <picture>

@@ -1,5 +1,10 @@
 // import React from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // css
 import styles from "./Awards.module.css";
@@ -13,6 +18,15 @@ import client5 from "/awards/clients/Logo-05.jpg";
 import client6 from "/awards/clients/Logo-06.jpg";
 
 const Awards = () => {
+  useEffect(() => {
+    // Scroll to the top when the component is mounted or re-rendered
+    AOS.init({
+      easing: "linear",
+      delay: 300,
+      duration: 600,
+    });
+  });
+
   const { t, i18n } = useTranslation();
   return (
     <div
@@ -27,6 +41,7 @@ const Awards = () => {
                 className={`${styles.subTitle} ${
                   i18n.language === "ar" ? "mediumArFont" : "mediumEnFont"
                 } mb-3`}
+                data-aos="fade-up"
               >
                 {t("home.awards.subTitle")}
               </h3>
@@ -39,10 +54,15 @@ const Awards = () => {
                     ? { maxWidth: "360px" }
                     : { maxWidth: "660px" }
                 }
+                data-aos="fade-up"
+                data-aos-delay="500"
               >
                 {t("home.awards.mainTitle")}
               </h2>
-              <div className={`${styles.overWorld} blackEnFont`}>
+              <div
+                className={`${styles.overWorld} blackEnFont`}
+                data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+              >
                 <div className={`${styles.number}`}>
                   <span>{t("home.awards.overWorld.number")}</span>
                   <span>+</span>
@@ -55,36 +75,62 @@ const Awards = () => {
           </div>
           <div className="col-md-7">
             <div className={`${styles.clients}`}>
-              <p className={`${styles.description} fw-bold mb-4`}>
+              <p
+                className={`${styles.description} fw-bold mb-4`}
+                data-aos="fade-down"
+              >
                 <span>{t("home.awards.description")}</span>
               </p>
               <div className={`${styles.clientsGroup} row g-3 pb-3`}>
-                <div className="col-6 col-sm-3 col-md-4">
+                <div
+                  className="col-6 col-sm-3 col-md-4"
+                  data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+                >
                   <picture>
                     <img src={client1} alt="" />
                   </picture>
                 </div>
-                <div className="col-6 col-sm-3 col-md-4">
+                <div
+                  className="col-6 col-sm-3 col-md-4"
+                  data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+                  data-aos-delay="500"
+                >
                   <picture>
                     <img src={client2} alt="" />
                   </picture>
                 </div>
-                <div className="col-6 col-sm-3 col-md-4">
+                <div
+                  className="col-6 col-sm-3 col-md-4"
+                  data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+                  data-aos-delay="750"
+                >
                   <picture>
                     <img src={client3} alt="" />
                   </picture>
                 </div>
-                <div className="col-6 col-sm-3 col-md-4">
+                <div
+                  className="col-6 col-sm-3 col-md-4"
+                  data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+                  data-aos-delay="1000"
+                >
                   <picture>
                     <img src={client4} alt="" />
                   </picture>
                 </div>
-                <div className="col-6 col-sm-3 col-md-4">
+                <div
+                  className="col-6 col-sm-3 col-md-4"
+                  data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+                  data-aos-delay="1250"
+                >
                   <picture>
                     <img src={client5} alt="" />
                   </picture>
                 </div>
-                <div className="col-6 col-sm-3 col-md-4">
+                <div
+                  className="col-6 col-sm-3 col-md-4"
+                  data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+                  data-aos-delay="1500"
+                >
                   <picture>
                     <img src={client6} alt="" />
                   </picture>

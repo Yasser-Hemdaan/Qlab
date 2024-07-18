@@ -1,5 +1,10 @@
 // import React from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // css
 import styles from "./Examinations.module.css";
@@ -9,6 +14,14 @@ import examinations from "../../DB/Examinations.js";
 
 // eslint-disable-next-line react/prop-types
 const Examinations = ({ ExaminationsNumber }) => {
+  useEffect(() => {
+    // Scroll to the top when the component is mounted or re-rendered
+    AOS.init({
+      easing: "linear",
+      delay: 300,
+      duration: 600,
+    });
+  });
   const { t, i18n } = useTranslation();
   return (
     <div
@@ -24,6 +37,7 @@ const Examinations = ({ ExaminationsNumber }) => {
             className={`${styles.subTitle} mb-3  ${
               i18n.language === "ar" ? "semiBoldArFont" : "semiBoldEnFont"
             }`}
+            data-aos="fade-down"
           >
             {t("home.examinations.mainTitle")}
           </h3>
@@ -31,6 +45,7 @@ const Examinations = ({ ExaminationsNumber }) => {
             className={`${styles.mainTitle} mb-0 mx-auto ${
               i18n.language === "ar" ? "boldArFont" : "blackEnFont"
             } `}
+            data-aos="fade-down"
           >
             {t("home.examinations.subTitle1")}
           </h2>
@@ -38,6 +53,7 @@ const Examinations = ({ ExaminationsNumber }) => {
             className={`${styles.mainTitle} mb-4 mx-auto ${
               i18n.language === "ar" ? "boldArFont" : "blackEnFont"
             } `}
+            data-aos="fade-down"
           >
             {t("home.examinations.subTitle2")}
           </h2>
@@ -45,6 +61,7 @@ const Examinations = ({ ExaminationsNumber }) => {
             className={`${styles.description} ${
               i18n.language === "ar" ? "semiBoldArFont" : "exBoldEnFont"
             }  `}
+            data-aos="fade-down"
           >
             {t("home.examinations.description")}
             <span>{t("home.examinations.price")}</span>
@@ -55,7 +72,12 @@ const Examinations = ({ ExaminationsNumber }) => {
         >
           <div className="row g-3">
             {examinations.slice(0, ExaminationsNumber).map((card, index) => (
-              <div key={index} className="col-md-6 col-xl-4">
+              <div
+                key={index}
+                className="col-md-6 col-xl-4"
+                data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"
+              >
                 <div className={`${styles.examinationsCard}`}>
                   <div className={`${styles.image}`}>
                     <picture>
@@ -112,9 +134,7 @@ const Examinations = ({ ExaminationsNumber }) => {
                     </div>
                     <p
                       className={`${styles.description} ${
-                        i18n.language === "ar"
-                          ? "semiBoldArFont"
-                          : "boldEnFont"
+                        i18n.language === "ar" ? "semiBoldArFont" : "boldEnFont"
                       }`}
                     >
                       {t(

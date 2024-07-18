@@ -6,6 +6,10 @@ import emailjs from "@emailjs/browser";
 import cover1 from "../../assets/images/HomeVisit/Hero/hero.jpg";
 import image from "../../assets/images/HomeVisit/1.jpg";
 
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // css
 import styles from "./HomeVisit.module.css";
 
@@ -15,6 +19,12 @@ import Branches from "../../components/Branches/Branches";
 const HomeVisit = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    // Scroll to the top when the component is mounted or re-rendered
+    AOS.init({
+      easing: "linear",
+      delay: 300,
+      duration: 600,
+    });
   }, []);
   const form = useRef();
 
@@ -86,6 +96,8 @@ const HomeVisit = () => {
             className={`${styles.mainTitle} mx-auto ${
               i18n.language === "ar" ? "boldArFont" : "blackEnFont"
             }`}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
             style={
               i18n.language === "ar"
                 ? { maxWidth: "660px" }
@@ -99,7 +111,11 @@ const HomeVisit = () => {
           className={`${styles.formWrapper} align-items-center customContainer row mx-auto gy-4 mb-4`}
         >
           <div className={`${styles.content} col-lg-6`}>
-            <div className={`${styles.text} mb-5`}>
+            <div
+              className={`${styles.text} mb-5`}
+              data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+              data-aos-delay="250"
+            >
               <h3 className={`${styles.subtitle} fw-bold`}>
                 {t("homeVisit.book.subTitle1")}
               </h3>
@@ -107,7 +123,13 @@ const HomeVisit = () => {
                 {t("homeVisit.book.subTitle2")}
               </h2>
             </div>
-            <form ref={form} onSubmit={sendEmail} className="p-0">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="p-0"
+              data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+              data-aos-delay="250"
+            >
               <div className="row g-3">
                 <div className="col-md-12">
                   <input
@@ -121,7 +143,7 @@ const HomeVisit = () => {
                     title="Please enter a valid service (more than 3 letters) (only letters)"
                     value={serviceName}
                     onChange={(e) => setServiceName(e.target.value)}
-                    //required
+                    required
                     placeholder={t("home.book.formData.serviceName")}
                   />
                 </div>
@@ -137,7 +159,7 @@ const HomeVisit = () => {
                     title="Please enter a valid name (more than 3 letters) (only letters)"
                     value={firstName}
                     onChange={(e) => setFirstName(e.target.value)}
-                    //required
+                    required
                     placeholder={t("home.book.formData.FName")}
                   />
                 </div>
@@ -153,7 +175,7 @@ const HomeVisit = () => {
                     title="Please enter a valid name (more than 3 letters) (only letters)"
                     value={lastName}
                     onChange={(e) => setLastName(e.target.value)}
-                    //required
+                    required
                     placeholder={t("home.book.formData.LName")}
                   />
                 </div>
@@ -168,7 +190,7 @@ const HomeVisit = () => {
                     }`}
                     pattern="^\[0-9]{11,13}$"
                     title="Please enter a valid starts with phone number between (11-13) digits"
-                    //required
+                    required
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     placeholder={t("home.book.formData.phone")}
@@ -185,7 +207,7 @@ const HomeVisit = () => {
                     }`}
                     pattern="^(\w{3,}[.-])@([a-z]{3,})((\.[a-z]{2,})+)$"
                     title="Please enter a valid email address"
-                    //required
+                    required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder={t("home.book.formData.email")}
@@ -199,7 +221,7 @@ const HomeVisit = () => {
                     id="date"
                     className={`form-control px-4 py-3`}
                     title="Please enter a valid date"
-                    //required
+                    required
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
                   />
@@ -212,7 +234,7 @@ const HomeVisit = () => {
                     id="time"
                     className={`form-control px-4 py-3`}
                     title="Please enter a valid time"
-                    //required
+                    required
                     value={time}
                     onChange={(e) => setTime(e.target.value)}
                   />
@@ -229,7 +251,11 @@ const HomeVisit = () => {
               </div>
             </form>
           </div>
-          <div className={`${styles.images} col-lg-6`}>
+          <div
+            className={`${styles.images} col-lg-6`}
+            data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+            data-aos-delay="250"
+          >
             <picture>
               <img src={image} className="w-100" alt="" />
             </picture>

@@ -8,6 +8,10 @@ import cover1 from "../../assets/images/About/Hero/hero.jpg";
 import image from "../../assets/images/About/1.jpg";
 import Signature from "../../assets/images/About/Signature.png";
 
+// aos
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 // css
 import styles from "./About.module.css";
 
@@ -17,7 +21,13 @@ import Branches from "./../../components/Branches/Branches";
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    // Scroll to the top when the component is mounted or re-rendered
+    AOS.init({
+      easing: "linear",
+      delay: 300,
+      duration: 600,
+    });
+  });
   const { t, i18n } = useTranslation();
   const [activeKey, setActiveKey] = useState("0");
   const handleToggle = (key) => {
@@ -42,20 +52,42 @@ const About = () => {
           className={`${styles.mainAbout} customContainer row mx-auto py-5 my-5`}
         >
           <div className={`${styles.text} mt-3 col-md-6`}>
-            <h3 className={`${styles.subTitle} pb-2 mb-4 fw-bold`}>
+            <h3
+              className={`${styles.subTitle} pb-2 mb-4 fw-bold`}
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               {t("about.subTitle")}
             </h3>
-            <h2 className={`${styles.mainTitle} fw-bold mb-4`}>
+            <h2
+              className={`${styles.mainTitle} fw-bold mb-4`}
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               {t("about.mainTitle")}
             </h2>
-            <p className={`${styles.description}`}>{t("about.description")}</p>
-            <div className={`${styles.signature}`}>
+            <p
+              className={`${styles.description}`}
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
+              {t("about.description")}
+            </p>
+            <div
+              className={`${styles.signature}`}
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <picture>
                 <img src={Signature} alt="" />
               </picture>
             </div>
           </div>
-          <div className={`${styles.images} col-md-6`}>
+          <div
+            className={`${styles.images} col-md-6`}
+            data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+            data-aos-delay="250"
+          >
             <picture>
               <img src={image} className="w-100" alt="" />
             </picture>
@@ -68,12 +100,18 @@ const About = () => {
             className={`${styles.subTitle} ${
               i18n.language === "ar" ? "boldArFont" : "blackEnFont"
             } pb-2 mb-4`}
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
           >
             {t("about.values.title")}
           </h3>
 
           <Accordion className="mb-4" activeKey={activeKey} alwaysOpen>
-            <Accordion.Item eventKey="0">
+            <Accordion.Item
+              eventKey="0"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <Accordion.Header
                 onClick={() => handleToggle("0")}
                 className={`accordionTitle ${
@@ -91,7 +129,11 @@ const About = () => {
                 {t("about.values.value1.description")}
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="1">
+            <Accordion.Item
+              eventKey="1"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <Accordion.Header
                 onClick={() => handleToggle("1")}
                 className={`accordionTitle ${
@@ -109,7 +151,11 @@ const About = () => {
                 {t("about.values.value2.description")}
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="2">
+            <Accordion.Item
+              eventKey="2"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <Accordion.Header
                 onClick={() => handleToggle("2")}
                 className={`accordionTitle ${
@@ -127,7 +173,11 @@ const About = () => {
                 {t("about.values.value3.description")}
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="3">
+            <Accordion.Item
+              eventKey="3"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <Accordion.Header
                 onClick={() => handleToggle("3")}
                 className={`accordionTitle ${
@@ -145,7 +195,11 @@ const About = () => {
                 {t("about.values.value4.description")}
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="4">
+            <Accordion.Item
+              eventKey="4"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <Accordion.Header
                 onClick={() => handleToggle("4")}
                 className={`accordionTitle ${
@@ -163,7 +217,11 @@ const About = () => {
                 {t("about.values.value5.description")}
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="5">
+            <Accordion.Item
+              eventKey="5"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <Accordion.Header
                 onClick={() => handleToggle("5")}
                 className={`accordionTitle ${
@@ -181,7 +239,11 @@ const About = () => {
                 {t("about.values.value6.description")}
               </Accordion.Body>
             </Accordion.Item>
-            <Accordion.Item eventKey="6">
+            <Accordion.Item
+              eventKey="6"
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+            >
               <Accordion.Header
                 onClick={() => handleToggle("6")}
                 className={`accordionTitle ${
@@ -200,62 +262,7 @@ const About = () => {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
-          {/* <div className={`${styles.row}`}>
-              <h4 className={`${styles.title}`}>
-                {t("about.values.value1.title")}
-              </h4>
-              <p className={`${styles.description}`}>
-                {t("about.values.value1.description")}
-              </p>
-            </div>
-            <div className={`${styles.row}`}>
-              <h4 className={`${styles.title}`}>
-                {t("about.values.value2.title")}
-              </h4>
-              <p className={`${styles.description}`}>
-                {t("about.values.value2.description")}
-              </p>
-            </div>
-            <div className={`${styles.row}`}>
-              <h4 className={`${styles.title}`}>
-                {t("about.values.value3.title")}
-              </h4>
-              <p className={`${styles.description}`}>
-                {t("about.values.value3.description")}
-              </p>
-            </div>
-            <div className={`${styles.row}`}>
-              <h4 className={`${styles.title}`}>
-                {t("about.values.value4.title")}
-              </h4>
-              <p className={`${styles.description}`}>
-                {t("about.values.value4.description")}
-              </p>
-            </div>
-            <div className={`${styles.row}`}>
-              <h4 className={`${styles.title}`}>
-                {t("about.values.value5.title")}
-              </h4>
-              <p className={`${styles.description}`}>
-                {t("about.values.value5.description")}
-              </p>
-            </div>
-            <div className={`${styles.row}`}>
-              <h4 className={`${styles.title}`}>
-                {t("about.values.value6.title")}
-              </h4>
-              <p className={`${styles.description}`}>
-                {t("about.values.value6.description")}
-              </p>
-            </div>
-            <div className={`${styles.row}`}>
-              <h4 className={`${styles.title}`}>
-                {t("about.values.value7.title")}
-              </h4>
-              <p className={`${styles.description}`}>
-                {t("about.values.value7.description")}
-              </p>
-            </div> */}
+          
         </div>
       </div>
       <Branches />
