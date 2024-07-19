@@ -146,7 +146,7 @@ const Footer = () => {
                   data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
                   data-aos-delay="500"
                 >
-                  <a href="">
+                  <a href="https://wa.me/201122240120">
                     <i className="fa-brands fa-whatsapp"></i>
                     <span>info@qlab-eg.com</span>
                   </a>

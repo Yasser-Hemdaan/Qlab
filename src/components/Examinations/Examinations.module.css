@@ -66,6 +66,26 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+.examinationsCardsContainer .examinationsCard .image {
+  overflow: hidden;
+}
+
+.examinationsCardsContainer .examinationsCard .image picture img {
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -ms-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+}
+
+.examinationsCardsContainer .examinationsCard:hover .image picture img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
 .examinationsCardsContainer .examinationsCard .cardBody .type,
 .examinationsCardsContainer .examinationsCard .cardBody .title {
   color: var(--main-color);
@@ -77,6 +97,20 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2; /* start showing ellipsis when 3rd line is reached */
   white-space: pre-wrap; /* let the text wrap preserving spaces */
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -ms-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+}
+
+.examinationsCardsContainer .examinationsCard:hover .cardBody .type,
+.examinationsCardsContainer .examinationsCard:hover .cardBody .title {
+  transform: translateX(10px) scale(1.05);
+  -webkit-transform: translateX(10px) scale(1.05);
+  -moz-transform: translateX(10px) scale(1.05);
+  -ms-transform: translateX(10px) scale(1.05);
+  -o-transform: translateX(10px) scale(1.05);
 }
 
 .examinationsCardsContainer .examinationsCard .cardBody .type {
@@ -146,4 +180,17 @@
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  transition: 0.2s all linear;
+  -webkit-transition: 0.2s all linear;
+  -moz-transition: 0.2s all linear;
+  -ms-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+}
+
+.examinationsCardsContainer .examinationsCard:hover .more {
+  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
 }

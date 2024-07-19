@@ -54,10 +54,10 @@ const HomeVisit = () => {
 
     emailjs
       .sendForm(
-        "service_lnxyiud",
-        "template_97gt4ip",
+        "service_9uhjff4",
+        "template_q20rfjj",
         form.current,
-        "JR9tVyoPLDJWeTjlV"
+        "4OZAgBWqUp9Ofp1fk"
       )
       .then(
         () => {},

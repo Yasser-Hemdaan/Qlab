@@ -185,7 +185,7 @@ const Packages = ({ PackagesNumber }) => {
                         )}
                       </p>
                       <a
-                        href="wa-me:966554754811"
+                        href="https://wa.me/201122240120"
                         target="_blank"
                         className={`${styles.more} px-3 py-1`}
                       >
