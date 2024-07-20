@@ -94,10 +94,10 @@ const Branches = () => {
                       {t("branches.openingHour")}
                     </h3>
                     <p className={`${styles.work} ${styles.description}`}>
-                      mon - sat 8:00-18:00
+                      Saturday - Thursday 9:00 am -11:00 pm
                     </p>
-                    <p className={`${styles.close} ${styles.description}`}>
-                      monday - closed
+                    <p className={`${styles.work} ${styles.description}`}>
+                      Friday 10:00 am -11:00 pm
                     </p>
                   </div>
                 </div>
@@ -156,10 +156,10 @@ const Branches = () => {
                       {t("branches.openingHour")}
                     </h3>
                     <p className={`${styles.work} ${styles.description}`}>
-                      mon - sat 8:00-18:00
+                      Saturday - Thursday 9:00 am -11:00 pm
                     </p>
-                    <p className={`${styles.close} ${styles.description}`}>
-                      monday - closed
+                    <p className={`${styles.work} ${styles.description}`}>
+                      Friday 10:00 am -11:00 pm
                     </p>
                   </div>
                 </div>
@@ -218,10 +218,10 @@ const Branches = () => {
                       {t("branches.openingHour")}
                     </h3>
                     <p className={`${styles.work} ${styles.description}`}>
-                      mon - sat 8:00-18:00
+                      Saturday - Thursday 9:00 am -11:00 pm
                     </p>
-                    <p className={`${styles.close} ${styles.description}`}>
-                      monday - closed
+                    <p className={`${styles.work} ${styles.description}`}>
+                      Friday 10:00 am -11:00 pm
                     </p>
                   </div>
                 </div>
@@ -280,17 +280,17 @@ const Branches = () => {
                       {t("branches.openingHour")}
                     </h3>
                     <p className={`${styles.work} ${styles.description}`}>
-                      mon - sat 8:00-18:00
+                      Saturday - Thursday 9:00 am -11:00 pm
                     </p>
-                    <p className={`${styles.close} ${styles.description}`}>
-                      monday - closed
+                    <p className={`${styles.work} ${styles.description}`}>
+                      Friday 10:00 am -11:00 pm
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
+          {/* <div
             className={`${styles.item} col-lg-4 col-md-6`}
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
@@ -351,7 +351,7 @@ const Branches = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

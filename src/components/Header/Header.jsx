@@ -76,7 +76,11 @@ const Header = () => {
                   {t("header.homeVisit")}
                 </NavLink>
               </li>
-              <li className={`${i18n.language === "ar" ? "boldEnFont" : "regularArFont"}`}>
+              <li
+                className={`${
+                  i18n.language === "ar" ? "boldEnFont" : "regularArFont"
+                }`}
+              >
                 <NavLink onClick={switchLanguage}>
                   {t("header.language")}
                 </NavLink>
@@ -85,7 +89,7 @@ const Header = () => {
 
             <ul className="sci m-0 p-0">
               <li>
-                <a href="">
+                <a href="https://www.facebook.com/Q.Lab.Eg" target="_blank">
                   <i className="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
@@ -95,7 +99,7 @@ const Header = () => {
                 </a>
               </li>
               <li>
-                <a href="">
+                <a href="https://www.instagram.com/q.lab.eg/" target="_blank">
                   <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>

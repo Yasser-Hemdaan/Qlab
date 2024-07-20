@@ -45,7 +45,7 @@ const Footer = () => {
                   data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
                   data-aos-delay="750"
                 >
-                  <a href="">
+                  <a href="https://www.facebook.com/Q.Lab.Eg" target="_blank">
                     <i className="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
@@ -61,7 +61,7 @@ const Footer = () => {
                   data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
                   data-aos-delay="1250"
                 >
-                  <a href="">
+                  <a href="https://www.instagram.com/q.lab.eg/" target="_blank">
                     <i className="fa-brands fa-instagram"></i>
                   </a>
                 </li>
@@ -146,8 +146,28 @@ const Footer = () => {
                   data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
                   data-aos-delay="500"
                 >
-                  <a href="https://wa.me/201122240120">
+                  <a href="https://wa.me/201122240120" target="_blank">
                     <i className="fa-brands fa-whatsapp"></i>
+                    <span>+20 11 222 40 120</span>
+                  </a>
+                </li>
+                <li
+                  className={`${styles.data}`}
+                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+                  data-aos-delay="750"
+                >
+                  <a href="">
+                    <i className="fa-regular fa-envelope"></i>
+                    <span>info@qlab-eg.com</span>
+                  </a>
+                </li>
+                <li
+                  className={`${styles.data}`}
+                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+                  data-aos-delay="750"
+                >
+                  <a href="">
+                    <i className="fa-regular fa-envelope"></i>
                     <span>info@qlab-eg.com</span>
                   </a>
                 </li>
@@ -186,52 +206,52 @@ const Footer = () => {
               <ul className={`${styles.openingHours} w-100`}>
                 <li
                   data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
-                  data-aos-delay="250"
-                >
-                  <span>{t("footer.openingHours.monday")}</span>
-                  <span>9am - 7pm</span>
-                </li>
-                <li
-                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
-                  data-aos-delay="500"
-                >
-                  <span>{t("footer.openingHours.tuesday")}</span>
-                  <span>9am - 7pm</span>
-                </li>
-                <li
-                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
-                  data-aos-delay="750"
-                >
-                  <span>{t("footer.openingHours.wednesday")}</span>
-                  <span>9am - 7pm</span>
-                </li>
-                <li
-                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
-                  data-aos-delay="1000"
-                >
-                  <span>{t("footer.openingHours.thursday")}</span>
-                  <span>9am - 7pm</span>
-                </li>
-                <li
-                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
-                  data-aos-delay="1250"
-                >
-                  <span>{t("footer.openingHours.friday")}</span>
-                  <span>9am - 7pm</span>
-                </li>
-                <li
-                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
                   data-aos-delay="1500"
                 >
                   <span>{t("footer.openingHours.saturday")}</span>
-                  <span>9am - 7pm</span>
+                  <span>9am - 11pm</span>
                 </li>
                 <li
                   data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
                   data-aos-delay="1750"
                 >
                   <span>{t("footer.openingHours.sunday")}</span>
-                  <span>{t("footer.openingHours.closed")}</span>
+                  <span>9am - 11pm</span>
+                </li>
+                <li
+                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+                  data-aos-delay="250"
+                >
+                  <span>{t("footer.openingHours.monday")}</span>
+                  <span>9am - 11pm</span>
+                </li>
+                <li
+                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+                  data-aos-delay="500"
+                >
+                  <span>{t("footer.openingHours.tuesday")}</span>
+                  <span>9am - 11pm</span>
+                </li>
+                <li
+                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+                  data-aos-delay="750"
+                >
+                  <span>{t("footer.openingHours.wednesday")}</span>
+                  <span>9am - 11pm</span>
+                </li>
+                <li
+                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+                  data-aos-delay="1000"
+                >
+                  <span>{t("footer.openingHours.thursday")}</span>
+                  <span>9am - 11pm</span>
+                </li>
+                <li
+                  data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+                  data-aos-delay="1250"
+                >
+                  <span>{t("footer.openingHours.friday")}</span>
+                  <span>10am - 11pm</span>
                 </li>
               </ul>
             </div>
@@ -348,27 +368,27 @@ const Footer = () => {
               <ul className={`${styles.openingHours} w-100`}>
                 <li>
                   <span>{t("footer.openingHours.monday")}</span>
-                  <span>9am - 7pm</span>
+                  <span>9am - 11pm</span>
                 </li>
                 <li>
                   <span>{t("footer.openingHours.tuesday")}</span>
-                  <span>9am - 7pm</span>
+                  <span>9am - 11pm</span>
                 </li>
                 <li>
                   <span>{t("footer.openingHours.wednesday")}</span>
-                  <span>9am - 7pm</span>
+                  <span>9am - 11pm</span>
                 </li>
                 <li>
                   <span>{t("footer.openingHours.thursday")}</span>
-                  <span>9am - 7pm</span>
+                  <span>9am - 11pm</span>
                 </li>
                 <li>
                   <span>{t("footer.openingHours.friday")}</span>
-                  <span>9am - 7pm</span>
+                  <span>9am - 11pm</span>
                 </li>
                 <li>
                   <span>{t("footer.openingHours.saturday")}</span>
-                  <span>9am - 7pm</span>
+                  <span>9am - 11pm</span>
                 </li>
                 <li>
                   <span>{t("footer.openingHours.sunday")}</span>

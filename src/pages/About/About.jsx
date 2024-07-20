@@ -7,6 +7,16 @@ import { Accordion } from "react-bootstrap/";
 import cover1 from "../../assets/images/About/Hero/hero.jpg";
 import image from "../../assets/images/About/1.jpg";
 import Signature from "../../assets/images/About/Signature.png";
+import client1 from "/awards/clients/Logo-01.jpg";
+import client2 from "/awards/clients/Logo-02.jpg";
+import client3 from "/awards/clients/Logo-03.jpg";
+import client4 from "/awards/clients/Logo-04.jpg";
+import client5 from "/awards/clients/Logo-05.jpg";
+import client6 from "/awards/clients/Logo-06.jpg";
+
+// carousrel
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 // aos
 import AOS from "aos";
@@ -18,6 +28,29 @@ import styles from "./About.module.css";
 // Components
 import Branches from "./../../components/Branches/Branches";
 
+const responsive = {
+  desktop: {
+    breakpoint: { max: 4000, min: 1200 },
+    items: 6,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+  largTablet: {
+    breakpoint: { max: 1200, min: 992 },
+    items: 5,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 992, min: 768 },
+    items: 4,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 768, min: 0 },
+    items: 2,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
+
 const About = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,7 +60,7 @@ const About = () => {
       delay: 300,
       duration: 600,
     });
-  });
+  }, []);
   const { t, i18n } = useTranslation();
   const [activeKey, setActiveKey] = useState("0");
   const handleToggle = (key) => {
@@ -93,9 +126,266 @@ const About = () => {
             </picture>
           </div>
         </div>
+
+        {/* Clients */}
+        <div
+          className={`${styles.clients} fw-bold`}
+          dir={i18n.language === "ar" ? "rtl" : "ltr"}
+        >
+          <div className={`${styles.clientsBody} customContainer mx-auto`}>
+            <h3
+              className={`${styles.title} mb-4`}
+              data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+            >
+              {t("about.clients.title")}
+            </h3>
+            <p
+              className={`${styles.description} mb-4`}
+              data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
+            >
+              {t("about.clients.description")}
+            </p>
+            <Carousel
+              swipeable={true}
+              draggable={true}
+              ssr={true}
+              infinite={true}
+              autoPlay={true}
+              autoPlaySpeed={1750}
+              removeArrowOnDeviceType={[
+                "desktop",
+                "mobile",
+                "largTablet",
+                "tablet",
+              ]}
+              responsive={responsive}
+              dir={i18n.language === "ar" ? "rtl" : "ltr"}
+            >
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client1} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client2} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client3} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client4} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client5} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client6} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client1} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client2} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client3} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client4} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client5} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client6} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client1} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client2} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client3} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client4} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client5} alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div
+                className={`${styles.clientImage} ${
+                  i18n.language === "ar" ? "ms-3" : "me-3"
+                }`}
+                data-aos={i18n.language === "ar" ? "fade-right" : "fade-left"}
+              >
+                <div className={`${styles.image}`}>
+                  <picture>
+                    <img src={client6} alt="" />
+                  </picture>
+                </div>
+              </div>
+            </Carousel>
+          </div>
+        </div>
+
         {/* Values */}
 
-        <div className={`${styles.value} customContainer row mx-auto p-5 my-5`}>
+        <div
+          className={`${styles.value} customContainer row mx-auto py-5 my-5`}
+        >
           <h3
             className={`${styles.subTitle} ${
               i18n.language === "ar" ? "boldArFont" : "blackEnFont"
@@ -262,7 +552,6 @@ const About = () => {
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
-          
         </div>
       </div>
       <Branches />

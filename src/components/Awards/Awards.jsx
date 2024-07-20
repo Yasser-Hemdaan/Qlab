@@ -17,6 +17,9 @@ import client4 from "/awards/clients/Logo-04.jpg";
 import client5 from "/awards/clients/Logo-05.jpg";
 import client6 from "/awards/clients/Logo-06.jpg";
 
+// files
+import certificate from "../../assets/Files/certificate.pdf";
+
 const Awards = () => {
   useEffect(() => {
     // Scroll to the top when the component is mounted or re-rendered
@@ -71,6 +74,23 @@ const Awards = () => {
                   <span>{t("home.awards.overWorld.title")}</span>
                 </h4>
               </div>
+              {/* want to add link to download pdf here */}
+              <a
+                href={certificate}
+                download="certificate"
+                target="_blank"
+                rel="noreferrer"
+                title="download Q-Lab certificate"
+                className={`${
+                  styles.certificateLink
+                } d-flex align-items-baseline gap-2 p-3 mt-4 ${
+                  i18n.language === "ar" ? "mediumArFont" : "mediumEnFont"
+                }`}
+                data-aos="fade-up"
+              >
+                <i className="fa-regular fa-file-lines"></i>
+                {t("home.awards.certificateLink")}
+              </a>
             </div>
           </div>
           <div className="col-md-7">

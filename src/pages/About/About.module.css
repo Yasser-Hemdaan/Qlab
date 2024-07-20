@@ -56,6 +56,68 @@
   color: var(--gray-color);
 }
 
+/* Clients */
+
+.clients {
+  background-color: var(--main-color);
+  padding-block: 100px;
+  position: relative;
+}
+.clients::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("../../assets/images/Home/testmonails/TestmonialsBack.jpg");
+  background-position: center;
+  z-index: 0;
+  opacity: 1;
+}
+
+.clients .clientsBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.clients .clientsBody .title {
+  font-size: 36px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: white;
+}
+
+.clients .clientsBody .description {
+  font-size: 18px;
+  color: white;
+  width: 100%;
+}
+
+.clients .clientsBody .client {
+  background-color: white;
+  margin-inline-end: 15px !important;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  padding: 25px !important;
+}
+.clients .clientsBody .client .personalInfo {
+  display: flex;
+  flex-wrap: wrap !important;
+}
+
+.clientImage .image picture img {
+  width: 100%;
+}
+
 /* value */
 
 .value {

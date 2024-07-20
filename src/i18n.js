@@ -504,6 +504,7 @@ i18n.use(initReactI18next).init({
           awards: {
             subTitle: "Versatile Laboratory Service Provider",
             mainTitle: "We Have Got Prestigious Awards For Our Work",
+            certificateLink: "certificate (PDF)",
             overWorld: {
               number: "20",
               title: "Awards From All Over the world",
@@ -530,6 +531,11 @@ i18n.use(initReactI18next).init({
           mainTitle: "We Guarantee Quality for Timely Results",
           description:
             "The primary objective of the quality assurance program at Q-Labs is to deliver exceptional and timely results to our clients. We achieve this by continuously monitoring and enhancing our analysis performance through rigorous external and internal evaluation programs. Our commitment to quality ensures that every project meets the highest standards of accuracy and reliability, fostering trust and satisfaction among our clients.",
+          clients: {
+            title: "Parteners",
+            description:
+              "Our laboratory serves a diverse clientele, including individual patients seeking diagnostic tests, healthcare providers referring patients for specialized analyses, and corporate clients requiring comprehensive health screening for employees. We are committed to delivering accurate and reliable results to all our clients.",
+          },
           values: {
             title: "values",
             value1: {
@@ -634,12 +640,12 @@ i18n.use(initReactI18next).init({
               email: "info@qlab-eg.com",
               phone: "01111652983",
             },
-            branch5: {
-              addressTitle:
-                "Qalyubia, 10th of Ramadan Street, next to Taqa gas station, in front of Bin Abdul Aziz",
-              email: "info@qlab-eg.com",
-              phone: "01111652913",
-            },
+            // branch5: {
+            //   addressTitle:
+            //     "Qalyubia, 10th of Ramadan Street, next to Taqa gas station, in front of Bin Abdul Aziz",
+            //   email: "info@qlab-eg.com",
+            //   phone: "01111652913",
+            // },
           },
         },
       },
@@ -1135,6 +1141,7 @@ i18n.use(initReactI18next).init({
           awards: {
             subTitle: "مزود خدمات مختبرية متعدد الاستخدامات",
             mainTitle: "لقد حصلنا على جوائز مرموقة لعملنا",
+            certificateLink: "شهادة تميز (PDF)",
             overWorld: {
               number: "20",
               title: "جوائز من جميع أنحاء العالم",
@@ -1161,6 +1168,11 @@ i18n.use(initReactI18next).init({
           mainTitle: "نحن نضمن الجودة للنتائج وفى وقت قياسى",
           description:
             "الهدف الرئيسي من برنامج ضمان الجودة في Q-Labs هو تقديم نتائج استثنائية وفي الوقت المناسب لعملائنا. نحقق ذلك من خلال مراقبة وتحسين أداء التحليل باستمرار من خلال برامج التقييم الخارجية والداخلية الدقيقة. يضمن التزامنا بالجودة أن كل مشروع يفي بأعلى معايير الدقة والموثوقية، مما يعزز الثقة والرضا بين عملائنا.",
+          clients: {
+            title: "شركاؤنا",
+            description:
+              "مختبرنا يخدم عملاء متنوعين، بما في ذلك المرضى الأفراد الذين يبحثون عن اختبارات تشخيصية، ومقدمي الرعاية الصحية الذين يحيلون المرضى لإجراء تحليلات متخصصة، والعملاء من الشركات الذين يحتاجون إلى فحوصات صحية شاملة للموظفين. نحن ملتزمون بتقديم نتائج دقيقة وموثوقة لجميع عملائنا.",
+          },
           values: {
             title: "قيمُنا",
             value1: {
