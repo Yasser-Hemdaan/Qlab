@@ -93,16 +93,16 @@ const Header = () => {
                   <i className="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="">
                   <i className="fa-brands fa-x-twitter"></i>
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a href="https://www.instagram.com/q.lab.eg/" target="_blank">
                   <i className="fa-brands fa-instagram"></i>
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="">
                   <i className="fa-brands fa-tiktok"></i>
