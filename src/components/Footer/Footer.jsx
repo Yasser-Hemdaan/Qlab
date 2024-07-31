@@ -65,14 +65,14 @@ const Footer = () => {
                     <i className="fa-brands fa-instagram"></i>
                   </a>
                 </li> */}
-                <li
+                {/* <li
                   data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
                   data-aos-delay="1500"
                 >
                   <a href="">
                     <i className="fa-brands fa-tiktok"></i>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className={`${styles.quickWrapper} order-2 mt-0`}>
@@ -136,7 +136,7 @@ const Footer = () => {
                   data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
                   data-aos-delay="250"
                 >
-                  <a href="">
+                  <a href="tel:201122240120">
                     <i className="fa-solid fa-phone"></i>
                     <span>+20 11 222 40 120</span>
                   </a>
@@ -156,7 +156,7 @@ const Footer = () => {
                   data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
                   data-aos-delay="750"
                 >
-                  <a href="">
+                  <a href="mailto:info@qlab-eg.com">
                     <i className="fa-regular fa-envelope"></i>
                     <span>info@qlab-eg.com</span>
                   </a>
@@ -186,7 +186,7 @@ const Footer = () => {
                   data-aos={i18n.language === "ar" ? "fade-left" : "fade-right"}
                   data-aos-delay="1000"
                 >
-                  <a href="">
+                  <a>
                     <i className="fa-solid fa-location-dot"></i>
                     <span>{t("footer.contactUS.location")}</span>
                   </a>

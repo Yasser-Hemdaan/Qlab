@@ -18,7 +18,7 @@ import client5 from "/awards/clients/Logo-05.jpg";
 import client6 from "/awards/clients/Logo-06.jpg";
 
 // files
-import certificate from "../../assets/Files/certificate.pdf";
+import certificate from "../../assets/Files/RIQAS.pdf";
 
 const Awards = () => {
   useEffect(() => {

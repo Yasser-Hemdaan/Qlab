@@ -103,11 +103,11 @@ const Header = () => {
                   <i className="fa-brands fa-instagram"></i>
                 </a>
               </li> */}
-              <li>
+              {/* <li>
                 <a href="">
                   <i className="fa-brands fa-tiktok"></i>
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 

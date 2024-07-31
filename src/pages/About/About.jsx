@@ -128,7 +128,7 @@ const About = () => {
         </div>
 
         {/* Clients */}
-        <div
+        {/* <div
           className={`${styles.clients} fw-bold`}
           dir={i18n.language === "ar" ? "rtl" : "ltr"}
         >
@@ -379,7 +379,7 @@ const About = () => {
               </div>
             </Carousel>
           </div>
-        </div>
+        </div> */}
 
         {/* Values */}
 

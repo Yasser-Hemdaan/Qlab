@@ -47,8 +47,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "160 L.E",
                 description:
                   "It is a test to measure the number and type of blood cells in the body. It can help diagnose and monitor many medical conditions",
-                testNumber: 90,
-                testType: "test",
+                testNumber: 16,
+                testType: "parameter",
               },
               examination2: {
                 type: "Tests",
@@ -57,7 +57,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "170 L.E",
                 description:
                   "It is a group of blood tests that measure the levels of some enzymes, proteins, and bilirubin in the blood",
-                testNumber: 50,
+                testNumber: 2,
                 testType: "parameter",
               },
               examination3: {
@@ -67,8 +67,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "170 L.E",
                 description:
                   "It is a group of blood and urinary tests that measure the efficiency of the kidneys in filtering waste and toxins from the blood and regulating water, salts and hormones.",
-                testNumber: 90,
-                testType: "test",
+                testNumber: 2,
+                testType: "parameter",
               },
               examination4: {
                 type: "Tests",
@@ -77,7 +77,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "360 L.E",
                 description:
                   "It is a group of blood tests that measure the levels of fats and cholesterol in the blood, which affect the health of the heart and blood vessels.",
-                testNumber: 50,
+                testNumber: 6,
                 testType: "parameter",
               },
               examination5: {
@@ -87,8 +87,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "130 L.E",
                 description:
                   "It is a test that measures the amount of iron available in the blood, which is used in the production of red blood cells and hemoglobin.",
-                testNumber: 90,
-                testType: "test",
+                testNumber: 1,
+                testType: "parameter",
               },
               examination6: {
                 type: "Test",
@@ -97,7 +97,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "600 L.E",
                 description:
                   "It is a test that measures the level of 25-hydroxyvitamin D in the blood, which is an indicator of the amount of vitamin D available in the body.",
-                testNumber: 50,
+                testNumber: 1,
                 testType: "parameter",
               },
               examination7: {
@@ -107,8 +107,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "300 L.E",
                 description:
                   "It is a test that measures the level of this vitamin in the blood, which plays an important role in the health of the blood and nervous system.",
-                testNumber: 90,
-                testType: "test",
+                testNumber: 1,
+                testType: "parameter",
               },
               examination8: {
                 type: "Test",
@@ -117,7 +117,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "300 L.E",
                 description:
                   "It is a test that measures the level of folic acid (vitamin B9) in the blood, which is one of the important vitamins for the manufacture of red blood cells and DNA.",
-                testNumber: 50,
+                testNumber: 1,
                 testType: "parameter",
               },
               examination9: {
@@ -127,8 +127,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "300 L.E",
                 description:
                   "It is a test that measures the level of glucose, or blood sugar, and is used to diagnose and monitor diabetes.",
-                testNumber: 90,
-                testType: "test",
+                testNumber: 1,
+                testType: "parameter",
               },
               examination10: {
                 type: "Test",
@@ -137,7 +137,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "160 L.E",
                 description:
                   "It is a test that measures the level of glycated hemoglobin in the blood, which is an indicator of the average blood sugar level during the previous three months.",
-                testNumber: 50,
+                testNumber: 1,
                 testType: "parameter",
               },
               examination11: {
@@ -147,8 +147,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "420 L.E",
                 description:
                   "It is a group of blood tests that aim to detect the presence of infection with hepatitis C viruses.",
-                testNumber: 90,
-                testType: "test",
+                testNumber: 2,
+                testType: "parameter",
               },
               examination12: {
                 type: "Test",
@@ -157,7 +157,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "250 L.E",
                 description:
                   "It is a test aimed at detecting the presence of infection with the human immunodeficiency virus (HIV), which causes acquired immunodeficiency syndrome",
-                testNumber: 50,
+                testNumber: 1,
                 testType: "parameter",
               },
               examination13: {
@@ -167,8 +167,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "465 L.E",
                 description:
                   "These are blood tests that measure the levels of hormones produced by the thyroid gland that affect metabolism, growth, and energy processes in the body.",
-                testNumber: 90,
-                testType: "test",
+                testNumber: 3,
+                testType: "parameter",
               },
               examination14: {
                 type: "Tests FSH, LH",
@@ -177,7 +177,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "465 L.E",
                 description:
                   "These are blood tests that measure hormone levels that affect fertility and sexual functions in men and women.",
-                testNumber: 50,
+                testNumber: 3,
                 testType: "parameter",
               },
               examination15: {
@@ -187,8 +187,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "450 L.E",
                 description:
                   "It is a test that measures the level of this hormone in the blood, which is the main male sex hormone that affects fertility, sexual functions, and general health for men and women.",
-                testNumber: 90,
-                testType: "test",
+                testNumber: 2,
+                testType: "parameter",
               },
               examination16: {
                 type: "Tests tumor markers",
@@ -197,7 +197,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "1770 L.E",
                 description:
                   "These are tests that measure the levels of certain chemicals that are linked to the presence or activity of cancerous tumors in the body.",
-                testNumber: 50,
+                testNumber: 7,
                 testType: "parameter",
               },
               examination17: {
@@ -207,8 +207,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "260 L.E",
                 description:
                   "It is a group of blood tests that measure the blood's ability to clot and control bleeding.",
-                testNumber: 90,
-                testType: "test",
+                testNumber: 4,
+                testType: "parameter",
               },
               examination18: {
                 type: "Tests",
@@ -217,7 +217,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "2000 L.E",
                 description:
                   "These are tests that measure the levels of IGE and IGG antibodies produced by the immune system against specific substances that cause allergies.",
-                testNumber: 50,
+                testNumber: 1,
                 testType: "parameter",
               },
             },
@@ -692,8 +692,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "160 جنيه",
                 description:
                   "هى مجموعه من الاختبارات الدموية التي تقيس مستويات بعض الانزيمات والبروتينات والبيليروبين فى الدم",
-                testNumber: 90,
-                testType: "اختبار",
+                testNumber: 16,
+                testType: "مُدخل",
               },
               examination2: {
                 type: "تحاليل",
@@ -702,7 +702,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "170 جنيه",
                 description:
                   "هي مجموعة من الفحوصات الدموية والبولية التي تقيس مدى كفاءة الكلى في تصفية الدم من الفضالت والسموم وتنظيم الماء والاملاح والهرمونات.",
-                testNumber: 50,
+                testNumber: 2,
                 testType: "مُدخل",
               },
               examination3: {
@@ -712,8 +712,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "170 جنيه",
                 description:
                   "هي مجموعة من الفحوصات الدموية والبولية التي تقيس مدى كفاءة الكلى في تصفية الدم من الفضالت والسموم وتنظيم الماء والاملاح والهرمونات.",
-                testNumber: 90,
-                testType: "اختبار",
+                testNumber: 2,
+                testType: "مُدخل",
               },
               examination4: {
                 type: "تحاليل",
@@ -722,7 +722,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "360 جنيه",
                 description:
                   "هي مجموعة من الفحوصات الدموية التي تقيس مستويات الدهون والكوليسترول في الدم، والتي تؤثر على صحة القلب والاوعية الدموية.",
-                testNumber: 50,
+                testNumber: 6,
                 testType: "مُدخل",
               },
               examination5: {
@@ -732,8 +732,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "130 جنيه",
                 description:
                   "هو فحص يقيس كمية الحديد المتوفرة في الدم، والتي تستخدم في إنتاج خاليا الدم الحمراء والهيموغلوبين.",
-                testNumber: 90,
-                testType: "اختبار",
+                testNumber: 1,
+                testType: "مُدخل",
               },
               examination6: {
                 type: "تحليل",
@@ -742,7 +742,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "600 جنيه",
                 description:
                   "هو فحص يقيس مستوى هيدروكسي فيتامين (D25) D في الدم، وهو مؤشر على كمية فيتامين D المتوفرة في الجسم.",
-                testNumber: 50,
+                testNumber: 1,
                 testType: "مُدخل",
               },
               examination7: {
@@ -752,8 +752,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "300 جنيه",
                 description:
                   "هو فحص يقيس مستوى هذا الفيتامين في الدم، والذي يلعب دورا مهما في صحة الدم والجهاز العصبي.",
-                testNumber: 90,
-                testType: "اختبار",
+                testNumber: 1,
+                testType: "مُدخل",
               },
               examination8: {
                 type: "تحليل",
@@ -762,7 +762,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "300 جنيه",
                 description:
                   "هو فحص يقيس مستوى حمض الفوليك (فيتامين ب9 ) في الدم، وهو أحد الفيتامينات الهامة لتصنيع خاليا الدم الحمراء والحمض النووي.",
-                testNumber: 50,
+                testNumber: 1,
                 testType: "مُدخل",
               },
               examination9: {
@@ -772,8 +772,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "300 جنيه",
                 description:
                   "هو فحص يقيس مستوى الجلوكوز أو السكر في الدم، ويستخدم لتشخيص ومراقبة مرض السكري.",
-                testNumber: 90,
-                testType: "اختبار",
+                testNumber: 1,
+                testType: "مُدخل",
               },
               examination10: {
                 type: "تحليل",
@@ -782,7 +782,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "160 جنيه",
                 description:
                   "هو فحص يقيس نسبة الهيموغلوبين السكري في الدم، وهو مؤشر على متوسط مستوى السكر في الدم خالل الثالثة أشهر السابقة.",
-                testNumber: 50,
+                testNumber: 1,
                 testType: "مُدخل",
               },
               examination11: {
@@ -792,8 +792,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "420 جنيه",
                 description:
                   "هي مجموعة من الفحوصات الدموية التي تهدف إلى كشف وجود العدوى بفيروسات التهاب الكبد الوبائي .",
-                testNumber: 90,
-                testType: "اختبار",
+                testNumber: 2,
+                testType: "مُدخل",
               },
               examination12: {
                 type: "تحليل",
@@ -802,7 +802,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "250 جنيه",
                 description:
                   "هو فحص يهدف إلى كشف وجود العدوى بفيروس نقص المناعة البشرية (HIV) والذي يسبب متالزمة نقص المناعة المكتسبة",
-                testNumber: 50,
+                testNumber: 1,
                 testType: "مُدخل",
               },
               examination13: {
@@ -812,8 +812,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "465 جنيه",
                 description:
                   "هي فحوصات دم تقيس مستويات الهرمونات التي تنتجها الغدة الدرقية والتي تؤثر على عمليات األيض والنمو والطاقة في الجسم.",
-                testNumber: 90,
-                testType: "اختبار",
+                testNumber: 3,
+                testType: "مُدخل",
               },
               examination14: {
                 type: "تحاليل",
@@ -822,7 +822,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "465 جنيه",
                 description:
                   "هي فحوصات دم تقيس مستويات الهرمونات التي تؤثر على الخصوبة والوظائف الجنسية لدى الرجال والنساء.",
-                testNumber: 50,
+                testNumber: 3,
                 testType: "مُدخل",
               },
               examination15: {
@@ -832,8 +832,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "450 جنيه",
                 description:
                   "هو فحص يقيس مستوى هذا الهرمون في الدم، وهو الهرمون الجنسي الذكري الرئيسي الذي يؤثر على الخصوبة والوظائف الجنسية والصحة العامة للرجال والنساء.",
-                testNumber: 90,
-                testType: "اختبار",
+                testNumber: 2,
+                testType: "مُدخل",
               },
               examination16: {
                 type: "تحاليل",
@@ -842,7 +842,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "1770 جنيه",
                 description:
                   "هي فحوصات تقيس مستويات بعض المواد الكيميائية التي ترتبط بوجود أو نشاط األورام السرطانية في الجسم.",
-                testNumber: 50,
+                testNumber: 7,
                 testType: "مُدخل",
               },
               examination17: {
@@ -852,8 +852,8 @@ i18n.use(initReactI18next).init({
                 newPrice: "260 جنيه",
                 description:
                   "هي مجموعة من الفحوصات الدموية التي تقيس قدرة الدم على التخثر والسيطرة على النزيف.",
-                testNumber: 90,
-                testType: "اختبار",
+                testNumber: 4,
+                testType: "مُدخل",
               },
               examination18: {
                 type: "تحاليل",
@@ -862,7 +862,7 @@ i18n.use(initReactI18next).init({
                 newPrice: "2000 جنيه",
                 description:
                   "هي فحوصات تقيس مستويات األجسام المضادة من نوع IGE والـ IGG التي تنتجها المناعة ضد مواد محددة تسبب الحساسية.",
-                testNumber: 50,
+                testNumber: 1,
                 testType: "مُدخل",
               },
             },

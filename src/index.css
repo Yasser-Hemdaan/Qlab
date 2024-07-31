@@ -192,7 +192,7 @@
   display: none;
 }
 
-.accordionTitle button{
+.accordionTitle button {
   display: flex;
   justify-content: space-between;
 }
